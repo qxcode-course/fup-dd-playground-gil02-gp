@@ -9,5 +9,5 @@ func main() {
     var minutos = resto / 60
     var segundo = resto % 60
 
-    fmt.Printf("%d:%d:%d", hora, minutos, segundo)
+    fmt.Printf("%d:%d:%d\n", hora, minutos, segundo)
 }

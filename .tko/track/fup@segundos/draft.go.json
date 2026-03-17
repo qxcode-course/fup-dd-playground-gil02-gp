@@ -62,8 +62,18 @@
         },
         {
             "label": "2026-03-16_18-20-32",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var h, m, s float64\n    fmt.Scan(&h, &m, &s)\n    s = h / 3600\n    s = m / 60\n    h = s * 3600\n    fmt.Println(\"h:m:s\", s)\n}\n",
+            "content": "@@ -45,159 +45,97 @@\n var \n-tempo int%0A    fmt.Scan(&tempo)%0A%0A    var resto int = tempo %25 3600%0A    var hora = tempo / 3600%0A    var minutos = resto / 60%0A    var segundo = resto %25 60%0A\n+h, m, s float64%0A    fmt.Scan(&h, &m, &s)%0A    s = h / 3600%0A    s = m / 60%0A    h = s * 3600\n %0A   \n@@ -148,44 +148,21 @@\n rint\n-f(%22%25d:%25d:%25d%22, hora, minutos, segundo\n+ln(%22h:m:s%22, s\n )%0A%7D%0A\n",
             "lines": "10"
+        },
+        {
+            "label": "2026-03-17_16-56-54",
+            "content": "@@ -221,10 +221,8 @@\n d:%25d\n-%5Cn\n %22, h\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-17_16-57-08",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var tempo int\n    fmt.Scan(&tempo)\n\n    var resto int = tempo % 3600\n    var hora = tempo / 3600\n    var minutos = resto / 60\n    var segundo = resto % 60\n\n    fmt.Printf(\"%d:%d:%d\\n\", hora, minutos, segundo)\n}\n",
+            "lines": "13"
         }
     ]
 }
