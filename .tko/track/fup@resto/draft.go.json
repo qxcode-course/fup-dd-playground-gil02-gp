@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_00-34-24",
+            "content": "@@ -41,114 +41,28 @@\n     \n-var bombon, crianca int%0A    fmt.Scan(&bombon, &crianca)%0A    fmt.Println(bombon / crianca, bombon %25 crianca\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_00-38-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var bombon, crianca int\n    fmt.Scan(&bombon, &crianca)\n    fmt.Println(bombon / crianca, bombon % crianca)\n}\n",
+            "lines": "7"
+        }
+    ]
+}

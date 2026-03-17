@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-15_23-45-15",
+            "content": "@@ -37,71 +37,8 @@\n ) %7B%0A\n-    var num1, num2 int%0A    fmt.Scan(&num1)%0A    fmt.Scan(&num2)%0A\n     \n@@ -54,19 +54,14 @@\n ln(%22\n-num1 + num2\n+qxcode\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_00-16-22",
+            "content": "@@ -74,18 +74,31 @@\n an(&num1\n-, \n+)%0A    fmt.Scan(\n &num2)%0A \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_00-17-10",
+            "content": "@@ -99,16 +99,17 @@\n Println(\n+%22\n num1 + n\n@@ -111,12 +111,13 @@\n 1 + num2\n+%22\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_00-17-28",
+            "content": "@@ -55,14 +55,8 @@\n num2\n-, num3\n  int\n@@ -85,15 +85,8 @@\n num2\n-, &num3\n )%0A  \n@@ -114,15 +114,8 @@\n num2\n- + num3\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_00-18-13",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2, num3 int\n    fmt.Scan(&num1, &num2, &num3)\n    fmt.Println(num1 + num2 + num3)\n}\n",
+            "lines": "7"
+        }
+    ]
+}
