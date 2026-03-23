@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_01-08-36",
+            "content": "@@ -172,25 +172,17 @@\n 2 - x1)*\n-(x2 - x1)\n+2\n  + (y2 -\n@@ -186,25 +186,17 @@\n 2 - y1)*\n-(y2 - y1)\n+2\n )%0A    fm\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-23_01-13-27",
+            "content": "@@ -135,20 +135,16 @@\n 2, &y2)%0A\n-    \n %0A    dis\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-23_01-14-21",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var x1, x2, y1, y2, distancia float64\n    fmt.Scan(&x1, &y1)\n    fmt.Scan(&x2, &y2)\n    \n    distancia = math.Sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1))\n    fmt.Printf(\"%.2f\\n\", distancia)\n}\n",
+            "lines": "11"
+        }
+    ]
+}
