@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-21_02-58-05",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var tc float64\n    fmt.Scan(&tc)\n\n    tf := 1.8*tc + 32\n    fmt.Printf(\"%.6f\\n\", tf)\n}\n",
+            "lines": "9"
+        }
+    ]
+}
