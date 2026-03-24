@@ -13,11 +13,7 @@ sources:
   quests: null
   tasks: null
 expanded:
-- '@fup@operacoes-basic-base_sem_quest'
-- fup@operacoes-basic-base
-- '@fup@selecao-1-if_else-if1-base_sem_quest'
-- fup@selecao-1-if_else-if1-base
-- sandbox@student_sandbox_alias:00_rascunhos
+- sandbox@00_rascunhos
 tasks:
   fup@tres: '{self:1, rate:100, guided:1}'
   fup@resto: '{self:1, rate:100, guided:1}'
@@ -27,6 +23,7 @@ tasks:
   fup@celsius: '{self:1, rate:100, concept:1, problem:1}'
   fup@pintando: '{self:1, rate:100, friend:Hanna, guided:1}'
   fup@bala: '{self:1, rate:100, friend:Hanna, guided:1}'
+  fup@quebrada: '{self:1, rate:100}'
   fup@abs: '{self:1, rate:100}'
   fup@max: '{self:1, rate:100}'
   fup@ou: '{self:1, rate:100}'
@@ -34,11 +31,11 @@ tasks:
   fup@multiplo: '{self:1, rate:100}'
   fup@calc: '{self:1, rate:100}'
 flags:
-  painel: 0
-  quests: 0
-  tracks: 0
+  panel: 1
+  inbox: 0
+  show_panel: 0
   tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@selecao-1-if_else-if1-base
+selected: sandbox@00_rascunhos

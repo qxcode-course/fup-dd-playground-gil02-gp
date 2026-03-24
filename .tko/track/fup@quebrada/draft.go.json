@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_16-41-48",
+            "content": "@@ -41,106 +41,28 @@\n     \n-var n1, n2 float64%0A    fmt.Scan(&n1, &n2)%0A%0A    resultado := n1 / n2%0A    fmt.Printf(%22%25f%22, resultado\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-24_16-58-34",
+            "content": "@@ -122,17 +122,16 @@\n rintf(%22%25\n-.\n f%22, resu\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-00-02",
+            "content": "@@ -142,53 +142,6 @@\n do)%0A\n-    fmt.Printf(%22n1 = %25.2f, n2 = %25.2f%22, n1, n2)%0A\n %7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-01-43",
+            "content": "@@ -138,10 +138,57 @@\n ultado)%0A\n+    fmt.Printf(%22n1 = %25.2f, n2 = %25.2f%22, n1, n2)%0A\n %7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-24_17-02-22",
+            "content": "@@ -128,10 +128,8 @@\n %22%25.f\n-%5Cn\n %22, r\n@@ -138,11 +138,10 @@\n ultado)%0A\n-%0A\n %7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-06-57",
+            "content": "@@ -48,19 +48,23 @@\n  n1, n2 \n-int\n+float64\n %0A    fmt\n@@ -126,195 +126,25 @@\n f(%22%25\n-d%5Cn%22, resultado)%0A    fmt.Printf(%22%25d%5Cn%22, n1 %25 n2)%0A    var resultado2, n3, n4 float64%0A    n3 = float64(n1)%0A    n4 = float64(n2)%0A    resultado2 = n3 / n4%0A    fmt.Printf(%22%25.2f%5Cn%22, resultado2)\n+.f%5Cn%22, resultado)%0A\n %0A%7D%0A\n- \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-24_17-17-31",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2 int\n    fmt.Scan(&n1, &n2)\n\n    resultado := n1 / n2\n    fmt.Printf(\"%d\\n\", resultado)\n    fmt.Printf(\"%d\\n\", n1 % n2)\n    var resultado2, n3, n4 float64\n    n3 = float64(n1)\n    n4 = float64(n2)\n    resultado2 = n3 / n4\n    fmt.Printf(\"%.2f\\n\", resultado2)\n}\n ",
+            "lines": "16"
+        }
+    ]
+}
