@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_16-54-26",
+            "content": "@@ -134,17 +134,16 @@\n rintf(%22%25\n-.\n f%5Cn%22, ma\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-23_16-54-34",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var a, b float64\n    fmt.Scan(&a, &b)\n    maior := math.Max(a, b)\n    fmt.Printf(\"%.f\\n\", maior)\n}\n",
+            "lines": "12"
+        }
+    ]
+}

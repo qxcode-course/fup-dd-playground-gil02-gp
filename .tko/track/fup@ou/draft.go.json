@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_16-58-33",
+            "content": "@@ -114,18 +114,16 @@\n ntf(%22SIM\n-%5Cn\n %22)%0A    %7D\n@@ -157,10 +157,8 @@\n %22NAO\n-%5Cn\n %22)%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-23_16-58-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n\n    if(a == 3 || a == 5){\n        fmt.Printf(\"SIM\\n\")\n    } else {\n        fmt.Printf(\"NAO\\n\")\n    }\n}\n",
+            "lines": "12"
+        }
+    ]
+}

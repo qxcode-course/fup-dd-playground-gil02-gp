@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_16-49-07",
+            "content": "@@ -140,10 +140,8 @@\n f(%22%25\n-.1\n f%22, \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-23_16-49-32",
+            "content": "@@ -118,9 +118,9 @@\n s(a \n--\n++\n  b)%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-23_16-49-59",
+            "content": "@@ -136,16 +136,18 @@\n rintf(%22%25\n+.1\n f%22, valo\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-23_16-50-06",
+            "content": "@@ -141,10 +141,8 @@\n (%22%25f\n-%5Cn\n %22, v\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-23_16-50-19",
+            "content": "@@ -140,10 +140,8 @@\n f(%22%25\n-.1\n f%5Cn%22\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-23_16-50-29",
+            "content": "@@ -137,16 +137,17 @@\n intf(%22%25.\n+1\n f%5Cn%22, va\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-23_16-51-03",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var a, b float64\n    fmt.Scan(&a, &b)\n\n    valor := math.Abs(a - b)\n    fmt.Printf(\"%.f\\n\", valor)\n}\n",
+            "lines": "13"
+        }
+    ]
+}

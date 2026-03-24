@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_17-06-58",
+            "content": "@@ -48,19 +48,23 @@\n  numero \n-int\n+float64\n %0A    fmt\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-23_17-08-18",
+            "content": "@@ -175,10 +175,36 @@\n )%0A    %7D%0A\n+    fmt.Println(%22qxcode%22)%0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-23_17-08-26",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numero int\n    fmt.Scan(&numero)\n\n    if(numero % 7 == 0){\n        fmt.Printf(\"SIM\\n\")\n    } else {\n        fmt.Printf(\"NAO\\n\")\n    }\n}\n",
+            "lines": "12"
+        }
+    ]
+}

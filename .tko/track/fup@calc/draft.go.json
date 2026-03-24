@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_17-27-46",
+            "content": "@@ -56,16 +56,43 @@\n um2 int%0A\n+    fmt.Scan(&num1, &num2)%0A\n     var \n@@ -104,14 +104,12 @@\n dor \n-string\n+char\n %0A   \n@@ -122,22 +122,8 @@\n can(\n-&num1, &num2, \n &ope\n@@ -152,11 +152,11 @@\n  == \n-%22+%22\n+'+'\n )%7B%0A \n@@ -167,26 +167,25 @@\n    fmt.Print\n-ln\n+f\n (%22num1 + num\n@@ -218,11 +218,11 @@\n  == \n-%22-%22\n+'-'\n )%7B%0A \n@@ -233,26 +233,25 @@\n    fmt.Print\n-ln\n+f\n (%22num1 - num\n@@ -284,11 +284,11 @@\n  == \n-%22*%22\n+'*'\n )%7B%0A \n@@ -299,26 +299,25 @@\n    fmt.Print\n-ln\n+f\n (%22num1 * num\n@@ -349,11 +349,11 @@\n  == \n-%22/%22\n+'/'\n )%7B%0A \n@@ -372,10 +372,9 @@\n rint\n-ln\n+f\n (%22nu\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-23_17-38-08",
+            "content": "@@ -156,25 +156,26 @@\n    fmt.Print\n-f\n+ln\n (%22num1 + num\n@@ -223,25 +223,26 @@\n    fmt.Print\n-f\n+ln\n (%22num1 - num\n@@ -290,25 +290,26 @@\n    fmt.Print\n-f\n+ln\n (%22num1 * num\n@@ -360,17 +360,18 @@\n mt.Print\n-f\n+ln\n (%22num1 /\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-23_17-38-58",
+            "content": "@@ -126,15 +126,11 @@\n     \n-switch \n+if(\n oper\n@@ -138,19 +138,16 @@\n dor \n-%7B%0Acase\n+==\n  %22+%22\n-:\n+)%7B\n %0A   \n@@ -185,17 +185,35 @@\n     \n-case\n+%7D else if(operador ==\n  %22-%22\n-:\n+)%7B\n %0A   \n@@ -251,17 +251,35 @@\n     \n-case\n+%7D else if(operador ==\n  %22*%22\n-:\n+)%7B\n %0A   \n@@ -317,17 +317,34 @@\n     \n-case\n+%7Delse if(operador ==\n  %22/%22\n-:\n+)%7B\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-23_17-40-20",
+            "content": "@@ -122,19 +122,23 @@\n or)%0A    \n-if(\n+switch \n operador\n@@ -142,16 +142,19 @@\n dor \n-==\n+%7B%0Acase\n  %22+%22\n-)%7B\n+:\n %0A   \n@@ -192,35 +192,17 @@\n     \n-%7D else if(operador ==\n+case\n  %22-%22\n-)%7B\n+:\n %0A   \n@@ -240,35 +240,17 @@\n     \n-%7D else if(operador ==\n+case\n  %22*%22\n-)%7B\n+:\n %0A   \n@@ -288,34 +288,17 @@\n     \n-%7Delse if(operador ==\n+case\n  %22/%22\n-)%7B\n+:\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-23_17-40-40",
+            "content": "@@ -102,43 +102,17 @@\n num1\n-)%0A    fmt.Scan(&num2)%0A    fmt.Scan(\n+, &num2, \n &ope\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-23_17-41-39",
+            "content": "@@ -200,36 +200,37 @@\n 1 + num2%22)%0A    %7D\n-%0A   \n+ else\n  if(operador == \n@@ -266,36 +266,37 @@\n 1 - num2%22)%0A    %7D\n-%0A   \n+ else\n  if(operador == \n@@ -340,20 +340,20 @@\n %22)%0A    %7D\n-%0A   \n+else\n  if(oper\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_17-43-45",
+            "content": "@@ -190,10 +190,9 @@\n rint\n-ln\n+f\n (%22nu\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-23_17-44-56",
+            "content": "@@ -248,26 +248,25 @@\n    fmt.Print\n-ln\n+f\n (%22num1 - num\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-23_17-45-18",
+            "content": "@@ -148,13 +148,8 @@\n or)%0A\n-    %0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-23_18-03-59",
+            "content": "@@ -144,16 +144,20 @@\n erador)%0A\n+    \n %0A    if(\n@@ -187,25 +187,26 @@\n    fmt.Print\n-f\n+ln\n (%22num1 + num\n@@ -253,25 +253,26 @@\n    fmt.Print\n-f\n+ln\n (%22num1 - num\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-23_18-04-21",
+            "content": "@@ -183,27 +183,27 @@\n    fmt.Print\n-ln(\n+f(%22\n num1 + num2)\n@@ -197,36 +197,36 @@\n %22num1 + num2\n+%22\n )%0A    %7D\n- else\n+%0A   \n  if(operador\n@@ -248,27 +248,27 @@\n    fmt.Print\n-ln(\n+f(%22\n num1 - num2)\n@@ -262,36 +262,36 @@\n %22num1 - num2\n+%22\n )%0A    %7D\n- else\n+%0A   \n  if(operador\n@@ -313,27 +313,27 @@\n    fmt.Print\n-ln(\n+f(%22\n num1 * num2)\n@@ -335,20 +335,20 @@\n num2\n+%22\n )%0A    %7D\n- else\n+%0A   \n  if(\n@@ -386,11 +386,11 @@\n rint\n-ln(\n+f(%22\n num1\n@@ -392,22 +392,23 @@\n %22num1 / num2\n+%22\n )%0A    %7D%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-24_15-18-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 int\n    var operador string\n    fmt.Scan(&num1)\n    fmt.Scan(&num2)\n    fmt.Scan(&operador)\n\n    if(operador == \"+\"){\n        fmt.Println(num1 + num2)\n    } else if(operador == \"-\"){\n        fmt.Println(num1 - num2)\n    } else if(operador == \"*\"){\n        fmt.Println(num1 * num2)\n    } else if(operador == \"/\"){\n        fmt.Println(num1 / num2)\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}
