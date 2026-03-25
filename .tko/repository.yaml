@@ -13,7 +13,7 @@ sources:
   quests: null
   tasks: null
 expanded:
-- sandbox@00_rascunhos
+- fup@base
 tasks:
   fup@tres: '{self:1, rate:100, guided:1}'
   fup@resto: '{self:1, rate:100, guided:1}'
@@ -24,6 +24,9 @@ tasks:
   fup@pintando: '{self:1, rate:100, friend:Hanna, guided:1}'
   fup@bala: '{self:1, rate:100, friend:Hanna, guided:1}'
   fup@quebrada: '{self:1, rate:100}'
+  fup@operacoes: '{self:1, rate:100, guided:1}'
+  fup@data: '{self:1, rate:100, guided:1}'
+  fup@opala: '{self:1, rate:100, guided:1, problem:1}'
   fup@abs: '{self:1, rate:100}'
   fup@max: '{self:1, rate:100}'
   fup@ou: '{self:1, rate:100}'
@@ -32,10 +35,10 @@ tasks:
   fup@calc: '{self:1, rate:100}'
 flags:
   panel: 1
-  inbox: 0
+  inbox: 1
   show_panel: 0
   tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: sandbox@00_rascunhos
+selected: fup@tv

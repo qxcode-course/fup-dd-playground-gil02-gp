@@ -27,8 +27,18 @@
         },
         {
             "label": "2026-03-24_17-28-14",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    fmt.Println(a + b)\n    fmt.Println(a - b)\n    fmt.Println(a * b)\n    fmt.Println(a / b)\n    fmt.Println(a % b)\n}\n",
+            "content": "@@ -66,38 +66,16 @@\n Scan\n-ln\n (&a\n-)%0A    fmt.Scanln(&b)%0A    \n+, &b)\n %0A   \n",
             "lines": "11"
+        },
+        {
+            "label": "2026-03-25_17-29-54",
+            "content": "@@ -88,16 +88,20 @@\n nln(&b)%0A\n+    \n %0A    fmt\n@@ -179,43 +179,16 @@\n rint\n-f(%22%25.2f%5Cn%22, float64\n+ln\n (a\n-)\n  / \n-float64(b)\n+b\n )%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-25_17-31-58",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scanln(&a)\n    fmt.Scanln(&b)\n\n    fmt.Println(a + b)\n    fmt.Println(a - b)\n    fmt.Println(a * b)\n    fmt.Printf(\"%.2f\\n\", float64(a) / float64(b))\n    fmt.Println(a % b)\n}\n",
+            "lines": "13"
         }
     ]
 }

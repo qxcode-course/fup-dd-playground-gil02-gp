@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-25_18-10-08",
+            "content": "@@ -208,16 +208,22 @@\n ncia := \n+hora *\n  velocid\n@@ -229,15 +229,8 @@\n dade\n- * hora\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-25_18-10-58",
+            "content": "@@ -288,9 +288,8 @@\n (%22%25.\n-2\n f%5Cn%22\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-25_18-11-10",
+            "content": "@@ -176,26 +176,16 @@\n %0A   \n- tempo :=\n  hora \n-* (\n+= \n min \n@@ -190,17 +190,16 @@\n n / 60.0\n-)\n %0A    dis\n@@ -226,13 +226,12 @@\n e * \n-tempo\n+hora\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-25_18-21-46",
+            "content": "@@ -80,16 +80,36 @@\n float64%0A\n+    fmt.Scan(&hora)%0A\n     fmt.\n@@ -119,16 +119,16 @@\n n(&min)%0A\n-\n     fmt.\n@@ -176,16 +176,26 @@\n %0A   \n+ tempo :=\n  hora \n-= \n+* (\n min \n@@ -200,16 +200,17 @@\n n / 60.0\n+)\n %0A    dis\n@@ -233,20 +233,21 @@\n idade * \n-hora\n+tempo\n %0A    des\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-25_18-28-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var hora, min, velocidade, consumo float64\n    fmt.Scan(&min)\n    fmt.Scan(&velocidade)\n    fmt.Scan(&consumo)\n\n    hora = min / 60.0\n    distancia :=  velocidade * hora\n    desempenho := distancia / consumo\n\n    fmt.Printf(\"%.2f\\n\", desempenho)\n}\n",
+            "lines": "14"
+        }
+    ]
+}
