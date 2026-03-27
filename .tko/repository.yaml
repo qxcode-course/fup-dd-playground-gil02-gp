@@ -12,8 +12,7 @@ sources:
   writeable: false
   quests: null
   tasks: null
-expanded:
-- fup@base
+expanded: []
 tasks:
   fup@tres: '{self:1, rate:100, guided:1}'
   fup@resto: '{self:1, rate:100, guided:1}'
@@ -27,6 +26,7 @@ tasks:
   fup@operacoes: '{self:1, rate:100, guided:1}'
   fup@data: '{self:1, rate:100, guided:1}'
   fup@opala: '{self:1, rate:100, guided:1, problem:1}'
+  fup@tv: '{self:1, rate:100, friend:Weslem, guided:1}'
   fup@abs: '{self:1, rate:100}'
   fup@max: '{self:1, rate:100}'
   fup@ou: '{self:1, rate:100}'
@@ -36,9 +36,8 @@ tasks:
 flags:
   panel: 1
   inbox: 1
-  show_panel: 0
-  tasks: 0
+  show_panel: 1
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@tv
+selected: fup@if1

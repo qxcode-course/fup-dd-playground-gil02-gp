@@ -1,0 +1,20 @@
+2026-03-27 00:33:36, MOVE, v:1, k:fup@tv, mode:PICK
+2026-03-27 00:35:23, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:8
+2026-03-27 00:56:56, MOVE, v:1, k:fup@tv, mode:PICK
+2026-03-27 00:56:59, EXEC, v:1, k:fup@tv, mode:FREE, size:10
+2026-03-27 01:00:55, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:15
+2026-03-27 01:01:15, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:15
+2026-03-27 01:01:24, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:15
+2026-03-27 01:01:59, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:15
+2026-03-27 01:07:44, EXEC, v:1, k:fup@tv, mode:FULL, rate:16, size:15
+2026-03-27 01:09:29, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:15
+2026-03-27 01:10:02, EXEC, v:1, k:fup@tv, mode:FULL, rate:0, size:15
+2026-03-27 01:25:13, MOVE, v:1, k:fup@tv, mode:PICK
+2026-03-27 01:25:27, EXEC, v:1, k:fup@tv, mode:FULL, rate:0
+2026-03-27 01:25:34, MOVE, v:1, k:fup@tv, mode:BACK
+2026-03-27 01:25:52, MOVE, v:1, k:fup@tv, mode:PICK
+2026-03-27 01:27:23, EXEC, v:1, k:fup@tv, mode:FULL, rate:0
+2026-03-27 01:27:38, EXEC, v:1, k:fup@tv, mode:FULL, rate:100, size:15
+2026-03-27 01:27:50, MOVE, v:1, k:fup@tv, mode:BACK
+2026-03-27 01:28:23, SELF, v:1, k:fup@tv, self:1, rate:100, guided:1
+2026-03-27 01:28:48, SELF, v:1, k:fup@tv, self:1, rate:100, friend:Weslem, guided:1
