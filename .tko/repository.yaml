@@ -13,8 +13,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@base
 - fup@if1
+- fup@base
 tasks:
   fup@tres: '{self:1, rate:100, guided:1}'
   fup@resto: '{self:1, rate:100, guided:1}'
@@ -36,6 +36,7 @@ tasks:
   fup@multiplo: '{self:1, rate:100}'
   fup@calc: '{self:1, rate:100}'
   fup@guarda: '{self:1, rate:100}'
+  fup@quantos: '{self:1, rate:100, friend:Hanna}'
 flags:
   panel: 1
   inbox: 1
@@ -43,4 +44,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@guarda
+selected: fup@impar

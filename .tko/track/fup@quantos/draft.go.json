@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-28_18-02-32",
+            "content": "@@ -131,76 +131,13 @@\n  n2 \n-&& n1 == n3)%7B%0A        fmt.Printf(%223%5Cn%22)%0A    %7D else if(n2 == n1 \n %7C%7C n\n-2\n+1\n  == \n@@ -165,75 +165,15 @@\n tf(%22\n-2%5Cn%22)%0A    %7D else if(n3 == n2 %7C%7C n3 == n1)%7B%0A        fmt.Printf(%220%5Cn%22\n+%25d%22, n1\n )%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-28_18-06-07",
+            "content": "@@ -240,16 +240,41 @@\n   %7D else\n+ if(n3 == n2 %7C%7C n3 == n1)\n %7B%0A      \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-28_18-07-28",
+            "content": "@@ -194,17 +194,17 @@\n  n1 %7C%7C n\n-1\n+2\n  == n3)%7B\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-28_18-14-35",
+            "content": "@@ -196,20 +196,8 @@\n 1 %7C%7C\n- n2 == n3 %7C%7C\n  n1 \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-28_18-15-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, n3 int\n    fmt.Scan(&n1)\n    fmt.Scan(&n2)\n    fmt.Scan(&n3)\n\n    if(n1 == n2 && n1 == n3){\n        fmt.Printf(\"3\\n\")\n    } else if(n2 == n1 || n2 == n3 || n1 == n3){\n        fmt.Printf(\"2\\n\")\n    } else{\n        fmt.Printf(\"0\\n\")\n    }\n\n}\n",
+            "lines": "17"
+        }
+    ]
+}
