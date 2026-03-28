@@ -12,7 +12,9 @@ sources:
   writeable: false
   quests: null
   tasks: null
-expanded: []
+expanded:
+- fup@base
+- fup@if1
 tasks:
   fup@tres: '{self:1, rate:100, guided:1}'
   fup@resto: '{self:1, rate:100, guided:1}'
@@ -33,11 +35,12 @@ tasks:
   fup@positivo: '{self:1, rate:100}'
   fup@multiplo: '{self:1, rate:100}'
   fup@calc: '{self:1, rate:100}'
+  fup@guarda: '{self:1, rate:100}'
 flags:
   panel: 1
   inbox: 1
-  show_panel: 1
+  show_panel: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@if1
+selected: fup@guarda

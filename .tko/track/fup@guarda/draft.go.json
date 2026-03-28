@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-28_17-43-49",
+            "content": "@@ -234,10 +234,8 @@\n wifi\n-%5Cn\n %22)%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-28_17-44-01",
+            "content": "@@ -163,34 +163,32 @@\n fmt.Printf(%22done\n-%5Cn\n %22)%0A    %7D else%7B%0A \n@@ -245,236 +245,6 @@\n   %7D%0A\n-    if(login == 1)%7B%0A        fmt.Printf(%22done%5Cn%22)%0A    %7D else%7B%0A        fmt.Printf(%22you need to login first%5Cn%22)%0A    %7D%0A    if(admin == 1)%7B%0A        fmt.Printf(%22done%5Cn%22)%0A    %7D else%7B%0A        fmt.Printf(%22you must login as admin%5Cn%22)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-28_17-47-41",
+            "content": "@@ -139,26 +139,67 @@\n  if(wifi == \n-0)\n+1)%7B%0A        fmt.Printf(%22done%5Cn%22)%0A    %7D else\n %7B%0A        fm\n@@ -242,21 +242,20 @@\n %22)%0A    %7D\n- else\n+%0A   \n  if(logi\n@@ -255,26 +255,67 @@\n if(login == \n-0)\n+1)%7B%0A        fmt.Printf(%22done%5Cn%22)%0A    %7D else\n %7B%0A        fm\n@@ -357,20 +357,20 @@\n %22)%0A    %7D\n-else\n+%0A   \n  if(admi\n@@ -378,9 +378,9 @@\n  == \n-0\n+1\n )%7B%0A \n@@ -402,31 +402,12 @@\n tf(%22\n-you must login as admin\n+done\n %5Cn%22)\n@@ -431,33 +431,52 @@\n     fmt.Printf(%22\n-done\n+you must login as admin\n %5Cn%22)%0A    %7D%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-28_17-50-18",
+            "content": "@@ -326,19 +326,16 @@\n ou must \n-to \n login as\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-28_17-51-16",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var wifi, login, admin int\n    fmt.Scan(&wifi)\n    fmt.Scan(&login)\n    fmt.Scan(&admin)\n\n    if(wifi == 0){\n        fmt.Printf(\"you must connect to wifi\\n\")\n    } else if(login == 0){\n        fmt.Printf(\"you need to login first\\n\")\n    }else if(admin == 0){\n        fmt.Printf(\"you must to login as admin\\n\")\n    } else{\n        fmt.Printf(\"done\\n\")\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}
