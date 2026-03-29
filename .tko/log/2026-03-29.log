@@ -1,0 +1,11 @@
+2026-03-29 17:45:56, MOVE, v:1, k:fup@impar, mode:DOWN
+2026-03-29 17:45:58, MOVE, v:1, k:fup@impar, mode:PICK
+2026-03-29 18:16:58, EXEC, v:1, k:fup@impar, mode:FULL, rate:78, size:19
+2026-03-29 18:18:07, EXEC, v:1, k:fup@impar, mode:FREE
+2026-03-29 18:19:49, MOVE, v:1, k:fup@impar, mode:BACK
+2026-03-29 18:20:10, MOVE, v:1, k:fup@impar, mode:PICK
+2026-03-29 18:20:16, EXEC, v:1, k:fup@impar, mode:FULL, rate:78
+2026-03-29 18:23:20, EXEC, v:1, k:fup@impar, mode:FULL, rate:64, size:19
+2026-03-29 18:23:29, EXEC, v:1, k:fup@impar, mode:FULL, rate:100, size:19
+2026-03-29 18:23:53, MOVE, v:1, k:fup@impar, mode:BACK
+2026-03-29 18:25:15, SELF, v:1, k:fup@impar, self:1, rate:100, concept:1, problem:1
