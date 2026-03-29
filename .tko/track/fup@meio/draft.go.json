@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-29_19-13-19",
+            "content": "@@ -151,34 +151,34 @@\n     fmt.Printf(%22\n-%25d\n+n2\n %22)%0A    %7D else if\n@@ -224,10 +224,10 @@\n tf(%22\n-%25d\n+n1\n %22)%0A \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-29_19-13-45",
+            "content": "@@ -130,39 +130,15 @@\n  n2 \n-&& n1 %3C n3) %7C%7C (n1 %3C n2 && n1 %3E\n+%7C%7C n2 %3C\n  n3)\n@@ -160,13 +160,14 @@\n rint\n-ln(n1\n+f(%22%25d%22\n )%0A  \n@@ -191,103 +191,44 @@\n  n1 \n-&& n2 %3C n3) %7C%7C (n2 %3C n1 && n2 %3E n3)%7B%0A        fmt.Println(n2)%0A    %7D else %7B%0A        fmt.Println(3\n+%7C%7C n1 %3C n3)%7B%0A        fmt.Printf(%22%25d%22\n )%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-29_19-18-12",
+            "content": "@@ -304,17 +304,16 @@\n Println(\n-n\n 3)%0A    %7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-29_19-18-43",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, n3 int\n    fmt.Scan(&n1)\n    fmt.Scan(&n2)\n    fmt.Scan(&n3)\n\n    if(n1 > n2 && n1 < n3) || (n1 < n2 && n1 > n3){\n        fmt.Println(n1)\n    } else if (n2 > n1 && n2 < n3) || (n2 < n1 && n2 > n3){\n        fmt.Println(n2)\n    } else {\n        fmt.Println(n3)\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}
