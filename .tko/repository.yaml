@@ -13,7 +13,7 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@if1
+- fup@if2
 tasks:
   fup@tres: '{self:1, rate:100, guided:1}'
   fup@resto: '{self:1, rate:100, guided:1}'
@@ -40,11 +40,12 @@ tasks:
   fup@mumia: '{self:1, rate:100, concept:1, problem:1, refactor:1}'
   fup@meio: '{self:1, rate:100, guided:1, concept:1, problem:1, refactor:1}'
   fup@jokenpo: '{self:1, rate:100, guided:1, concept:1}'
+  fup@final: '{self:1, rate:100}'
 flags:
-  panel: 0
+  panel: 1
   inbox: 1
   show_panel: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@meio
+selected: fup@final
