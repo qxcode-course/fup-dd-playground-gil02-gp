@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-25-09",
+            "content": "@@ -173,14 +173,12 @@\n tln(\n-%22T\n+t\n rue\n-%22\n )%0A  \n@@ -210,15 +210,13 @@\n tln(\n-%22F\n+f\n alse\n-%22\n )%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_17-25-43",
+            "content": "@@ -174,12 +174,11 @@\n ln(%22\n-Fals\n+Tru\n e%22)%0A\n@@ -201,31 +201,32 @@\n    fmt.Println(%22\n-Tru\n+Fals\n e%22)%0A    %7D%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_17-27-17",
+            "content": "@@ -191,41 +191,8 @@\n else\n- if n1 == 1 %7C%7C n2 == 1 %7C%7C n3 == 1\n %7B%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_17-27-59",
+            "content": "@@ -174,11 +174,12 @@\n ln(%22\n-Tru\n+Fals\n e%22)%0A\n@@ -235,32 +235,31 @@\n    fmt.Println(%22\n-Fals\n+Tru\n e%22)%0A    %7D%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_17-28-46",
+            "content": "@@ -193,17 +193,17 @@\n e if n1 \n-!\n+=\n = 1 %7C%7C n\n@@ -204,17 +204,17 @@\n 1 %7C%7C n2 \n-!\n+=\n = 1 %7C%7C n\n@@ -219,9 +219,9 @@\n  n3 \n-!\n+=\n = 1%7B\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_17-29-20",
+            "content": "@@ -121,17 +121,17 @@\n   if n1 \n-!\n+=\n = 0 %7C%7C n\n@@ -132,17 +132,17 @@\n 0 %7C%7C n2 \n-!\n+=\n = 0 %7C%7C n\n@@ -143,17 +143,17 @@\n 0 %7C%7C n3 \n-!\n+=\n = 0%7B%0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_17-30-01",
+            "content": "@@ -193,17 +193,17 @@\n e if n1 \n-=\n+!\n = 1 %7C%7C n\n@@ -204,17 +204,17 @@\n 1 %7C%7C n2 \n-=\n+!\n = 1 %7C%7C n\n@@ -215,17 +215,17 @@\n 1 %7C%7C n3 \n-=\n+!\n = 1%7B%0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_17-30-38",
+            "content": "@@ -125,49 +125,34 @@\n  n1 \n-%3E n2 + n3 %7C%7C n2 %3E n1 + n3 %7C%7C n3 %3E n1 + n2\n+!= 0 %7C%7C n2 != 0 %7C%7C n3 != 0\n %7B%0A  \n@@ -174,12 +174,11 @@\n ln(%22\n-Fals\n+Tru\n e%22)%0A\n@@ -187,16 +187,48 @@\n   %7Delse \n+if n1 == 1 %7C%7C n2 == 1 %7C%7C n3 == 1\n %7B%0A      \n@@ -234,31 +234,32 @@\n    fmt.Println(%22\n-Tru\n+Fals\n e%22)%0A    %7D%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_17-38-16",
+            "content": "@@ -122,17 +122,16 @@\n  if n1 %3E\n-=\n  n2 + n3\n@@ -138,17 +138,16 @@\n  %7C%7C n2 %3E\n-=\n  n1 + n3\n@@ -158,9 +158,8 @@\n n3 %3E\n-=\n  n1 \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_17-38-52",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, n3 int\n    fmt.Scan(&n1)\n    fmt.Scan(&n2)\n    fmt.Scan(&n3)\n\n    if n1 >= n2 + n3 || n2 >= n1 + n3 || n3 >= n1 + n2{\n        fmt.Println(\"False\")\n    }else {\n        fmt.Println(\"True\")\n    }\n}\n",
+            "lines": "14"
+        }
+    ]
+}

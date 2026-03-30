@@ -6,3 +6,17 @@
 2026-03-30 17:18:21, EXEC, v:1, k:fup@semana, mode:FULL, rate:100, size:23
 2026-03-30 17:18:45, MOVE, v:1, k:fup@semana, mode:BACK
 2026-03-30 17:18:58, SELF, v:1, k:fup@semana, self:1, rate:100, friend:Hanna
+2026-03-30 17:20:19, MOVE, v:1, k:fup@varetas, mode:DOWN
+2026-03-30 17:20:20, MOVE, v:1, k:fup@varetas, mode:PICK
+2026-03-30 17:25:09, EXEC, v:1, k:fup@varetas, mode:FULL, rate:0, size:14
+2026-03-30 17:25:43, EXEC, v:1, k:fup@varetas, mode:FULL, rate:51, size:14
+2026-03-30 17:27:17, EXEC, v:1, k:fup@varetas, mode:FULL, rate:49, size:14
+2026-03-30 17:27:59, EXEC, v:1, k:fup@varetas, mode:FULL, rate:1, size:14
+2026-03-30 17:28:46, EXEC, v:1, k:fup@varetas, mode:FULL, rate:12, size:14
+2026-03-30 17:29:20, EXEC, v:1, k:fup@varetas, mode:FULL, rate:51, size:14
+2026-03-30 17:30:01, EXEC, v:1, k:fup@varetas, mode:FULL, rate:49, size:14
+2026-03-30 17:30:38, EXEC, v:1, k:fup@varetas, mode:FULL, rate:49, size:14
+2026-03-30 17:38:16, EXEC, v:1, k:fup@varetas, mode:FULL, rate:96, size:14
+2026-03-30 17:38:52, EXEC, v:1, k:fup@varetas, mode:FULL, rate:100, size:14
+2026-03-30 17:39:08, MOVE, v:1, k:fup@varetas, mode:BACK
+2026-03-30 17:39:20, SELF, v:1, k:fup@varetas, self:1, rate:100, friend:hanna
