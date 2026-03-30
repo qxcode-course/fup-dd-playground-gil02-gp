@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_18-08-54",
+            "content": "@@ -153,17 +153,16 @@\n (b,2) - \n-(\n 4 * a * \n@@ -162,17 +162,16 @@\n  * a * c\n-)\n %0A%0A    x \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-30_18-09-39",
+            "content": "@@ -153,16 +153,17 @@\n (b,2) - \n+(\n 4 * a * \n@@ -163,16 +163,17 @@\n  * a * c\n+)\n %0A%0A    x \n@@ -260,34 +260,8 @@\n     \n-%0A%0A    if num %3E 0%7B%0A        \n fmt.\n@@ -294,120 +294,6 @@\n x1)%0A\n-    %7D else if num == 0%7B%0A        fmt.Printf(%22%25.2f%5Cn%22, x)%0A    %7D else %7B%0A        fmt.Printf(%22nao ha raiz real%22)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-30_18-19-18",
+            "content": "@@ -419,18 +419,16 @@\n aiz real\n-%5Cn\n %22)%0A    %7D\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-30_18-19-34",
+            "content": "@@ -69,13 +69,8 @@\n c, x\n-, num\n  flo\n@@ -134,16 +134,17 @@\n     num \n+:\n = math.P\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-30_18-20-15",
+            "content": "@@ -178,16 +178,21 @@\n   x = (b\n+*(-1)\n  + math.\n@@ -222,16 +222,21 @@\n x1 := (b\n+*(-1)\n  - math.\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-30_18-21-54",
+            "content": "@@ -170,34 +170,8 @@\n  * c\n-%0A    fmt.Printf(%22%25f%22, num)\n %0A%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-30_18-24-48",
+            "content": "@@ -166,16 +166,42 @@\n  * a * c\n+%0A    fmt.Printf(%22%25f%22, num)\n %0A%0A    x \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-30_18-25-04",
+            "content": "@@ -178,21 +178,16 @@\n   x = (b\n-*(-1)\n  + math.\n@@ -195,31 +195,29 @@\n qrt(num)) / \n-(\n 2 * a\n-)\n %0A    x1 := (\n@@ -221,13 +221,8 @@\n = (b\n-*(-1)\n  - m\n@@ -242,15 +242,13 @@\n ) / \n-(\n 2 * a\n-)\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-30_18-28-42",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var a, b, c, x, num float64\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n    fmt.Scan(&c)\n\n    num = math.Pow(b,2) - 4 * a * c\n\n    x = (b*(-1) + math.Sqrt(num)) / (2 * a)\n    x1 := (b*(-1) - math.Sqrt(num)) / (2 * a)\n    \n\n    if num > 0{\n        fmt.Printf(\"%.2f\\n%.2f\\n\", x, x1)\n    } else if num == 0{\n        fmt.Printf(\"%.2f\\n\", x)\n    } else {\n        fmt.Printf(\"nao ha raiz real\\n\")\n    }\n}\n",
+            "lines": "23"
+        }
+    ]
+}
