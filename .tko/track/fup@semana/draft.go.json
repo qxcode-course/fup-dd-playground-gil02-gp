@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_16-50-34",
+            "content": "@@ -33,16 +33,49 @@\n ain() %7B%0A\n+    fmt.Println(%22Hello, World!%22)%0A\n     var \n@@ -145,40 +145,28 @@\n ra)%0A\n+%0A\n     if\n- dia == %22seg%22 && \n+(\n hora \n-== 8\n+!= dia)\n %7B%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_16-57-59",
+            "content": "@@ -143,9 +143,9 @@\n  == \n-9\n+8\n %7B%0A  \n@@ -166,11 +166,11 @@\n tf(%22\n-NAO\n+SIM\n %22)%0A \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_16-59-05",
+            "content": "@@ -45,19 +45,22 @@\n var dia \n+str\n in\n-t\n+g\n %0A    var\n@@ -123,223 +123,16 @@\n dia \n-%3E= 2 && dia %3C= 6%7B%0A        if hora %3E= 8 && hora %3C= 11 %7C%7C hora %3E= 14 && hora %3C= 17%7B%0A            fmt.Println(%22SIM%22)%0A        %7D else %7B%0A            fmt.Println(%22NAO%22)%0A        %7D%0A    %7D else if dia == 7%7B%0A        if hora %3E= 8\n+== %22seg%22\n  && \n@@ -140,19 +140,14 @@\n ora \n-%3C= 11%7B%0A    \n+== 9%7B%0A\n     \n@@ -163,106 +163,9 @@\n rint\n-ln(%22SIM%22)%0A        %7D else%7B%0A            fmt.Println(%22NAO%22)%0A        %7D%0A    %7D else%7B%0A        fmt.Println\n+f\n (%22NA\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-18-21",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var dia int\n    var hora int\n    fmt.Scan(&dia)\n    fmt.Scan(&hora)\n    if dia >= 2 && dia <= 6{\n        if hora >= 8 && hora <= 11 || hora >= 14 && hora <= 17{\n            fmt.Println(\"SIM\")\n        } else {\n            fmt.Println(\"NAO\")\n        }\n    } else if dia == 7{\n        if hora >= 8 && hora <= 11{\n            fmt.Println(\"SIM\")\n        } else{\n            fmt.Println(\"NAO\")\n        }\n    } else{\n        fmt.Println(\"NAO\")\n    }\n}\n",
+            "lines": "23"
+        }
+    ]
+}
