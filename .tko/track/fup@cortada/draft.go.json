@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_23-45-09",
+            "content": "@@ -75,221 +75,49 @@\n &T)%0A\n-%0A    felix := ((B + T) * 70) / 2%0A    marzia := (160 * 70) - felix%0A%0A    if felix %3E marzia %7B%0A        fmt.Println(%221%22)%0A    %7D else if marzia %3E felix %7B%0A        fmt.Println(%222%22)%0A    %7D else%7B%0A        fmt.Println(%220%22\n+    fmt.Println((B * T + 999) / 1000\n )%0A    \n-%7D\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-31_00-00-58",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var B, T int\n    fmt.Scan(&B, &T)\n\n    felix := ((B + T) * 70) / 2\n    marzia := (160 * 70) - felix\n\n    if felix > marzia {\n        fmt.Println(\"1\")\n    } else if marzia > felix {\n        fmt.Println(\"2\")\n    } else{\n        fmt.Println(\"0\")\n    }\n}\n",
+            "lines": "17"
+        }
+    ]
+}

@@ -33,3 +33,6 @@
 2026-03-30 18:28:42, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:100, size:23
 2026-03-30 18:28:53, MOVE, v:1, k:fup@bhaskara, mode:BACK
 2026-03-30 18:29:04, SELF, v:1, k:fup@bhaskara, self:1, rate:100, friend:hanna
+2026-03-30 23:41:51, MOVE, v:1, k:fup@cortada, mode:DOWN
+2026-03-30 23:41:52, MOVE, v:1, k:fup@cortada, mode:PICK
+2026-03-30 23:45:09, EXEC, v:1, k:fup@cortada, mode:FULL, rate:3, size:8

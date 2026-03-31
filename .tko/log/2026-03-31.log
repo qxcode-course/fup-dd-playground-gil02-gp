@@ -1,0 +1,3 @@
+2026-03-31 00:00:58, EXEC, v:1, k:fup@cortada, mode:FULL, rate:100, size:17
+2026-03-31 00:03:03, MOVE, v:1, k:fup@cortada, mode:BACK
+2026-03-31 00:03:13, SELF, v:1, k:fup@cortada, self:1, rate:100

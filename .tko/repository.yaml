@@ -44,6 +44,7 @@ tasks:
   fup@semana: '{self:1, rate:100, friend:Hanna}'
   fup@varetas: '{self:1, rate:100, friend:hanna}'
   fup@bhaskara: '{self:1, rate:100, friend:hanna}'
+  fup@cortada: '{self:1, rate:100}'
 flags:
   panel: 1
   inbox: 1
@@ -51,4 +52,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@bhaskara
+selected: fup@cortada
