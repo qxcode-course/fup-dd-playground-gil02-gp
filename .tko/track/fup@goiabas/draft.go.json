@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-10-15",
+            "content": "@@ -599,10 +599,8 @@\n      %7D%0A%7D\n-%0A%7D\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-31_17-10-35",
+            "content": "@@ -302,37 +302,42 @@\n        fmt.Print\n-f(%22%25d\n+ln(%22BANANA\n %22)%0A        %7D els\n@@ -410,37 +410,42 @@\n        fmt.Print\n-f(%22%25d\n+ln(%22GOIABA\n %22)%0A        %7D els\n@@ -517,37 +517,41 @@\n        fmt.Print\n-f(%22%25d\n+ln(%22MANGA\n %22)%0A        %7D els\n@@ -579,13 +579,18 @@\n rint\n-f(%22%25d\n+ln(%22EMPATE\n %22)%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-31_17-12-44",
+            "content": "@@ -319,10 +319,8 @@\n (%22%25d\n-%5Cn\n %22)%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-31_17-12-53",
+            "content": "@@ -131,24 +131,57 @@\n _mangas int%0A\n+    for i := 0; i %3C C; i++ %7B%0A    \n     fmt.Scan\n@@ -226,28 +226,137 @@\n as)%0A\n-%0A\n+   \n     \n-total_frutas :=\n+ if qtd_bananas %3E qtd_goiabas && qtd_bananas %3E qtd_mangas %7B%0A            fmt.Printf(%22%25d%5Cn%22)%0A        %7D else if qtd_goiabas %3E\n  qtd\n@@ -364,17 +364,18 @@\n bananas \n-+\n+&&\n  qtd_goi\n@@ -379,17 +379,17 @@\n goiabas \n-+\n+%3E\n  qtd_man\n@@ -395,109 +395,197 @@\n ngas\n-%0A%0A    if total_frutas %25 C == 0 %7B%0A        viagems := total_frutas / C%0A        fmt.Println(viagems)%0A    \n+ %7B%0A            fmt.Printf(%22%25d%22)%0A        %7D else if qtd_mangas %3E qtd_bananas && qtd_mangas %3E qtd_goiabas %7B%0A            fmt.Printf(%22%25d%22)%0A        %7D else %7B%0A            fmt.Printf(%22%25d%22)%0A        %7D%0A\n %7D%0A%7D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-31_17-22-52",
+            "content": "@@ -350,92 +350,8 @@\n ms)%0A\n-    %7D else %7B%0A        viagems := (total_frutas / C) + 1%0A        fmt.Println(viagems)%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-31_17-24-22",
+            "content": "@@ -403,9 +403,9 @@\n ) + \n-2\n+1\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-31_17-24-42",
+            "content": "@@ -403,9 +403,9 @@\n ) + \n-1\n+2\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-31_17-25-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var C int\n    fmt.Scan(&C)\n    var qtd_bananas int\n    var qtd_goiabas int\n    var qtd_mangas int\n    fmt.Scan(&qtd_bananas, &qtd_goiabas, &qtd_mangas)\n\n    total_frutas := qtd_bananas + qtd_goiabas + qtd_mangas\n\n    if total_frutas % C == 0 {\n        viagems := total_frutas / C\n        fmt.Println(viagems)\n    } else {\n        viagems := (total_frutas / C) + 1\n        fmt.Println(viagems)\n    }\n}",
+            "lines": "20"
+        }
+    ]
+}
