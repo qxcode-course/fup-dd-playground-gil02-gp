@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-39-22",
+            "content": "@@ -130,20 +130,11 @@\n rint\n-f(%22%25.2f%5Cn%22, \n+ln(\n sala\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-31_17-39-59",
+            "content": "@@ -158,226 +158,8 @@\n 20)%0A\n-    %7D else if salario %3C= 1500.00 %7B%0A        fmt.Printf(%22%25.2f%5Cn%22, salario * 0.15)%0A    %7D else if salario %3C= 2000.00 %7B%0A        fmt.Printf(%22%25.2f%5Cn%22, salario * 0.10)%0A    %7D else %7B%0A        fmt.Printf(%22%25.2f%5Cn%22, salario * 0.05)%0A\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-31_17-41-37",
+            "content": "@@ -97,16 +97,17 @@\n alario %3C\n+=\n  1000.00\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_17-42-01",
+            "content": "@@ -147,16 +147,18 @@\n lario * \n+0.\n 20)%0A    \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_17-42-59",
+            "content": "@@ -147,18 +147,16 @@\n lario * \n-0.\n 20)%0A    \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_17-43-14",
+            "content": "@@ -149,17 +149,16 @@\n rio * 0.\n-0\n 20)%0A    \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_17-43-27",
+            "content": "@@ -149,16 +149,17 @@\n rio * 0.\n+0\n 20)%0A    \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_17-43-42",
+            "content": "@@ -100,9 +100,9 @@\n rio \n-%3E\n+%3C\n  100\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_17-44-14",
+            "content": "@@ -96,17 +96,17 @@\n salario \n-%3C\n+%3E\n  1000.00\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_17-44-27",
+            "content": "@@ -176,16 +176,17 @@\n alario %3C\n+=\n  1500.00\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_17-44-53",
+            "content": "@@ -179,9 +179,9 @@\n rio \n-%3E\n+%3C\n  150\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_17-45-07",
+            "content": "@@ -175,18 +175,17 @@\n salario \n-%3C=\n+%3E\n  1500.00\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_17-45-23",
+            "content": "@@ -147,17 +147,17 @@\n lario * \n-1\n+0\n .20)%0A   \n@@ -227,17 +227,17 @@\n lario * \n-1\n+0\n .15)%0A   \n@@ -307,17 +307,17 @@\n lario * \n-1\n+0\n .10)%0A   \n@@ -365,17 +365,17 @@\n lario * \n-1\n+0\n .05)%0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_17-47-20",
+            "content": "@@ -97,17 +97,16 @@\n alario %3C\n-=\n  1000.00\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_17-47-34",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var salario float64\n    fmt.Scan(&salario)\n\n    if salario <= 1000.00 {\n        fmt.Printf(\"%.2f\\n\", salario * 1.20)\n    } else if salario <= 1500.00 {\n        fmt.Printf(\"%.2f\\n\", salario * 1.15)\n    } else if salario <= 2000.00 {\n        fmt.Printf(\"%.2f\\n\", salario * 1.10)\n    } else {\n        fmt.Printf(\"%.2f\\n\", salario * 1.05)\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}
