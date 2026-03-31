@@ -45,11 +45,12 @@ tasks:
   fup@varetas: '{self:1, rate:100, friend:hanna}'
   fup@bhaskara: '{self:1, rate:100, friend:hanna}'
   fup@cortada: '{self:1, rate:100}'
+  fup@monica: '{self:1, rate:100}'
 flags:
-  panel: 1
+  panel: 3
   inbox: 1
   show_panel: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@cortada
+selected: fup@monica

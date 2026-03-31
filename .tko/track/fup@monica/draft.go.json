@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_16-50-56",
+            "content": "@@ -130,17 +130,17 @@\n    if B \n-%3E\n+%3C\n  mais_ve\n@@ -189,9 +189,9 @@\n f C \n-%3E\n+%3C\n  mai\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-31_16-51-25",
+            "content": "@@ -252,10 +252,8 @@\n (%22%25d\n-%5Cn\n %22, m\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-31_16-51-46",
+            "content": "@@ -189,9 +189,9 @@\n f C \n-%3C\n+%3E\n  mai\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-31_16-52-18",
+            "content": "@@ -185,17 +185,17 @@\n se if C \n-%3E\n+%3C\n  mais_ve\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-31_16-52-27",
+            "content": "@@ -136,19 +136,19 @@\n B %3E \n-A && B %3E C \n+mais_velhos\n %7B%0A  \n@@ -191,19 +191,19 @@\n C %3E \n-A && C %3E B \n+mais_velhos\n %7B%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-31_17-04-21",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var M, A, B int\n    fmt.Scan(&M, &A, &B)\n\n    C := M - (A + B)\n    mais_velhos := A\n    if B > A && B > C {\n        mais_velhos = B\n    } else if C > A && C > B {\n        mais_velhos = C\n    }\n    fmt.Printf(\"%d\\n\", mais_velhos)\n}\n",
+            "lines": "15"
+        }
+    ]
+}
