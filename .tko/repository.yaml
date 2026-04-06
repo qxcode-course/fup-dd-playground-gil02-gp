@@ -13,9 +13,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@base
-- fup@if2
 - fup@if_extra
+- fup@if2
 tasks:
   fup@tres: '{self:1, rate:100, guided:1}'
   fup@resto: '{self:1, rate:100, guided:1}'
@@ -51,11 +50,12 @@ tasks:
   fup@goiabas: '{self:1, rate:100}'
   fup@salario: '{self:1, rate:100}'
   fup@impedido: '{self:1, rate:100}'
+  fup@maximo: '{self:1, rate:100}'
 flags:
-  panel: 3
+  panel: 2
   inbox: 1
   show_panel: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@impedido
+selected: fup@maximo
