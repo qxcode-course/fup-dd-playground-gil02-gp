@@ -18,3 +18,11 @@
 2026-04-06 17:01:57, EXEC, v:1, k:fup@maximo, mode:FULL, rate:100, size:11
 2026-04-06 17:01:59, MOVE, v:1, k:fup@maximo, mode:BACK
 2026-04-06 17:02:10, SELF, v:1, k:fup@maximo, self:1, rate:100
+2026-04-06 17:13:55, MOVE, v:1, k:fup@chaves, mode:DOWN
+2026-04-06 17:13:57, MOVE, v:1, k:fup@chaves, mode:PICK
+2026-04-06 17:17:01, EXEC, v:1, k:fup@chaves, mode:FULL, rate:0, size:14
+2026-04-06 17:17:29, EXEC, v:1, k:fup@chaves, mode:FULL, rate:33, size:14
+2026-04-06 17:18:36, EXEC, v:1, k:fup@chaves, mode:FULL, rate:83, size:14
+2026-04-06 17:18:54, EXEC, v:1, k:fup@chaves, mode:FULL, rate:100, size:14
+2026-04-06 17:19:07, MOVE, v:1, k:fup@chaves, mode:BACK
+2026-04-06 17:19:13, SELF, v:1, k:fup@chaves, self:1, rate:100
