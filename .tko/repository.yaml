@@ -13,9 +13,9 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@for1
 - fup@if2
 - fup@if_extra
+- fup@for1
 tasks:
   fup@tres: '{self:1, rate:100, guided:1}'
   fup@resto: '{self:1, rate:100, guided:1}'
@@ -53,6 +53,7 @@ tasks:
   fup@impedido: '{self:1, rate:100}'
   fup@maximo: '{self:1, rate:100}'
   fup@chaves: '{self:1, rate:100}'
+  fup@chute: '{self:1, rate:100, friend:hanna}'
 flags:
   panel: 2
   inbox: 1
@@ -60,4 +61,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@chaves
+selected: fup@maior
