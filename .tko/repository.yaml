@@ -15,6 +15,7 @@ sources:
 expanded:
 - fup@base
 - fup@if2
+- fup@if_extra
 tasks:
   fup@tres: '{self:1, rate:100, guided:1}'
   fup@resto: '{self:1, rate:100, guided:1}'
@@ -49,6 +50,7 @@ tasks:
   fup@monica: '{self:1, rate:100}'
   fup@goiabas: '{self:1, rate:100}'
   fup@salario: '{self:1, rate:100}'
+  fup@impedido: '{self:1, rate:100}'
 flags:
   panel: 3
   inbox: 1
@@ -56,4 +58,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@salario
+selected: fup@impedido
