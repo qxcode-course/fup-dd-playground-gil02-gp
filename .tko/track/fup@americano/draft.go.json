@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_17-34-18",
+            "content": "@@ -202,16 +202,17 @@\n (%22nenhum\n+a\n %22)%0A    %7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_17-34-27",
+            "content": "@@ -209,270 +209,8 @@\n m%22)%0A\n-    %7D else if n1 %3E n2 && n1 %3E n3 && n1 %3E n4 %7B%0A        fmt.Println(%22jog1%22)%0A    %7D else if n2 %3E n1 && n2 %3E n3 && n2 %3E n4 %7B%0A        fmt.Println(%22jog2%22)%0A    %7Delse if n3 %3E n1 && n3 %3E n2 && n3 %3E n4 %7B%0A        fmt.Println(%22jog3%22)%0A    %7D else %7B%0A        fmt.Println(%22jog4%22)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_17-37-33",
+            "content": "@@ -136,56 +136,48 @@\n n4)%0A\n+%0A\n     \n-jogos := n1 +n2 +\n+if n1 == n2 && n2 ==\n  n3 \n-+ n4%0A%0A    if jogos\n+&& n3\n  == \n-0\n+n4\n  %7B%0A \n@@ -200,9 +200,14 @@\n ln(%22\n-0\n+nenhum\n %22)%0A \n@@ -223,18 +223,37 @@\n  if \n-jogos == 1\n+n1 %3E n2 && n1 %3E n3 && n1 %3E n4\n  %7B%0A \n@@ -272,16 +272,19 @@\n rintln(%22\n+jog\n 1%22)%0A    \n@@ -297,18 +297,37 @@\n  if \n-jogos == 2\n+n2 %3E n1 && n2 %3E n3 && n2 %3E n4\n  %7B%0A \n@@ -346,16 +346,19 @@\n rintln(%22\n+jog\n 2%22)%0A    \n@@ -354,33 +354,32 @@\n jog2%22)%0A    %7D\n- \n else if \n jogos == 3 %7B\n@@ -370,18 +370,37 @@\n  if \n-jogos == 3\n+n3 %3E n1 && n3 %3E n2 && n3 %3E n4\n  %7B%0A \n@@ -419,16 +419,19 @@\n rintln(%22\n+jog\n 3%22)%0A    \n@@ -441,22 +441,8 @@\n lse \n-if jogos == 4 \n %7B%0A  \n@@ -460,16 +460,19 @@\n rintln(%22\n+jog\n 4%22)%0A    \n@@ -473,11 +473,10 @@\n )%0A    %7D%0A\n-%0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-07_17-44-48",
+            "content": "@@ -208,14 +208,9 @@\n ln(%22\n-nenhum\n+0\n %22)%0A \n@@ -256,19 +256,16 @@\n rintln(%22\n-jog\n 1%22)%0A    \n@@ -308,19 +308,16 @@\n rintln(%22\n-jog\n 2%22)%0A    \n@@ -360,19 +360,16 @@\n rintln(%22\n-jog\n 3%22)%0A    \n@@ -412,19 +412,16 @@\n rintln(%22\n-jog\n 4%22)%0A    \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-07_17-45-25",
+            "content": "@@ -149,17 +149,16 @@\n  := n1 +\n- \n n2 + n3 \n@@ -439,10 +439,11 @@\n )%0A    %7D%0A\n+%0A\n %7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-07_17-58-39",
+            "content": "@@ -403,9 +403,9 @@\n gos \n-%3E\n+=\n = 4 \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_18-01-20",
+            "content": "@@ -289,17 +289,17 @@\n f jogos \n-%3E\n+=\n = 2 %7B%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_18-01-39",
+            "content": "@@ -234,17 +234,17 @@\n f jogos \n-%3E\n+=\n = 1 %7B%0A  \n@@ -344,17 +344,17 @@\n f jogos \n-%3E\n+=\n = 3 %7B%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_18-01-54",
+            "content": "@@ -234,17 +234,17 @@\n f jogos \n-=\n+%3E\n = 1 %7B%0A  \n@@ -289,17 +289,17 @@\n f jogos \n-=\n+%3E\n = 2 %7B%0A  \n@@ -344,17 +344,17 @@\n f jogos \n-=\n+%3E\n = 3 %7B%0A  \n@@ -399,17 +399,17 @@\n f jogos \n-=\n+%3E\n = 4 %7B%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_18-02-29",
+            "content": "@@ -293,9 +293,9 @@\n gos \n-%3C\n+=\n = 2 \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_18-02-43",
+            "content": "@@ -177,20 +177,16 @@\n f jogos \n-%25 4 \n == 0 %7B%0A \n@@ -234,20 +234,16 @@\n f jogos \n-%25 4 \n == 1 %7B%0A \n@@ -289,21 +289,17 @@\n f jogos \n-%25 4 =\n+%3C\n = 2 %7B%0A  \n@@ -344,20 +344,16 @@\n f jogos \n-%25 4 \n == 3 %7B%0A \n@@ -403,12 +403,8 @@\n gos \n-%25 4 \n == 4\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_18-06-25",
+            "content": "@@ -177,16 +177,20 @@\n f jogos \n+%25 4 \n == 0 %7B%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_18-09-35",
+            "content": "@@ -414,25 +414,25 @@\n ogos %25 4 == \n-0\n+4\n  %7B%0A        f\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_18-15-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, n3, n4 int\n    fmt.Scan(&n1)\n    fmt.Scan(&n2)\n    fmt.Scan(&n3)\n    fmt.Scan(&n4)\n    jogos := n1 + n2 + n3 + n4\n\n    if jogos == 0 {\n        fmt.Println(\"nenhum\")\n    } else if jogos % 4 == 1 {\n        fmt.Println(\"jog1\")\n    } else if jogos % 4 == 2 {\n        fmt.Println(\"jog2\")\n    } else if jogos % 4 == 3 {\n        fmt.Println(\"jog3\")\n    } else if jogos % 4 == 0 {\n        fmt.Println(\"jog4\")\n    }\n}\n",
+            "lines": "22"
+        }
+    ]
+}
