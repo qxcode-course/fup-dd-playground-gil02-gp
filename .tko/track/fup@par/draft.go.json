@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_13-54-30",
+            "content": "@@ -102,18 +102,18 @@\n intln(%22P\n-AR\n+ar\n %22)%0A    %7D\n@@ -145,13 +145,13 @@\n ln(%22\n-IMPAR\n+%C3%8Dmpar\n %22)%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-07_13-54-54",
+            "content": "@@ -78,12 +78,8 @@\n f a \n-%25 2 \n == 0\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-07_13-57-58",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n\n    if a % 2 == 0{\n        fmt.Println(\"PAR\")\n    } else {\n        fmt.Println(\"IMPAR\")\n    }\n}\n",
+            "lines": "12"
+        }
+    ]
+}
