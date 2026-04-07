@@ -44,3 +44,25 @@
 2026-04-07 13:57:58, EXEC, v:1, k:fup@par, mode:FULL, rate:100, size:12
 2026-04-07 13:58:02, MOVE, v:1, k:fup@par, mode:BACK
 2026-04-07 13:58:10, SELF, v:1, k:fup@par, self:1, rate:100
+2026-04-07 16:43:14, MOVE, v:1, k:fup@divisiveis, mode:DOWN
+2026-04-07 16:43:15, MOVE, v:1, k:fup@divisiveis, mode:PICK
+2026-04-07 16:43:14, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-04-07 16:43:14, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-04-07 16:44:33, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-04-07 16:46:50, EXEC, v:1, k:fup@divisiveis, mode:FULL, size:13, fail:COMP
+2026-04-07 16:47:00, EXEC, v:1, k:fup@divisiveis, mode:FULL, rate:62, size:13
+2026-04-07 16:47:43, EXEC, v:1, k:fup@divisiveis, mode:FULL, rate:62, size:13
+2026-04-07 16:47:40, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-04-07 16:47:43, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-04-07 16:51:54, EXEC, v:1, k:fup@divisiveis, mode:FULL, rate:75, size:13
+2026-04-07 16:52:49, EXEC, v:1, k:fup@divisiveis, mode:FULL, rate:37, size:13
+2026-04-07 16:53:01, EXEC, v:1, k:fup@divisiveis, mode:FULL, rate:75, size:13
+2026-04-07 16:53:53, EXEC, v:1, k:fup@divisiveis, mode:FULL, rate:75, size:13
+2026-04-07 16:53:50, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-04-07 16:53:53, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-04-07 16:56:52, MOVE, v:1, k:fup@divisiveis, mode:EDIT
+2026-04-07 17:01:02, EXEC, v:1, k:fup@divisiveis, mode:FULL, rate:75, size:11
+2026-04-07 17:01:32, EXEC, v:1, k:fup@divisiveis, mode:FULL, rate:100, size:11
+2026-04-07 17:01:40, MOVE, v:1, k:fup@divisiveis, mode:BACK
+2026-04-07 17:01:48, SELF, v:1, k:fup@divisiveis, self:1, rate:100
+2026-04-07 17:01:56, SELF, v:1, k:fup@divisiveis, self:1, rate:100, problem:1
