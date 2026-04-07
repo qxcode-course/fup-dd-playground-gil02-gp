@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_13-19-05",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var A, G, ra, rg float64\n    fmt.Scan(&A)\n    fmt.Scan(&G)\n    fmt.Scan(&ra)\n    fmt.Scan(&rg)\n\n    alcool := A / ra\n    gasolina := G / rg\n\n    if alcool < gasolina {\n        fmt.Println(\"A\")\n    } else {\n        fmt.Println(\"G\")\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}
