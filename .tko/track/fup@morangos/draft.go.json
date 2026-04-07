@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_18-17-12",
+            "content": "@@ -117,72 +117,14 @@\n     \n-%0A    if compri %3E 0 && largura %3E 0 && num %3E 0 %7B%0A        var \n area \n+:\n = co\n@@ -146,22 +146,15 @@\n     \n-    var \n total \n+:\n = ar\n@@ -166,20 +166,16 @@\n num%0A    \n- \n-   \n fmt.Prin\n@@ -198,12 +198,6 @@\n al)%0A\n-    %7D%0A\n %7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-06_18-19-39",
+            "content": "@@ -47,21 +47,27 @@\n r  c\n-1, l1, c2, l2\n+ompri, largura, num\n  flo\n@@ -90,182 +90,148 @@\n n(&c\n-1, &l1, &c2, &l2)%0A    area1 := c1 * l1%0A    area2 := c2 * l2%0A%0A    if area1 %3E area2 %7B%0A        fmt.Printf(%221%22)%0A    %7D else if area1 %3C area2 %7B%0A        fmt.Printf(%222%22)%0A    %7D else %7B\n+ompri, &largura, &num)%0A    %0A    if compri %3E 0 && largura %3E 0 && num %3E 0 %7B%0A        var area = compri * largura%0A        var total = area * num\n %0A   \n@@ -251,10 +251,22 @@\n tf(%22\n-0%22\n+%25.2f%5Cn%22, total\n )%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-07_01-35-51",
+            "content": "@@ -199,16 +199,33 @@\n  %7D else \n+if area1 %3C area2 \n %7B%0A      \n@@ -248,11 +248,47 @@\n )%0A    %7D \n+else %7B%0A        fmt.Printf(%220%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_01-36-21",
+            "content": "@@ -184,20 +184,16 @@\n Printf(%22\n-area\n 1%22)%0A    \n@@ -221,20 +221,16 @@\n Printf(%22\n-area\n 2%22)%0A    \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_01-36-45",
+            "content": "@@ -177,26 +177,25 @@\n    fmt.Print\n-ln\n+f\n (%22area1%22)%0A  \n@@ -226,10 +226,9 @@\n rint\n-ln\n+f\n (%22ar\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_01-37-05",
+            "content": "@@ -184,21 +184,23 @@\n Println(\n+%22\n area1\n+%22\n )%0A    %7D \n@@ -226,21 +226,23 @@\n Println(\n+%22\n area2\n+%22\n )%0A    %7D \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_01-37-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var  c1, l1, c2, l2 float64\n    fmt.Scan(&c1, &l1, &c2, &l2)\n    area1 := c1 * l1\n    area2 := c2 * l2\n\n    if area1 > area2 {\n        fmt.Println(area1)\n    } else {\n        fmt.Println(area2)\n    } \n}\n",
+            "lines": "14"
+        }
+    ]
+}
