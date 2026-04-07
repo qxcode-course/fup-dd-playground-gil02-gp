@@ -66,3 +66,26 @@
 2026-04-07 17:01:40, MOVE, v:1, k:fup@divisiveis, mode:BACK
 2026-04-07 17:01:48, SELF, v:1, k:fup@divisiveis, self:1, rate:100
 2026-04-07 17:01:56, SELF, v:1, k:fup@divisiveis, self:1, rate:100, problem:1
+2026-04-07 17:04:26, SELF, v:1, k:fup@tres, self:1, guided:1
+2026-04-07 17:05:09, MOVE, v:1, k:fup@xadrez, mode:DOWN
+2026-04-07 17:05:10, MOVE, v:1, k:fup@xadrez, mode:PICK
+2026-04-07 17:05:09, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-04-07 17:05:09, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-04-07 17:06:58, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-04-07 17:11:19, EXEC, v:1, k:fup@xadrez, mode:FULL, rate:55, size:11
+2026-04-07 17:11:39, EXEC, v:1, k:fup@xadrez, mode:FULL, rate:55, size:11
+2026-04-07 17:12:06, EXEC, v:1, k:fup@xadrez, mode:FULL, rate:55, size:11
+2026-04-07 17:12:29, MOVE, v:1, k:fup@xadrez, mode:PICK
+2026-04-07 17:12:33, EXEC, v:1, k:fup@xadrez, mode:FULL, rate:55
+2026-04-07 17:16:37, EXEC, v:1, k:fup@xadrez, mode:FULL, rate:55, size:11
+2026-04-07 17:16:47, EXEC, v:1, k:fup@xadrez, mode:FULL, rate:55, size:11
+2026-04-07 17:16:47, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-04-07 17:16:46, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-04-07 17:20:12, EXEC, v:1, k:fup@xadrez, mode:FULL, rate:55, size:12
+2026-04-07 17:20:10, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-04-07 17:20:11, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-04-07 17:27:08, EXEC, v:1, k:fup@xadrez, mode:FULL, rate:100, size:12
+2026-04-07 17:27:17, MOVE, v:1, k:fup@xadrez, mode:BACK
+2026-04-07 17:27:06, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-04-07 17:27:07, MOVE, v:1, k:fup@xadrez, mode:EDIT
+2026-04-07 17:27:31, SELF, v:1, k:fup@xadrez, self:1, rate:100

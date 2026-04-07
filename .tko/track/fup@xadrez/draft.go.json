@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_17-11-19",
+            "content": "@@ -94,9 +94,9 @@\n & c \n-%3C\n+=\n = 8 \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_17-11-39",
+            "content": "@@ -84,32 +84,12 @@\n f l \n-%3E= 1 && l %3C= 8 && c %3E= 1\n+== 8\n  && \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_17-12-06",
+            "content": "@@ -80,20 +80,40 @@\n    if l \n-%3C= 8\n+%3E= 1 && l %3C= 8 && c %3E= 1\n  && c %3C=\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_17-16-37",
+            "content": "@@ -80,17 +80,17 @@\n    if l \n-=\n+%3C\n = 8 && c\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_17-16-47",
+            "content": "@@ -79,35 +79,24 @@\n     \n-tabu := l + c%0A    if tabu =\n+if l == 8 && c %3C\n = 8 \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_17-20-12",
+            "content": "@@ -105,16 +105,12 @@\n abu \n-%25 2 \n == \n-0\n+8\n  %7B%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-07_17-27-07",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var l, c int\n    fmt.Scan(&l, &c)\n    tabu := l + c\n    if tabu % 2 == 0 {\n        fmt.Println(\"1\")\n    } else {\n        fmt.Println(\"0\")\n    }\n}\n",
+            "lines": "12"
+        }
+    ]
+}
