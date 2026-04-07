@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_01-46-47",
+            "content": "@@ -213,23 +213,8 @@\n o%22)%0A\n-        return%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_01-47-06",
+            "content": "@@ -298,9 +298,9 @@\n eal \n-%3C\n+%3E\n  chu\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-07_01-47-22",
+            "content": "@@ -339,53 +339,8 @@\n o%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22primeiro%22)%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-07_01-48-02",
+            "content": "@@ -237,17 +237,16 @@\n %0A    if \n-(\n escolha \n@@ -271,14 +271,12 @@\n hute\n-)\n  %7C%7C \n-(\n esco\n@@ -301,17 +301,16 @@\n  %3C chute\n-)\n  %7B%0A     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_01-48-58",
+            "content": "@@ -155,16 +155,91 @@\n colha)%0A%0A\n+    if chute == real%7B%0A        fmt.Println(%22primeiro%22)%0A        return%0A    %7D%0A\n     if (\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_01-49-25",
+            "content": "@@ -166,70 +166,8 @@\n  if \n-chute == real %7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else if \n (esc\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_01-53-15",
+            "content": "@@ -322,20 +322,65 @@\n (%22segundo%22)%0A\n+    %7D else %7B%0A        fmt.Println(%22primeiro%22)%0A\n     %7D%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-07_01-53-47",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -84,17 +84,16 @@\n  string%0A\n-%0A\n     fmt.\n@@ -123,23 +123,20 @@\n Scanln(&\n-escolha\n+real\n )%0A    fm\n@@ -145,20 +145,23 @@\n Scanln(&\n-real\n+escolha\n )%0A%0A    i\n@@ -330,53 +330,8 @@\n o%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22primeiro%22)%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_01-55-25",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var chute, real float64\n    var escolha string\n\n    fmt.Scanln(&chute)\n    fmt.Scanln(&escolha)\n    fmt.Scanln(&real)\n\n    if chute == real {\n        fmt.Println(\"primeiro\")\n    } else if (escolha == \"M\" && real > chute) || (escolha == \"m\" && real < chute) {\n        fmt.Println(\"segundo\")\n    } else {\n        fmt.Println(\"primeiro\")\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}
