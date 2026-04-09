@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-09_02-08-11",
+            "content": "@@ -153,13 +153,25 @@\n (%22%25d\n-%5Cn%22, \n+%5E2 = %25d%5Cn%22, i, i*\n i)%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-09_02-08-42",
+            "content": "@@ -72,60 +72,111 @@\n     \n-result := (n + 1)*(n + 2) / 2%0A    fmt.Println(result)\n+%0A    for i := 1; i %3C= n; i++ %7B%0A        if i %25 2 == 0 %7B%0A            fmt.Printf(%22%25d%5Cn%22, i)%0A        %7D%0A    %7D\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-09_02-12-06",
+            "content": "@@ -78,17 +78,16 @@\n sult := \n-(\n (n + 1)*\n@@ -93,17 +93,16 @@\n *(n + 2)\n-)\n  / 2%0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-09_02-12-43",
+            "content": "@@ -78,16 +78,17 @@\n sult := \n+(\n (n + 1)*\n@@ -94,16 +94,17 @@\n *(n + 2)\n+)\n  / 2%0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-09_02-12-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    result := (n + 1)*(n + 2) / 2\n    fmt.Println(result)\n}\n",
+            "lines": "8"
+        }
+    ]
+}

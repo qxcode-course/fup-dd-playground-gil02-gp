@@ -26,3 +26,17 @@
 2026-04-09 02:04:38, EXEC, v:1, k:fup@loops, mode:FULL, rate:100, size:12
 2026-04-09 02:04:43, MOVE, v:1, k:fup@loops, mode:BACK
 2026-04-09 02:05:23, SELF, v:1, k:fup@loops, self:1, rate:100, concept:1, code:1
+2026-04-09 02:06:59, MOVE, v:1, k:fup@domino, mode:DOWN
+2026-04-09 02:07:01, MOVE, v:1, k:fup@domino, mode:PICK
+2026-04-09 02:08:11, EXEC, v:1, k:fup@domino, mode:FULL, rate:0, size:12
+2026-04-09 02:08:42, EXEC, v:1, k:fup@domino, mode:FULL, rate:0, size:12
+2026-04-09 02:06:59, MOVE, v:1, k:fup@domino, mode:EDIT
+2026-04-09 02:06:59, MOVE, v:1, k:fup@domino, mode:EDIT
+2026-04-09 02:11:41, MOVE, v:1, k:fup@domino, mode:EDIT
+2026-04-09 02:08:40, MOVE, v:1, k:fup@domino, mode:EDIT
+2026-04-09 02:12:06, EXEC, v:1, k:fup@domino, mode:FULL, rate:100, size:8
+2026-04-09 02:12:43, EXEC, v:1, k:fup@domino, mode:FULL, rate:100, size:8
+2026-04-09 02:12:56, EXEC, v:1, k:fup@domino, mode:FULL, rate:100, size:8
+2026-04-09 02:13:35, EXEC, v:1, k:fup@domino, mode:FULL, rate:100
+2026-04-09 02:13:39, MOVE, v:1, k:fup@domino, mode:BACK
+2026-04-09 02:13:59, SELF, v:1, k:fup@domino, self:1, rate:100, concept:1
