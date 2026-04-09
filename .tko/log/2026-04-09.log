@@ -1,0 +1,15 @@
+2026-04-09 01:06:18, MOVE, v:1, k:fup@jokenpo15, mode:DOWN
+2026-04-09 01:06:21, MOVE, v:1, k:fup@jokenpo15, mode:PICK
+2026-04-09 01:07:35, EXEC, v:1, k:fup@jokenpo15, mode:FULL, rate:8, size:13
+2026-04-09 01:08:05, EXEC, v:1, k:fup@jokenpo15, mode:FULL, rate:50, size:13
+2026-04-09 01:09:58, EXEC, v:1, k:fup@jokenpo15, mode:FULL, rate:50, size:13
+2026-04-09 01:06:18, MOVE, v:1, k:fup@jokenpo15, mode:EDIT
+2026-04-09 01:06:18, MOVE, v:1, k:fup@jokenpo15, mode:EDIT
+2026-04-09 01:09:54, MOVE, v:1, k:fup@jokenpo15, mode:EDIT
+2026-04-09 01:09:58, MOVE, v:1, k:fup@jokenpo15, mode:EDIT
+2026-04-09 01:15:13, MOVE, v:1, k:fup@jokenpo15, mode:EDIT
+2026-04-09 01:15:46, MOVE, v:1, k:fup@jokenpo15, mode:EDIT
+2026-04-09 01:50:58, MOVE, v:1, k:fup@jokenpo15, mode:PICK
+2026-04-09 01:51:11, EXEC, v:1, k:fup@jokenpo15, mode:FULL, rate:100, size:15
+2026-04-09 01:51:28, MOVE, v:1, k:fup@jokenpo15, mode:BACK
+2026-04-09 01:52:15, SELF, v:1, k:fup@jokenpo15, self:1, rate:100, concept:1, problem:1, refactor:1
