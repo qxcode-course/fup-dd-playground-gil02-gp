@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-09_01-59-56",
+            "content": "@@ -121,9 +121,10 @@\n o %3C \n-2\n+90\n  %7B%0A \n@@ -134,28 +134,65 @@\n     \n-angulo += 360\n+fmt.Println(%22primeiro%22)%0A    %7D else if angulo %3C 180 %7B\n %0A    \n-%7D%0A\n     \n@@ -203,18 +203,131 @@\n Println(\n-angulo)\n+%22segundo%22)%0A    %7D else if angulo %3C 270 %7B%0A        fmt.Println(%22terceiro%22)%0A    %7D else %7B%0A        fmt.Println(%22quarto%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-09_02-03-16",
+            "content": "@@ -121,9 +121,9 @@\n o %3C \n-1\n+2\n  %7B%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-09_02-03-31",
+            "content": "@@ -117,17 +117,17 @@\n ngulo %3C \n-0\n+1\n  %7B%0A     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-09_02-04-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var angulo int\n    fmt.Scan(&angulo)\n\n    angulo = angulo % 360\n    if angulo < 0 {\n        angulo += 360\n    }\n    fmt.Println(angulo)\n}\n",
+            "lines": "12"
+        }
+    ]
+}
