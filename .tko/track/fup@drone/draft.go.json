@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-09_02-23-46",
+            "content": "@@ -130,138 +130,29 @@\n f a \n-%3C= h && b %3C= l %7C%7C a %3C= l && c %3C= h %7C%7C%0A        b %3C= h && a %3C= l %7C%7C b %3C= l && c %3C= h %7C%7C%0A        c %3C= h && a %3C= l %7C%7C c %3C= l && b %3C= h\n+%3E h %7C%7C b %3E l %7C%7C c %3E l\n  %7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-09_02-26-55",
+            "content": "@@ -145,25 +145,25 @@\n = l %7C%7C a %3C= \n-h\n+l\n  && c %3C= l %7C\n@@ -151,33 +151,33 @@\n  a %3C= l && c %3C= \n-l\n+h\n  %7C%7C%0A        b %3C=\n@@ -193,25 +193,25 @@\n = l %7C%7C b %3C= \n-h\n+l\n  && c %3C= l %7C\n@@ -207,17 +207,17 @@\n && c %3C= \n-l\n+h\n  %7C%7C%0A    \n@@ -241,25 +241,25 @@\n = l %7C%7C c %3C= \n-h\n+l\n  && b %3C= l %7B\n@@ -255,17 +255,17 @@\n && b %3C= \n-l\n+h\n  %7B%0A     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-09_02-28-42",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c int\n    var h, l int\n    fmt.Scan(&a, &b, &c)\n    fmt.Scan(&h, &l)\n\n    if a <= h && b <= l || a <= h && c <= l ||\n        b <= h && a <= l || b <= h && c <= l ||\n        c <= h && a <= l || c <= h && b <= l {\n        fmt.Println(\"S\")\n    } else {\n        fmt.Println(\"N\")\n    }\n\n}\n",
+            "lines": "17"
+        }
+    ]
+}
