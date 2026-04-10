@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-10_23-14-12",
+            "content": "@@ -109,32 +109,18 @@\n m :=\n- (a +\n  aluno \n-- 1) / aluno\n+/ a\n %0A%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-10_23-15-31",
+            "content": "@@ -117,17 +117,17 @@\n + aluno \n-+\n+-\n  1) / al\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-10_23-16-02",
+            "content": "@@ -117,17 +117,17 @@\n + aluno \n--\n++\n  1) / al\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-10_23-16-21",
+            "content": "@@ -148,18 +148,11 @@\n rint\n-f(%22%25d%5Cn%22, \n+ln(\n viag\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-10_23-17-08",
+            "content": "@@ -89,31 +89,14 @@\n  := \n-(a + (c - 2)) / (\n c - 1\n-)\n+%0A\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-10_23-23-39",
+            "content": "@@ -95,17 +95,17 @@\n  + (c - \n-1\n+2\n )) / (c \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-10_23-23-51",
+            "content": "@@ -76,23 +76,21 @@\n c)%0A%0A    \n-viagens\n+aluno\n  := (a +\n@@ -99,9 +99,9 @@\n c - \n-2\n+1\n )) /\n@@ -108,16 +108,54 @@\n  (c - 1)\n+%0A    viagem := (a + aluno - 1) / aluno\n %0A%0A    fm\n@@ -180,10 +180,9 @@\n iage\n-ns\n+m\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-10_23-26-08",
+            "content": "@@ -129,11 +129,18 @@\n rint\n-ln(\n+f(%22%25d%5Cn%22, \n viag\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-10_23-27-49",
+            "content": "@@ -69,23 +69,10 @@\n n(&a\n-)%0A    fmt.Scan(\n+, \n &c)%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-10_23-29-54",
+            "content": "@@ -64,17 +64,17 @@\n t.Scan(&\n-c\n+a\n )%0A    fm\n@@ -81,17 +81,17 @@\n t.Scan(&\n-a\n+c\n )%0A%0A    v\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-10_23-30-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, c int\n    fmt.Scan(&c)\n    fmt.Scan(&a)\n\n    viagens := (a + (c - 2)) / (c - 1)\n\n    fmt.Println(viagens)\n}\n",
+            "lines": "11"
+        }
+    ]
+}
