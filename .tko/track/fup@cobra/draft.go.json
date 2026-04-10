@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-10_23-45-43",
+            "content": "@@ -92,57 +92,18 @@\n n(&n\n-)%0A    fmt.Scan(&x)%0A    fmt.Scan(&y)%0A    fmt.Scan(\n+, &x, &y, \n &s)%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-10_23-48-02",
+            "content": "@@ -138,17 +138,17 @@\n t.Scan(&\n-c\n+s\n )%0A    fm\n@@ -155,17 +155,17 @@\n t.Scan(&\n-s\n+c\n )%0A%0A    i\n@@ -186,18 +186,18 @@\n     \n-x\n+s\n  = (\n-x + s\n+s + x\n ) %25 \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-10_23-50-28",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, x, y, s int\n    var c string\n    fmt.Scan(&n)\n    fmt.Scan(&x)\n    fmt.Scan(&y)\n    fmt.Scan(&c)\n    fmt.Scan(&s)\n\n    if c == \"R\" {\n     x = (x + s) % n\n    } else if c == \"L\" {\n     x = (x - s%n + n) % n\n    } else if c == \"D\" {\n        y = (y + s) % n\n    } else if c == \"U\" {\n        y = (y - s%n + n) % n\n    }\n    fmt.Println(x, y)\n}\n",
+            "lines": "22"
+        }
+    ]
+}
