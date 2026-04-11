@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-10_23-55-52",
+            "content": "@@ -111,16 +111,20 @@\n - a + n)\n+ %25 n\n %0A%0A    fm\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-10_23-56-17",
+            "content": "@@ -115,12 +115,8 @@\n + n)\n- / n\n %0A%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-10_23-56-43",
+            "content": "@@ -116,9 +116,9 @@\n  n) \n-%25\n+/\n  n%0A%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-10_23-57-09",
+            "content": "@@ -120,64 +120,8 @@\n %25 n%0A\n-    if movimento == 0 %7B%0A        movimento = n%0A    %7D%0A    \n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-10_23-58-56",
+            "content": "@@ -160,17 +160,16 @@\n mento = \n--\n n%0A    %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-10_23-59-53",
+            "content": "@@ -137,9 +137,10 @@\n nto \n-%3C\n+==\n  0 %7B\n@@ -160,16 +160,17 @@\n mento = \n+-\n n%0A    %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-11_00-00-21",
+            "content": "@@ -137,10 +137,9 @@\n nto \n-%3E=\n+%3C\n  0 %7B\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-11_00-00-32",
+            "content": "@@ -134,16 +134,17 @@\n imento %3E\n+=\n  0 %7B%0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-11_00-00-51",
+            "content": "@@ -137,62 +137,9 @@\n nto \n-== 0 %7B%0A        movimento = n%0A    %7D else if movimento %3C\n+%3E\n  0 %7B\n@@ -157,17 +157,16 @@\n vimento \n-+\n = n%0A    \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-11_00-01-53",
+            "content": "@@ -72,49 +72,84 @@\n n(&n\n-)%0A    fmt.Scan(&d)%0A    fmt.Scan(&a)\n+, &a, &d)%0A    %0A    movimento := (d - a + n) %25 n%0A    if movimento == 0 %7B\n %0A    \n-%0A\n     \n@@ -158,34 +158,78 @@\n vimento \n-:\n = \n-(d - a + n) %25 n\n+n%0A    %7D else if movimento %3C 0 %7B%0A        movimento += n%0A    %7D\n %0A    %0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-11_00-03-10",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, a, d int\n    fmt.Scan(&n)\n    fmt.Scan(&d)\n    fmt.Scan(&a)\n    \n    movimento := (d - a + n) % n\n    \n    fmt.Println(movimento)\n}\n",
+            "lines": "12"
+        }
+    ]
+}

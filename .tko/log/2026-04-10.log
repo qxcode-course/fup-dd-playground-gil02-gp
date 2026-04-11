@@ -36,3 +36,16 @@
 2026-04-10 23:50:28, EXEC, v:1, k:fup@cobra, mode:FULL, rate:100, size:22
 2026-04-10 23:50:41, MOVE, v:1, k:fup@cobra, mode:BACK
 2026-04-10 23:51:30, SELF, v:1, k:fup@cobra, self:1, rate:100, concept:1, problem:1, debug:1
+2026-04-10 23:53:24, MOVE, v:1, k:fup@game10, mode:DOWN
+2026-04-10 23:53:28, MOVE, v:1, k:fup@game10, mode:PICK
+2026-04-10 23:55:52, EXEC, v:1, k:fup@game10, mode:FULL, rate:14, size:10
+2026-04-10 23:56:17, EXEC, v:1, k:fup@game10, mode:FULL, rate:0, size:10
+2026-04-10 23:56:43, EXEC, v:1, k:fup@game10, mode:FULL, rate:14, size:10
+2026-04-10 23:57:09, EXEC, v:1, k:fup@game10, mode:FULL, rate:14, size:10
+2026-04-10 23:53:24, MOVE, v:1, k:fup@game10, mode:EDIT
+2026-04-10 23:53:24, MOVE, v:1, k:fup@game10, mode:EDIT
+2026-04-10 23:57:07, MOVE, v:1, k:fup@game10, mode:EDIT
+2026-04-10 23:57:09, MOVE, v:1, k:fup@game10, mode:EDIT
+2026-04-10 23:57:45, EXEC, v:1, k:fup@game10, mode:FULL, rate:14
+2026-04-10 23:58:56, EXEC, v:1, k:fup@game10, mode:FULL, rate:0, size:13
+2026-04-10 23:59:53, EXEC, v:1, k:fup@game10, mode:FULL, rate:0, size:13
