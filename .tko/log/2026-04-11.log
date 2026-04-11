@@ -7,3 +7,13 @@
 2026-04-11 00:03:10, EXEC, v:1, k:fup@game10, mode:FULL, rate:100, size:12
 2026-04-11 00:03:30, MOVE, v:1, k:fup@game10, mode:BACK
 2026-04-11 00:03:40, SELF, v:1, k:fup@game10, self:1, rate:100
+2026-04-11 00:07:43, MOVE, v:1, k:fup@omeletao, mode:DOWN
+2026-04-11 00:07:48, MOVE, v:1, k:fup@omeletao, mode:PICK
+2026-04-11 00:07:43, MOVE, v:1, k:fup@omeletao, mode:EDIT
+2026-04-11 00:07:43, MOVE, v:1, k:fup@omeletao, mode:EDIT
+2026-04-11 00:09:11, MOVE, v:1, k:fup@omeletao, mode:EDIT
+2026-04-11 00:09:45, EXEC, v:1, k:fup@omeletao, mode:FULL, rate:83, size:19
+2026-04-11 00:11:22, EXEC, v:1, k:fup@omeletao, mode:FULL, rate:100, size:19
+2026-04-11 00:13:03, EXEC, v:1, k:fup@omeletao, mode:FULL, rate:100
+2026-04-11 00:13:21, MOVE, v:1, k:fup@omeletao, mode:BACK
+2026-04-11 00:13:48, SELF, v:1, k:fup@omeletao, self:1, rate:100

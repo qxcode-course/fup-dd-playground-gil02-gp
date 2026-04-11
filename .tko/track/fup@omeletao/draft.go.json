@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-11_00-09-45",
+            "content": "@@ -144,17 +144,16 @@\n  if n1 %3E\n-=\n  n2 && n\n@@ -155,17 +155,16 @@\n  && n1 %3E\n-=\n  n3 && n\n@@ -166,17 +166,16 @@\n  && n1 %3E\n-=\n  n4 %7B%0A  \n@@ -214,17 +214,16 @@\n  if n2 %3E\n-=\n  n1 && n\n@@ -225,17 +225,16 @@\n  && n2 %3E\n-=\n  n3 && n\n@@ -236,17 +236,16 @@\n  && n2 %3E\n-=\n  n4 %7B%0A  \n@@ -284,17 +284,16 @@\n  if n3 %3E\n-=\n  n1 && n\n@@ -295,17 +295,16 @@\n  && n3 %3E\n-=\n  n2 && n\n@@ -310,9 +310,8 @@\n n3 %3E\n-=\n  n4 \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-11_00-11-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, n3, n4 int\n    fmt.Scan(&n1)\n    fmt.Scan(&n2)\n    fmt.Scan(&n3)\n    fmt.Scan(&n4)\n\n    if n1 >= n2 && n1 >= n3 && n1 >= n4 {\n        fmt.Println(n1)\n    } else if n2 >= n1 && n2 >= n3 && n2 >= n4 {\n        fmt.Println(n2)\n    } else if n3 >= n1 && n3 >= n2 && n3 >= n4 {\n        fmt.Println(n3)\n    } else {\n        fmt.Println(n4)\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}
