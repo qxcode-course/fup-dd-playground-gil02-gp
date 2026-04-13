@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-08-35",
+            "content": "@@ -153,11 +153,12 @@\n ath.\n-Pow\n+Sqrt\n (flo\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_17-10-27",
+            "content": "@@ -153,12 +153,11 @@\n ath.\n-Sqrt\n+Pow\n (flo\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_17-11-07",
+            "content": "@@ -62,23 +62,19 @@\n  x1, y1 \n-float64\n+int\n %0A    var\n@@ -85,15 +85,11 @@\n  y2 \n-float64\n+int\n %0A   \n@@ -154,16 +154,23 @@\n th.Sqrt(\n+float64\n ((x2-x1)\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_17-12-30",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var x1, y1 float64\n    var x2, y2 float64\n    fmt.Scan(&x1, &y1)\n    fmt.Scan(&x2, &y2)\n\n    raiz := math.Sqrt(((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1)))\n    fmt.Printf(\"%.2f\\n\", raiz)\n}\n",
+            "lines": "12"
+        }
+    ]
+}

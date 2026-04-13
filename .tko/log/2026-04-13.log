@@ -32,3 +32,16 @@
 2026-04-13 16:46:06, EXEC, v:1, k:fup@loop_iii, mode:FULL, rate:100, size:11
 2026-04-13 16:47:35, MOVE, v:1, k:fup@loop_iii, mode:BACK
 2026-04-13 16:47:42, SELF, v:1, k:fup@loop_iii, self:1, rate:100
+2026-04-13 17:02:57, MOVE, v:1, k:eval1@bala, mode:DOWN
+2026-04-13 17:02:58, MOVE, v:1, k:eval1@bala, mode:PICK
+2026-04-13 17:02:57, MOVE, v:1, k:eval1@bala, mode:EDIT
+2026-04-13 17:02:57, MOVE, v:1, k:eval1@bala, mode:EDIT
+2026-04-13 17:07:26, MOVE, v:1, k:eval1@bala, mode:EDIT
+2026-04-13 17:08:35, EXEC, v:1, k:eval1@bala, mode:FULL, rate:66, size:12
+2026-04-13 17:10:27, EXEC, v:1, k:eval1@bala, mode:FULL, size:12, fail:COMP
+2026-04-13 17:11:07, EXEC, v:1, k:eval1@bala, mode:FULL, rate:66, size:12
+2026-04-13 17:12:24, MOVE, v:1, k:eval1@bala, mode:EDIT
+2026-04-13 17:11:07, MOVE, v:1, k:eval1@bala, mode:EDIT
+2026-04-13 17:12:30, EXEC, v:1, k:eval1@bala, mode:FULL, rate:100, size:12
+2026-04-13 17:12:43, MOVE, v:1, k:eval1@bala, mode:BACK
+2026-04-13 17:12:50, SELF, v:1, k:eval1@bala, self:1, rate:100
