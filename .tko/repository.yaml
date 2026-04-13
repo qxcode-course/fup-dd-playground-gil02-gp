@@ -22,8 +22,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@if_extra
 - eval1@teste-1
+- fup@if_extra
 - fup@for1
 flags:
   inbox: all
@@ -32,4 +32,4 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: eval1@ceu
+selected: eval1@pares
