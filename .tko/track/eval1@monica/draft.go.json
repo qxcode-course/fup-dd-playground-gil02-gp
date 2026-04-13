@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-27-56",
+            "content": "@@ -118,50 +118,14 @@\n f c \n-%3E\n+%3C\n  0 %7B%0A\n-        fmt.Println(c)%0A    %7D else %7B%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_17-29-40",
+            "content": "@@ -176,16 +176,17 @@\n Println(\n+-\n 1)%0A    %7D\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-13_17-30-14",
+            "content": "@@ -118,9 +118,9 @@\n f c \n-%3C\n+%3E\n  0 %7B\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-13_17-30-35",
+            "content": "@@ -45,15 +45,15 @@\n var \n-m, a, b\n+M, A, B\n  int\n@@ -71,17 +71,17 @@\n an(&\n-m, &a, &b\n+M, &A, &B\n )%0A%0A \n@@ -92,189 +92,103 @@\n  := \n-m\n+M\n  - (\n-a + b\n+A + B\n )%0A    \n-mais_velhos := a%0A    if b %3E a && b %3E c %7B%0A        mais_velhos = b%0A    %7D else if c %3E a && c %3E b %7B%0A        mais_velhos = c%0A    %7D%0A    fmt.Printf(%22%25d%5Cn%22, mais_velhos\n+%0A    if c %3C 0 %7B%0A        fmt.Println(c)%0A    %7D else %7B%0A        fmt.Println(1\n )%0A    \n+%7D\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-13_17-33-02",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var m, a, b int\n    fmt.Scan(&m, &a, &b)\n\n    c := m - (a + b)\n    mais_velhos := a\n    if b > a && b > c {\n        mais_velhos = b\n    } else if c > a && c > b {\n        mais_velhos = c\n    }\n    fmt.Printf(\"%d\\n\", mais_velhos)\n    \n}\n",
+            "lines": "16"
+        }
+    ]
+}
