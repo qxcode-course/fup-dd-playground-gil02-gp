@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_16-29-38",
+            "content": "@@ -98,12 +98,8 @@\n %3C= b\n- - 1\n ; i+\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-13_16-30-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n\n    for i := a; i <= b - 1; i++ {\n        fmt.Println(i)\n    }\n}\n",
+            "lines": "10"
+        }
+    ]
+}

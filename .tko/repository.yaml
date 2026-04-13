@@ -15,12 +15,13 @@ sources:
   quests: null
   tasks: null
 expanded:
+- fup@for1
 - fup@if_extra
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@omeletao
+selected: fup@loop_i
