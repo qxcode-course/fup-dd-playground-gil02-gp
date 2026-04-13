@@ -22,9 +22,9 @@ sources:
   quests: null
   tasks: null
 expanded:
-- eval1@teste-1
 - fup@if_extra
 - fup@for1
+- eval1@teste-1
 flags:
   inbox: all
   panel: skills
@@ -32,4 +32,4 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: eval1@bala
+selected: eval1@mumia
