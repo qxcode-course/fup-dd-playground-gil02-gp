@@ -27,3 +27,8 @@
 2026-04-13 16:42:11, EXEC, v:1, k:fup@loop_ii, mode:FULL, rate:100, size:15
 2026-04-13 16:42:22, MOVE, v:1, k:fup@loop_ii, mode:BACK
 2026-04-13 16:42:27, SELF, v:1, k:fup@loop_ii, self:1, rate:100
+2026-04-13 16:44:47, MOVE, v:1, k:fup@loop_iii, mode:DOWN
+2026-04-13 16:44:49, MOVE, v:1, k:fup@loop_iii, mode:PICK
+2026-04-13 16:46:06, EXEC, v:1, k:fup@loop_iii, mode:FULL, rate:100, size:11
+2026-04-13 16:47:35, MOVE, v:1, k:fup@loop_iii, mode:BACK
+2026-04-13 16:47:42, SELF, v:1, k:fup@loop_iii, self:1, rate:100
