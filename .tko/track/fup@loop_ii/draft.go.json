@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_16-35-24",
+            "content": "@@ -65,18 +65,31 @@\n .Scan(&a\n-, \n+)%0A    fmt.Scan(\n &b)%0A%0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-13_16-35-56",
+            "content": "@@ -90,17 +90,18 @@\n intln(%22%5B\n- \n+%5Cn\n %22)%0A    f\n@@ -170,15 +170,14 @@\n rintln(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_16-36-07",
+            "content": "@@ -102,33 +102,30 @@\n     \n+for \n i := a\n-%0A    for\n+;\n  i %3C\n-=\n  b\n- - 1\n+; i++\n  %7B%0A \n@@ -144,31 +144,13 @@\n rint\n-f(%22%25d %22, i)%0A        i++\n+ln(i)\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_16-38-32",
+            "content": "@@ -94,10 +94,9 @@\n n(%22%5B\n-%5Cn\n+ \n %22)%0A \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-13_16-38-49",
+            "content": "@@ -90,16 +90,18 @@\n intln(%22%5B\n+%5Cn\n %22)%0A    i\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-13_16-38-57",
+            "content": "@@ -69,23 +69,10 @@\n n(&a\n-)%0A    fmt.Scan(\n+, \n &b)%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-13_16-39-40",
+            "content": "@@ -128,16 +128,17 @@\n  for i %3C\n+=\n  b - 1 %7B\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_16-40-56",
+            "content": "@@ -131,16 +131,20 @@\n r i %3C b \n+- 1 \n %7B%0A      \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_16-41-07",
+            "content": "@@ -98,17 +98,18 @@\n mt.Print\n-f\n+ln\n (%22%5B%22)%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_16-41-33",
+            "content": "@@ -102,17 +102,16 @@\n rintf(%22%5B\n- \n %22)%0A    i\n@@ -192,17 +192,18 @@\n mt.Print\n-f\n+ln\n (%22 %5D%22)%0A%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_16-41-51",
+            "content": "@@ -196,14 +196,15 @@\n Printf(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_16-41-57",
+            "content": "@@ -201,10 +201,8 @@\n f(%22%5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_16-42-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n\n    fmt.Printf(\"[ \")\n    i := a\n    for i < b {\n        fmt.Printf(\"%d \", i)\n        i++\n    }\n    fmt.Printf(\"]\\n\")\n}\n",
+            "lines": "15"
+        }
+    ]
+}
