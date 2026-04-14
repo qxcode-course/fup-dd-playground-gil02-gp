@@ -135,3 +135,33 @@
 2026-04-14 23:35:45, EXEC, v:1, k:fup@vet_iii, mode:FULL, rate:100, size:18
 2026-04-14 23:36:13, MOVE, v:1, k:fup@vet_iii, mode:BACK
 2026-04-14 23:36:29, SELF, v:1, k:fup@vet_iii, self:1, rate:100, concept:1, problem:1
+2026-04-14 23:39:33, MOVE, v:1, k:fup@loop_v, mode:DOWN
+2026-04-14 23:39:35, MOVE, v:1, k:fup@loop_v, mode:PICK
+2026-04-14 23:41:43, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:13
+2026-04-14 23:42:05, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:13
+2026-04-14 23:42:20, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:13
+2026-04-14 23:39:33, MOVE, v:1, k:fup@loop_v, mode:EDIT
+2026-04-14 23:39:33, MOVE, v:1, k:fup@loop_v, mode:EDIT
+2026-04-14 23:42:17, MOVE, v:1, k:fup@loop_v, mode:EDIT
+2026-04-14 23:42:20, MOVE, v:1, k:fup@loop_v, mode:EDIT
+2026-04-14 23:44:01, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:13
+2026-04-14 23:44:15, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:13
+2026-04-14 23:44:26, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:13
+2026-04-14 23:44:58, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:17
+2026-04-14 23:45:33, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:13
+2026-04-14 23:45:50, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:13
+2026-04-14 23:46:37, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:17
+2026-04-14 23:46:50, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:14
+2026-04-14 23:47:02, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:14
+2026-04-14 23:47:01, MOVE, v:1, k:fup@loop_v, mode:EDIT
+2026-04-14 23:47:02, MOVE, v:1, k:fup@loop_v, mode:EDIT
+2026-04-14 23:52:09, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:28
+2026-04-14 23:52:18, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:28
+2026-04-14 23:52:42, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:28
+2026-04-14 23:52:49, MOVE, v:1, k:fup@loop_v, mode:EDIT
+2026-04-14 23:52:42, MOVE, v:1, k:fup@loop_v, mode:EDIT
+2026-04-14 23:53:29, EXEC, v:1, k:fup@loop_v, mode:FULL, size:25, fail:COMP
+2026-04-14 23:54:06, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:0, size:22
+2026-04-14 23:54:46, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:100, size:28
+2026-04-14 23:54:56, MOVE, v:1, k:fup@loop_v, mode:BACK
+2026-04-14 23:55:53, SELF, v:1, k:fup@loop_v, self:1, rate:100, concept:1, problem:1, debug:1

@@ -1,0 +1,94 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_23-41-43",
+            "content": "@@ -75,28 +75,8 @@\n &b)%0A\n-    fmt.Printf(%22%5B %22)\n %0A   \n@@ -175,11 +175,27 @@\n   %7D%0A    \n+fmt.Printf(%22%5B %22)\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_23-42-05",
+            "content": "@@ -131,16 +131,17 @@\n = a; i %3C\n+=\n  b; i++ \n@@ -199,24 +199,7 @@\n     \n-fmt.Printf(%22%5D%5Cn%22)\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_23-42-20",
+            "content": "@@ -129,9 +129,9 @@\n  := \n-0\n+a\n ; i \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_23-44-01",
+            "content": "@@ -129,9 +129,9 @@\n  := \n-1\n+0\n ; i \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_23-44-15",
+            "content": "@@ -125,17 +125,17 @@\n or i := \n-a\n+1\n ; i %3C b;\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_23-44-26",
+            "content": "@@ -188,97 +188,8 @@\n   %7D%0A\n-    %7D else %7B%0A        for i := a; i %3E b; i-- %7B%0A            fmt.Printf(%22%25d %22, i)%0A        %7D%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_23-44-58",
+            "content": "@@ -129,16 +129,16 @@\n  := \n-b\n+a\n ; i %3C \n-a\n+b\n ; i+\n@@ -180,24 +180,113 @@\n )%0A        %7D%0A\n+    %7D else %7B%0A        for i := a; i %3E b; i-- %7B%0A            fmt.Printf(%22%25d %22, i)%0A        %7D%0A\n     %7D%0A    fm\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_23-45-33",
+            "content": "@@ -129,16 +129,16 @@\n  := \n-a\n+b\n ; i %3C \n-b\n+a\n ; i+\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_23-45-50",
+            "content": "@@ -116,25 +116,8 @@\n     \n-    return%0A    %7D%0A\n     \n@@ -134,36 +134,16 @@\n ; i \n-%3E=\n+%3C\n  b; i\n--- %7B%0A        if i %3C a\n+++\n  %7B%0A \n@@ -166,13 +166,18 @@\n rint\n+f\n (%22\n-, %22\n+%25d %22, i\n )%0A  \n@@ -188,29 +188,8 @@\n   %7D%0A\n-        fmt.Print(i)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_23-46-37",
+            "content": "@@ -159,16 +159,73 @@\n ; i-- %7B%0A\n+        if i %3C a %7B%0A            fmt.Print(%22, %22)%0A        %7D%0A\n         \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_23-46-50",
+            "content": "@@ -151,16 +151,17 @@\n ; i \n-%3C\n+%3E=\n  b; i\n-++\n+--\n  %7B%0A \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-14_23-47-02",
+            "content": "@@ -75,45 +75,8 @@\n &b)%0A\n-    %0A    i := a%0A    primeiro := true%0A\n     \n@@ -92,35 +92,22 @@\n f(%22%5B\n+ \n %22)%0A    \n-for %7B%0A        if i %3E\n+if a %3C\n = b \n@@ -120,220 +120,70 @@\n     \n-  \n-  break%0A   \n+return%0A\n     \n- \n %7D%0A\n-%0A \n     \n-   if i%252 == 0 %7B%0A             i++%0A             continue%0A        %7D%0A%0A        if ! primeiro %7B%0A            fmt.Print(%22, %22)%0A        %7D%0A        fmt.Print(i)%0A        primeiro = false%0A        i++\n+for i := a; i %3C b; i++ %7B%0A        fmt.Print(i)\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-14_23-52-09",
+            "content": "@@ -125,17 +125,16 @@\n rintf(%22%5B\n- \n %22)%0A    f\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-14_23-52-18",
+            "content": "@@ -307,16 +307,17 @@\n .Print(%22\n+,\n  %22)%0A    \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-14_23-52-42",
+            "content": "@@ -259,24 +259,25 @@\n       %7D%0A\n+%0A\n         \n %0A       \n@@ -264,24 +264,76 @@\n  %7D%0A%0A        \n+if ! primeiro %7B%0A            fmt.Print(%22 %22)%0A        %7D\n %0A        fmt\n@@ -401,17 +401,16 @@\n Printf(%22\n- \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-14_23-53-29",
+            "content": "@@ -87,16 +87,37 @@\n  i := a%0A\n+    primeiro := true%0A\n     fmt.\n@@ -251,32 +251,40 @@\n tinue%0A        %7D%0A\n+        \n %0A        fmt.Pri\n@@ -289,16 +289,53 @@\n rint(i)%0A\n+        primeiro = false%0A        i++%0A\n     %7D%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-14_23-54-06",
+            "content": "@@ -91,29 +91,8 @@\n = a%0A\n-    primeiro := true%0A\n     \n@@ -251,118 +251,20 @@\n     \n-if ! primeiro %7B%0A            fmt.Print(%22 %22)%0A        %7D%0A        fmt.Print(i)%0A        primeiro = false%0A        i++\n+fmt.Print(i)\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-14_23-54-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    \n    i := a\n    primeiro := true\n    fmt.Printf(\"[ \")\n    for {\n        if i >= b {\n            break\n        }\n\n        if i%2 == 0 {\n             i++\n             continue\n        }\n\n        if ! primeiro {\n            fmt.Print(\" \")\n        }\n        fmt.Print(i)\n        primeiro = false\n        i++\n    }\n    fmt.Printf(\" ]\\n\")\n}\n",
+            "lines": "28"
+        }
+    ]
+}
