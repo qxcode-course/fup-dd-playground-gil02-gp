@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_23-10-03",
+            "content": "@@ -264,13 +264,15 @@\n rintf(%22%5D\n+%5Cn\n %22)%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-14_23-10-24",
+            "content": "@@ -202,16 +202,17 @@\n %3C n; i++\n+ \n %7B%0A      \n@@ -247,27 +247,24 @@\n )%0A    %7D%0A    \n-   \n fmt.Printf(%22\n@@ -267,11 +267,9 @@\n tf(%22\n-%7D%5Cn\n+%5D\n %22)%0A%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-14_23-13-24",
+            "content": "@@ -265,16 +265,16 @@\n Printf(%22\n-%5D\n+%7D\n %5Cn%22)%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-14_23-13-37",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    vetor := make([]int, n)\n    for i := 0; i < n; i++ {\n        fmt.Scan(&vetor[i])\n    }\n    fmt.Printf(\"[ \")\n    for i := 0; i < n; i++{\n        fmt.Printf(\"%d \", vetor[i])\n    }\n       fmt.Printf(\"]\\n\")\n}\n",
+            "lines": "15"
+        }
+    ]
+}
