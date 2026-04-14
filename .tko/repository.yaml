@@ -22,6 +22,7 @@ sources:
   quests: null
   tasks: null
 expanded:
+- fup@for1
 - fup@list
 flags:
   inbox: all
@@ -30,4 +31,4 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@vet_i
+selected: fup@loop_iv
