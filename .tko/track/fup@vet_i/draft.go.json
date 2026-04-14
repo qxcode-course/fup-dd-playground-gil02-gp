@@ -1,0 +1,139 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_17-43-37",
+            "content": "@@ -257,16 +257,9 @@\n rint\n-f(%22%25d%22, \n+(\n v)%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-14_17-44-05",
+            "content": "@@ -262,10 +262,8 @@\n (%22%25d\n-%5Cn\n %22, v\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-14_17-44-16",
+            "content": "@@ -224,19 +224,12 @@\n rint\n-f\n (%22\n-%25d%5Cn%22, v\n+ %22\n )%0A  \n@@ -232,20 +232,50 @@\n )%0A        %7D%0A\n+        fmt.Printf(%22%25d%5Cn%22, v)%0A\n     %7D%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-14_17-45-25",
+            "content": "@@ -224,12 +224,19 @@\n rint\n+f\n (%22\n- %22\n+%25d%5Cn%22, v\n )%0A  \n@@ -247,38 +247,8 @@\n   %7D%0A\n-        fmt.Printf(%22%25d%5Cn%22, v)%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-14_17-47-26",
+            "content": "@@ -220,17 +220,16 @@\n mt.Print\n-f\n (%22 %22)%0A  \n@@ -258,16 +258,18 @@\n intf(%22%25d\n+%5Cn\n %22, v)%0A  \n@@ -276,24 +276,6 @@\n   %7D%0A\n-    fmt.Println()%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-14_17-50-16",
+            "content": "@@ -259,17 +259,16 @@\n intf(%22%25d\n- \n %22, v)%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-50-31",
+            "content": "@@ -263,10 +263,9 @@\n (%22%25d\n-%5Cn\n+ \n %22, v\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-50-44",
+            "content": "@@ -273,10 +273,28 @@\n )%0A    %7D%0A\n+    fmt.Println()%0A\n %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-51-00",
+            "content": "@@ -153,64 +153,125 @@\n     \n-    if i != 0 %7B%0A            arr%5Bi%5D += arr%5Bi-1%5D%0A        %7D\n+%7D%0A    for i, v := range arr %7B%0A        if i != 0 %7B%0A            fmt.Printf(%22 %22)%0A        %7D%0A        fmt.Printf(%22%25d%5Cn%22, v)\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-14_17-52-09",
+            "content": "@@ -153,123 +153,64 @@\n     \n-%7D%0A    for i, v := range arr %7B%0A        if i != 0 %7B%0A            fmt.Printf(%22 %22)%0A        %7D%0A        fmt.Printf(%22%25v%22, v)\n+    if i != 0 %7B%0A            arr%5Bi%5D += arr%5Bi-1%5D%0A        %7D\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_17-53-13",
+            "content": "@@ -263,10 +263,8 @@\n (%22%25v\n-%5Cn\n %22, v\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-14_17-53-25",
+            "content": "@@ -224,13 +224,12 @@\n rint\n+f\n (%22\n-sep\n+ \n %22)%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-14_17-54-50",
+            "content": "@@ -160,33 +160,32 @@\n    for i\n+, v\n  := \n-0; i %3C n; i++\n+range arr\n  %7B%0A     \n@@ -222,17 +222,19 @@\n .Print(%22\n- \n+sep\n %22)%0A     \n@@ -263,20 +263,15 @@\n f(%22%25\n-d\n+v\n %5Cn%22, \n-arr%5Bi%5D\n+v\n )%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-14_17-57-56",
+            "content": "@@ -72,17 +72,10 @@\n     \n-%0A    veto\n+ar\n r :=\n@@ -137,20 +137,18 @@\n t.Scan(&\n-veto\n+ar\n r%5Bi%5D)%0A  \n@@ -155,13 +155,8 @@\n   %7D%0A\n-    %0A\n     \n@@ -168,28 +168,80 @@\n  := \n-n - 1; i %3E= 0; i-- %7B\n+0; i %3C n; i++ %7B%0A        if i != 0 %7B%0A            fmt.Print(%22 %22)%0A        %7D\n %0A   \n@@ -263,16 +263,15 @@\n (%22%25d\n- %22, veto\n+%5Cn%22, ar\n r%5Bi%5D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-14_17-58-54",
+            "content": "@@ -194,18 +194,18 @@\n  %3E= 0; i\n-++\n+--\n  %7B%0A     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-14_17-59-04",
+            "content": "@@ -180,21 +180,25 @@\n  i := n \n+- 1\n ; i \n-%3C\n+%3E=\n  0; i++ \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-14_17-59-29",
+            "content": "@@ -179,23 +179,24 @@\n r i := n\n+ \n ; i %3C \n-n\n+0\n ; i++ %7B%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-14_18-00-06",
+            "content": "@@ -170,33 +170,33 @@\n   %0A    for i := \n-0\n+n\n ; i %3C n; i++ %7B%0A \n@@ -216,16 +216,17 @@\n intf(%22%25d\n+ \n %22, vetor\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-14_18-00-53",
+            "content": "@@ -198,65 +198,8 @@\n + %7B%0A\n-        if n == 0 %7B%0A            fmt.Print(%22 %22)%0A        %7D%0A\n     \n@@ -220,10 +220,8 @@\n (%22%25d\n-%5Cn\n %22, v\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-14_18-02-33",
+            "content": "@@ -237,18 +237,18 @@\n .Print(%22\n-%5Cn\n+ %22\n )%0A      \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_18-02-59",
+            "content": "@@ -239,17 +239,16 @@\n rint(%22%5Cn\n-%22\n )%0A      \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_18-03-13",
+            "content": "@@ -235,17 +235,16 @@\n mt.Print\n-f\n (%22%5Cn%22)%0A \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_18-03-42",
+            "content": "@@ -235,16 +235,17 @@\n mt.Print\n+f\n (%22%5Cn%22)%0A \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_18-03-48",
+            "content": "@@ -239,10 +239,8 @@\n rint\n-ln\n (%22%5Cn\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_18-06-02",
+            "content": "@@ -235,16 +235,18 @@\n mt.Print\n+ln\n (%22%5Cn%22)%0A \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_18-06-10",
+            "content": "@@ -164,16 +164,54 @@\n   %7D%0A    \n+%0A    for i := 0; i %3C n; i++ %7B%0A        \n if n == \n@@ -256,42 +256,8 @@\n   %7D%0A\n-    %0A    for i := 0; i %3C n; i++ %7B%0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_18-09-00",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    \n    vetor := make([]int, n)\n    for i := 0; i < n; i++ {\n        fmt.Scan(&vetor[i])\n    }\n    if n == 0 {\n            fmt.Print(\"\\n\")\n        }\n    \n    for i := 0; i < n; i++ {\n        fmt.Printf(\"%d\\n\", vetor[i])\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}
