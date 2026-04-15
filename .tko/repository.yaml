@@ -22,8 +22,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@for1
 - fup@if_extra
+- fup@for1
 flags:
   inbox: all
   panel: graph

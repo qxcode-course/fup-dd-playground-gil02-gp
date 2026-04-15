@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-15_00-45-59",
+            "content": "@@ -166,24 +166,64 @@\n rint\n-f(%22%25d%5Cn%22, filhos\n+ln(%22sim%22)%0A        %7D else %7B%0A            fmt.Println(%22nao%22\n )%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-15_00-46-36",
+            "content": "@@ -104,17 +104,17 @@\n := 0; i \n-%3E\n+%3C\n  qtd; i+\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-15_00-47-11",
+            "content": "@@ -90,23 +90,8 @@\n d)%0A%0A\n-    idade := 0%0A\n     \n@@ -108,9 +108,9 @@\n ; i \n-%3C\n+%3E\n  qtd\n@@ -157,63 +157,49 @@\n     \n-idade += 2%0A        %7D%0A    %7D%0A    fmt.Printf(%22%25d%5Cn%22, idade)\n+fmt.Printf(%22%25d%5Cn%22, filhos)%0A        %7D%0A    %7D\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-15_00-48-25",
+            "content": "@@ -181,10 +181,9 @@\n  += \n-10\n+2\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-15_00-48-42",
+            "content": "@@ -181,35 +181,10 @@\n  += \n-filhos%0A            filhos--\n+10\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-15_00-49-00",
+            "content": "@@ -184,16 +184,37 @@\n  filhos%0A\n+            filhos--%0A\n         \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-15_00-49-12",
+            "content": "@@ -177,17 +177,22 @@\n dade += \n-i\n+filhos\n %0A       \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-15_00-49-25",
+            "content": "@@ -173,18 +173,21 @@\n    idade\n-++\n+ += i\n %0A       \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-15_00-49-45",
+            "content": "@@ -171,34 +171,16 @@\n     \n- fmt.Printf(%22%25d%5Cn%22,\n  idade\n-)\n+++\n %0A   \n@@ -196,11 +196,36 @@\n   %7D%0A    \n+fmt.Printf(%22%25d%5Cn%22, idade)\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-15_00-50-11",
+            "content": "@@ -94,10 +94,8 @@\n     \n-//\n idad\n@@ -187,22 +187,21 @@\n %22%25d%5Cn%22, \n-filhos\n+idade\n )%0A      \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-15_00-50-34",
+            "content": "@@ -49,17 +49,19 @@\n filhos, \n-n\n+qtd\n  int%0A   \n@@ -84,12 +84,31 @@\n s, &\n-n\n+qtd\n )%0A%0A\n+    //idade := 0%0A\n     \n@@ -123,17 +123,19 @@\n  0; i %3C \n-n\n+qtd\n ; i++ %7B%0A\n@@ -146,33 +146,72 @@\n     \n-fmt.Println(filhos + i*2)\n+if filhos %3E 0 %7B%0A            fmt.Printf(%22%25d%5Cn%22, filhos)%0A        %7D\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-15_00-52-50",
+            "content": "@@ -81,16 +81,17 @@\n os, &n)%0A\n+%0A\n     for \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-15_00-53-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var filhos, n int\n    fmt.Scan(&filhos, &n)\n    for i := 0; i < n; i++ {\n        fmt.Println(filhos + i*2)\n    }\n    \n}\n",
+            "lines": "10"
+        }
+    ]
+}
