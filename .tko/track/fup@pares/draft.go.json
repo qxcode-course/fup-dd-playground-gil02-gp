@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-15_00-06-27",
+            "content": "@@ -128,22 +128,8 @@\n   %7D%0A\n-    soma := 0%0A\n     \n@@ -191,17 +191,28 @@\n     \n-soma +=\n+fmt.Printf(%22%25d %22,\n  i\n+)\n %0A   \n@@ -228,28 +228,6 @@\n   %7D%0A\n-    fmt.Println(soma)%0A\n %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-15_00-08-12",
+            "content": "@@ -244,16 +244,11 @@\n rint\n-f(%22%25d%22, \n+ln(\n soma\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-15_00-08-40",
+            "content": "@@ -182,17 +182,17 @@\n  if i%252 \n-=\n+!\n = 0 %7B%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-15_00-08-52",
+            "content": "@@ -249,10 +249,8 @@\n (%22%25d\n-%5Cn\n %22, s\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-15_00-09-01",
+            "content": "@@ -157,17 +157,16 @@\n = a; i %3C\n-=\n  b; i++ \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-15_00-09-44",
+            "content": "@@ -122,23 +122,8 @@\n o%22)%0A\n-        return%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-15_00-18-29",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n\n    if a > b{\n        fmt.Println(\"invalido\")\n        return\n    }\n    soma := 0\n    for i := a; i <= b; i++ {\n        if i%2 == 0 {\n            soma += i\n        }\n    }\n    fmt.Printf(\"%d\\n\", soma)\n}\n",
+            "lines": "18"
+        }
+    ]
+}

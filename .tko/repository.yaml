@@ -23,6 +23,7 @@ sources:
   tasks: null
 expanded:
 - fup@for1
+- fup@if_extra
 flags:
   inbox: all
   panel: graph
@@ -30,4 +31,4 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@loop_v
+selected: fup@pares
