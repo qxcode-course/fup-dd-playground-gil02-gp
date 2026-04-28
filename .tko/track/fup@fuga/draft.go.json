@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_13-59-43",
+            "content": "@@ -174,34 +174,16 @@\n ln(%22S%22)%0A\n-            break%0A\n         \n@@ -236,26 +236,8 @@\n N%22)%0A\n-            break%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-28_14-00-01",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var h, p, f, d int\n    fmt.Scan(&h, &p, &f, &d)\n\n    for {\n        f = (f + d + 16) % 16\n        if f == h{\n            fmt.Println(\"S\")\n            break\n        }\n        if f == p{\n            fmt.Println(\"N\")\n            break\n        }\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}
