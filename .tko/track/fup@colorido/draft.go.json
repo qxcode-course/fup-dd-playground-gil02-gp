@@ -1,0 +1,94 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_02-34-05",
+            "content": "@@ -68,28 +68,8 @@\n &n)%0A\n-    fmt.Print(%22%5B %22)%0A\n     \n@@ -265,28 +265,6 @@\n   %7D%0A\n-    fmt.Print(%22 %5D%5Cn%22)%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-28_02-34-40",
+            "content": "@@ -55,55 +55,19 @@\n     \n-var pe string%0A    fmt.Scan(&n)%0A    fmt.Scan(&pe\n+fmt.Scan(&n\n )%0A  \n@@ -262,110 +262,14 @@\n (%22%25d\n-%25s\n  %22, i\n-, pe)%0A        %7D%0A        if pe == %22e%22%7B%0A            pe = %22d%22%0A        %7D else%7B%0A            pe = %22e%22\n+)\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-28_02-42-12",
+            "content": "@@ -428,16 +428,17 @@\n .Print(%22\n+ \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-42-31",
+            "content": "@@ -428,17 +428,16 @@\n .Print(%22\n- \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-42-39",
+            "content": "@@ -296,18 +296,17 @@\n tf(%22%25d%25s\n-%5Cn\n+ \n %22, i, pe\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-42-58",
+            "content": "@@ -296,16 +296,18 @@\n tf(%22%25d%25s\n+%5Cn\n %22, i, pe\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-43-04",
+            "content": "@@ -296,17 +296,16 @@\n tf(%22%25d%25s\n- \n %22, i, pe\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-43-14",
+            "content": "@@ -294,18 +294,16 @@\n intf(%22%25d\n-%5Cn\n %25s %22, i,\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-43-25",
+            "content": "@@ -294,16 +294,18 @@\n intf(%22%25d\n+%5Cn\n %25s %22, i,\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-43-32",
+            "content": "@@ -248,17 +248,16 @@\n int(%22ceu\n- \n %22)%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-43-36",
+            "content": "@@ -248,16 +248,17 @@\n int(%22ceu\n+ \n %22)%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-43-46",
+            "content": "@@ -430,13 +430,15 @@\n rint(%22 %5D\n+%5Cn\n %22)%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-44-31",
+            "content": "@@ -248,17 +248,16 @@\n int(%22ceu\n- \n %22)%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-44-44",
+            "content": "@@ -248,16 +248,17 @@\n int(%22ceu\n+ \n %22)%0A     \n@@ -435,10 +435,8 @@\n (%22 %5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-44-59",
+            "content": "@@ -428,17 +428,16 @@\n .Print(%22\n- \n  %5D%5Cn%22)%0A%7D\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-45-10",
+            "content": "@@ -428,16 +428,18 @@\n .Print(%22\n+  \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-45-19",
+            "content": "@@ -248,17 +248,16 @@\n int(%22ceu\n- \n %22)%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_02-45-35",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    var pe string\n    fmt.Scan(&n)\n    fmt.Scan(&pe)\n    fmt.Print(\"[ \")\n    for i := 0; i <= 10; i++ {\n        if i == n {\n            continue\n        }\n        if i == 10{\n            fmt.Print(\"ceu \")\n        } else {\n            fmt.Printf(\"%d%s \", i, pe)\n        }\n        if pe == \"e\"{\n            pe = \"d\"\n        } else{\n            pe = \"e\"\n        }\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "lines": "25"
+        }
+    ]
+}
