@@ -67,3 +67,47 @@
 2026-04-28 14:00:01, EXEC, v:1, k:fup@fuga, mode:FULL, rate:100, size:18
 2026-04-28 14:00:24, MOVE, v:1, k:fup@fuga, mode:BACK
 2026-04-28 14:00:37, SELF, v:1, k:fup@fuga, self:1, rate:100, concept:1, problem:1, debug:1, refactor:1
+2026-04-28 17:07:11, MOVE, v:1, k:fup@lotado, mode:DOWN
+2026-04-28 17:07:11, MOVE, v:1, k:fup@lotado, mode:PICK
+2026-04-28 17:07:11, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:07:11, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:11:25, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:13:17, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:15
+2026-04-28 17:14:14, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:13
+2026-04-28 17:16:35, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:14:14, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:16:51, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:17
+2026-04-28 17:17:09, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:17
+2026-04-28 17:21:26, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:17:08, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:30:24, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:34:42, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:16
+2026-04-28 17:35:16, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:16
+2026-04-28 17:36:30, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:16
+2026-04-28 17:36:24, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:36:29, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:37:02, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:16
+2026-04-28 17:37:37, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:18
+2026-04-28 17:38:31, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:20
+2026-04-28 17:39:07, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:20
+2026-04-28 17:39:53, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:22
+2026-04-28 17:40:49, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:22
+2026-04-28 17:40:47, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:40:49, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:41:56, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:23
+2026-04-28 17:44:31, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:22
+2026-04-28 17:45:14, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:22
+2026-04-28 17:45:33, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:22
+2026-04-28 17:45:55, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:22
+2026-04-28 17:46:35, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:45:55, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:47:45, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:22
+2026-04-28 17:48:05, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:23
+2026-04-28 17:51:25, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:48:05, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-28 17:52:17, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:25
+2026-04-28 17:52:33, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:25
+2026-04-28 17:53:20, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:25
+2026-04-28 17:54:59, EXEC, v:1, k:fup@lotado, mode:FULL, rate:100, size:24
+2026-04-28 17:56:06, MOVE, v:1, k:fup@lotado, mode:BACK
+2026-04-28 17:56:23, SELF, v:1, k:fup@lotado, self:1, rate:100, friend:hanna

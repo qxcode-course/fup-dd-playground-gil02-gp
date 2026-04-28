@@ -1,0 +1,124 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_17-13-17",
+            "content": "@@ -113,18 +113,16 @@\n     \n-c\n+m\n ++%0A    \n-%7D%0A\n     \n@@ -130,13 +130,17 @@\n f c \n-%3E\n+%3C\n  0%7B%0A\n+    \n     \n@@ -164,16 +164,90 @@\n vazio%22)%0A\n+        %7D else if c %3E m %7B%0A            fmt.Println(%22ainda cabe%22)%0A        %7D%0A\n     %7D%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_17-14-14",
+            "content": "@@ -166,115 +166,8 @@\n o%22)%0A\n-    %7D else if c %3C 1%7B%0A        fmt.Println(%22ainda cabe%22)%0A    %7D else if c %3E= 1%7B%0A        fmt.Println(%22lotado%22)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-28_17-16-51",
+            "content": "@@ -180,17 +180,17 @@\n  if c %3C \n-m\n+1\n %7B%0A      \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-28_17-17-08",
+            "content": "@@ -74,28 +74,8 @@\n  &m)\n-%0A    passageiro := 0\n %0A%0A  \n@@ -113,23 +113,11 @@\n     \n-passageiro += m\n+c++\n %0A   \n@@ -126,26 +126,17 @@\n %0A    if \n-passageiro\n+c\n  %3E 0%7B%0A  \n@@ -180,23 +180,69 @@\n  if \n-passageiro %3E c \n+c %3C m%7B%0A        fmt.Println(%22ainda cabe%22)%0A    %7D else if c %3E= 1\n %7B%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-28_17-34-42",
+            "content": "@@ -169,19 +169,19 @@\n sageiro \n-%3C m\n+%3E 0\n %7B%0A      \n@@ -232,10 +232,9 @@\n iro \n-==\n+%3E\n  c %7B\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-28_17-35-16",
+            "content": "@@ -173,13 +173,10 @@\n iro \n-%3E= 2*\n+%3C \n m%7B%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-28_17-36-30",
+            "content": "@@ -231,17 +231,18 @@\n sageiro \n-%3C\n+==\n  c %7B%0A   \n@@ -263,18 +263,14 @@\n ln(%22\n-ainda cabe\n+lotado\n %22)%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-28_17-37-02",
+            "content": "@@ -275,70 +275,8 @@\n e%22)%0A\n-    %7D else if passageiro == c %7B%0A        fmt.Println(%22lotado%22)%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-28_17-37-36",
+            "content": "@@ -206,17 +206,16 @@\n vazio%22)%0A\n-%0A\n     %7D el\n@@ -232,17 +232,16 @@\n ageiro %3C\n-=\n  c %7B%0A   \n@@ -275,17 +275,8 @@\n e%22)%0A\n-        %0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-28_17-38-31",
+            "content": "@@ -273,16 +273,24 @@\n  cabe%22)%0A\n+        \n %0A    %7D e\n@@ -307,17 +307,17 @@\n sageiro \n-%3E\n+=\n = c %7B%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_17-39-07",
+            "content": "@@ -340,59 +340,8 @@\n o%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22hora de partir%22)%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_17-39-53",
+            "content": "@@ -177,12 +177,10 @@\n %3E= 2\n- * c\n+*m\n %7B%0A  \n@@ -202,22 +202,13 @@\n ln(%22\n-hora de partir\n+vazio\n %22)%0A%0A\n@@ -370,21 +370,30 @@\n rintln(%22\n-vazio\n+hora de partir\n %22)%0A    %7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-28_17-40-49",
+            "content": "@@ -219,28 +219,29 @@\n tir%22)%0A%0A    %7D\n-%0A   \n+ else\n  if passagei\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-28_17-41-56",
+            "content": "@@ -242,17 +242,17 @@\n sageiro \n-=\n+%3C\n = c %7B%0A  \n@@ -274,16 +274,22 @@\n ln(%22\n-vazio\n+ainda cabe\n %22)%0A\n+%0A\n     \n@@ -309,17 +309,18 @@\n sageiro \n-%3C\n+%3E=\n  c %7B%0A   \n@@ -337,26 +337,22 @@\n rintln(%22\n-ainda cabe\n+lotado\n %22)%0A    %7D\n@@ -372,33 +372,32 @@\n    fmt.Println(%22\n-lotad\n+vazi\n o%22)%0A    %7D%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-28_17-44-31",
+            "content": "@@ -196,17 +196,18 @@\n mt.Print\n-f\n+ln\n (%22hora d\n@@ -266,17 +266,18 @@\n mt.Print\n-f\n+ln\n (%22vazio%22\n@@ -326,17 +326,18 @@\n mt.Print\n-f\n+ln\n (%22ainda \n@@ -373,17 +373,18 @@\n mt.Print\n-f\n+ln\n (%22lotado\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-28_17-45-14",
+            "content": "@@ -220,22 +220,8 @@\n r%22)%0A\n-        return\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-28_17-45-33",
+            "content": "@@ -213,18 +213,16 @@\n e partir\n-%5Cn\n %22)%0A     \n@@ -287,18 +287,16 @@\n f(%22vazio\n-%5Cn\n %22)%0A    %7D\n@@ -355,10 +355,8 @@\n cabe\n-%5Cn\n %22)%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-28_17-45-55",
+            "content": "@@ -65,16 +65,20 @@\n .Scan(&c\n+, &m\n )%0A    pa\n@@ -125,29 +125,8 @@\n + %7B%0A\n-        fmt.Scan(&m)%0A\n     \n@@ -214,24 +214,39 @@\n  partir%5Cn%22)%0A\n+        return%0A\n     %7D%0A    if\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-28_17-47-45",
+            "content": "@@ -166,25 +166,8 @@\n = m%0A\n-        continue%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-28_17-48-05",
+            "content": "@@ -100,26 +100,26 @@\n for \n-passageiro %3C 2 * c\n+i := 0; i %3C m; i++\n  %7B%0A \n@@ -162,21 +162,112 @@\n ro += m%0A\n-%0A\n     \n+    continue%0A    %7D%0A    if passageiro %3E= 2 * c%7B%0A        fmt.Printf(%22hora de partir%5Cn%22)%0A    %7D%0A\n     if p\n@@ -425,97 +425,8 @@\n o%22)%0A\n-    %7D%0A        %0A    %7D%0A    if passageiro %3E= 2 * c%7B%0A        fmt.Printf(%22hora de partir%5Cn%22)%0A%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-28_17-52-17",
+            "content": "@@ -327,18 +327,16 @@\n (%22lotado\n-%5Cn\n %22)%0A    %7D\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_17-52-33",
+            "content": "@@ -188,17 +188,17 @@\n eiro == \n-0\n+c\n  %7B%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_17-53-20",
+            "content": "@@ -166,103 +166,16 @@\n = m%0A\n+%0A\n        \n- if passageiro %3E= 2 * c%7B%0A        fmt.Printf(%22hora de partir%5Cn%22)%0A        return%0A    %7Delse\n  if \n@@ -357,11 +357,80 @@\n   %7D%0A    \n+if passageiro %3E= 2 * c%7B%0A        fmt.Printf(%22hora de partir%5Cn%22)%0A%0A    %7D\n %0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_17-54-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c, m int\n    fmt.Scan(&c)\n    passageiro := 0\n\n    for passageiro < 2 * c {\n        fmt.Scan(&m)\n        passageiro += m\n        if passageiro >= 2 * c{\n        fmt.Printf(\"hora de partir\\n\")\n        return\n    }else if passageiro == 0 {\n        fmt.Printf(\"vazio\\n\")\n    } else if passageiro < c {\n        fmt.Printf(\"ainda cabe\\n\")\n    } else {\n        fmt.Printf(\"lotado\\n\")\n    }\n        \n    }\n    \n}\n",
+            "lines": "24"
+        }
+    ]
+}
