@@ -31,3 +31,29 @@
 2026-04-28 02:45:35, EXEC, v:1, k:fup@colorido, mode:FULL, rate:100, size:25
 2026-04-28 02:45:52, MOVE, v:1, k:fup@colorido, mode:BACK
 2026-04-28 02:46:16, SELF, v:1, k:fup@colorido, self:1, rate:100, concept:1, problem:1, refactor:1
+2026-04-28 02:48:04, MOVE, v:1, k:fup@concentra, mode:DOWN
+2026-04-28 02:48:05, MOVE, v:1, k:fup@concentra, mode:PICK
+2026-04-28 02:48:04, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-04-28 02:48:04, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-04-28 02:50:40, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-04-28 02:54:17, EXEC, v:1, k:fup@concentra, mode:FULL, size:14, fail:COMP
+2026-04-28 02:57:28, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-04-28 02:58:22, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:14
+2026-04-28 02:59:35, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:12
+2026-04-28 03:00:31, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:13
+2026-04-28 03:00:42, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:13
+2026-04-28 03:00:59, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:13
+2026-04-28 03:01:10, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:13
+2026-04-28 03:01:21, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:13
+2026-04-28 03:01:58, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:13
+2026-04-28 03:02:28, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-04-28 03:01:58, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-04-28 03:03:07, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:16
+2026-04-28 03:03:50, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:13
+2026-04-28 03:05:12, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:15
+2026-04-28 03:05:37, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:14
+2026-04-28 03:06:12, MOVE, v:1, k:fup@concentra, mode:PICK
+2026-04-28 03:06:34, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:15
+2026-04-28 03:06:52, EXEC, v:1, k:fup@concentra, mode:FULL, rate:100, size:15
+2026-04-28 03:07:07, MOVE, v:1, k:fup@concentra, mode:BACK
+2026-04-28 03:07:27, SELF, v:1, k:fup@concentra, self:1, rate:100, concept:1, problem:1, refactor:1
