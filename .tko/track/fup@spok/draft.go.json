@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_18-01-40",
+            "content": "@@ -67,27 +67,8 @@\n (&n)\n-%0A    poligonos := 0\n %0A%0A  \n@@ -73,33 +73,25 @@\n     if n == \n-poligonos\n+1\n %7B%0A        fm\n@@ -101,13 +101,15 @@\n rint\n-ln(%221\n+f(%22um%5Cn\n %22)%0A \n@@ -130,17 +130,9 @@\n  == \n-poligonos\n+0\n %7B%0A  \n@@ -150,13 +150,17 @@\n rint\n-ln(%220\n+f(%22zero%5Cn\n %22)%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-28_18-03-18",
+            "content": "@@ -142,16 +142,34 @@\n   %7D else\n+ if n == poligonos\n %7B%0A      \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_18-03-41",
+            "content": "@@ -109,12 +109,8 @@\n onos\n- + 1\n %7B%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_18-04-00",
+            "content": "@@ -97,9 +97,9 @@\n f n \n-%3E\n+=\n = po\n@@ -105,16 +105,20 @@\n oligonos\n+ + 1\n %7B%0A      \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_18-04-57",
+            "content": "@@ -109,12 +109,8 @@\n onos\n- + 1\n %7B%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_18-05-11",
+            "content": "@@ -94,16 +94,17 @@\n   if n %3E\n+=\n  poligon\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_18-05-27",
+            "content": "@@ -97,10 +97,9 @@\n f n \n-==\n+%3E\n  pol\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_18-05-38",
+            "content": "@@ -105,16 +105,20 @@\n oligonos\n+ + 1\n %7B%0A      \n@@ -150,26 +150,8 @@\n else\n- if n %3C poligonos \n %7B%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_18-06-12",
+            "content": "@@ -81,17 +81,17 @@\n onos := \n-1\n+0\n %0A%0A    if\n@@ -143,16 +143,33 @@\n  %7D else \n+if n %3C poligonos \n %7B%0A      \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_18-06-29",
+            "content": "@@ -109,13 +109,8 @@\n onos\n- %25 10\n %7B%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_18-07-08",
+            "content": "@@ -141,17 +141,8 @@\n 1%22)%0A\n-        %0A\n     \n@@ -185,17 +185,7 @@\n   %7D%0A\n-    return\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_18-07-46",
+            "content": "@@ -72,22 +72,21 @@\n     poli\n-mdromo\n+gonos\n  := 1%0A%0A \n@@ -104,15 +104,18 @@\n poli\n-mdromo \n+gonos %25 10\n %7B%0A  \n@@ -190,10 +190,21 @@\n )%0A    %7D%0A\n+    return%0A\n %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_18-08-38",
+            "content": "@@ -44,12 +44,8 @@\n  var\n- id,\n  n i\n@@ -72,38 +72,23 @@\n     \n-fmt.Scan(&id)%0A    revers\n+polimdrom\n o := \n-0\n+1\n %0A%0A  \n@@ -96,14 +96,24 @@\n  if \n-id %3C 0\n+n == polimdromo \n %7B%0A  \n@@ -131,193 +131,57 @@\n rint\n-f(%220%5Cn\n+ln(%221\n %22)%0A    \n-%7D%0A\n     \n-n = id%0A%0A    for n %3E 0%7B%0A        reverso = reverso * 10 + (n %25 10)%0A        n /= 10%0A    %7D%0A    if reverso == id%7B%0A        fmt.Printf(%221%5Cn%22)%0A    %7D else %7B%0A        fmt.Printf\n+%0A    %7D else %7B%0A        fmt.Println\n (%220%22\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-29_00-42-09",
+            "content": "@@ -316,29 +316,27 @@\n    fmt.Printf(%220\n-%5Cn\n %22)%0A    %7D%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-29_00-42-23",
+            "content": "@@ -252,22 +252,16 @@\n   if\n- id ==\n  reverso\n %7B%0A  \n@@ -256,16 +256,22 @@\n  reverso\n+ == id\n %7B%0A      \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-29_00-43-13",
+            "content": "@@ -69,11 +69,45 @@\n an(&\n-id)\n+n)%0A    fmt.Scan(&id)%0A    reverso := 0\n %0A%0A  \n@@ -128,37 +128,38 @@\n        fmt.Print\n-ln\n+f\n (%220\n+%5Cn\n %22)%0A    %7D%0A%0A    n \n@@ -151,17 +151,16 @@\n )%0A    %7D%0A\n-%0A\n     n = \n@@ -161,33 +161,16 @@\n   n = id\n-%0A    reverso := 0\n %0A%0A    fo\n@@ -285,13 +285,14 @@\n rint\n-ln\n+f\n (%221\n+%5Cn\n %22)%0A \n@@ -324,13 +324,14 @@\n rint\n-ln\n+f\n (%220\n+%5Cn\n %22)%0A \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-29_00-46-53",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var id, n int\n    fmt.Scan(&id)\n\n    if id < 0{\n        fmt.Println(\"0\")\n    }\n\n    n = id\n    reverso := 0\n\n    for n > 0{\n        reverso = reverso * 10 + (n % 10)\n        n /= 10\n    }\n    if id == reverso{\n        fmt.Println(\"1\")\n    } else {\n        fmt.Println(\"0\")\n    }\n}\n",
+            "lines": "23"
+        }
+    ]
+}
