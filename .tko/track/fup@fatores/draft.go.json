@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-29_01-25-33",
+            "content": "@@ -251,17 +251,17 @@\n intf(%22%25d\n- \n+%5E\n %25d %22, fa\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-29_01-25-57",
+            "content": "@@ -246,32 +246,33 @@\n mt.Printf(%22%25d %25d\n+ \n %22, fator, cont)%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-29_01-26-08",
+            "content": "@@ -258,11 +258,8 @@\n d %25d\n- %5Cn\n %22, f\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-29_01-26-21",
+            "content": "@@ -254,16 +254,17 @@\n f(%22%25d %25d\n+ \n %5Cn%22, fat\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-29_01-26-35",
+            "content": "@@ -377,34 +377,32 @@\n mt.Printf(%22%25d %25d\n-%5Cn\n %22, fator, cont)%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-29_01-27-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    fator := 2\n    cont := 0\n\n    for n != 1{\n        if n % fator == 0{\n            n /= fator\n            cont++\n        } else {\n            if cont > 0{\n                fmt.Printf(\"%d %d\\n\", fator, cont)\n            }\n            fator++\n            cont = 0\n        }\n    }\n    if cont > 0{\n        fmt.Printf(\"%d %d\\n\", fator, cont)\n    }\n}\n",
+            "lines": "24"
+        }
+    ]
+}
