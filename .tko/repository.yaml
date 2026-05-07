@@ -30,5 +30,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@poco
-selected_index: 7
+selected: fup@castelos
+selected_index: 9
