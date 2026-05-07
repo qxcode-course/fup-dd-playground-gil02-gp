@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-07_21-50-02",
+            "content": "@@ -114,16 +114,23 @@\n         \n+nova :=\n  posicao\n@@ -131,17 +131,16 @@\n osicao +\n-=\n  s%0A     \n@@ -145,23 +145,20 @@\n      if \n-posicao\n+nova\n  %3E= p %7B%0A\n@@ -255,23 +255,20 @@\n osicao, \n-posicao\n+nova\n )%0A    po\n@@ -275,23 +275,20 @@\n sicao = \n-posicao\n+nova\n  - e%0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-07_21-53-51",
+            "content": "@@ -227,137 +227,71 @@\n   %7D%0A\n-%0A        posicao = posicao - e%0A        fmt.Println(posicao)%0A%0A        if posicao %3C 0 %7B%0A            break%0A        %7D%0A        s -= 10\n+        fmt.Println(posicao, posicao)%0A    posicao = posicao - e\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-07_21-56-50",
+            "content": "@@ -118,93 +118,21 @@\n     \n-antes := posicao%0A%0A        posicao += s%0A        fmt.Printf(%22%25d %25d%5Cn%22, antes, posicao)%0A\n+ posicao += s\n %0A   \n@@ -254,25 +254,24 @@\n cao - e%0A\n-%0A\n         \n if posic\n@@ -266,24 +266,29 @@\n     \n-if \n+fmt.Println(\n posicao\n- %3C 0 %7B\n+)%0A\n %0A   \n@@ -296,43 +296,24 @@\n     \n-    fmt.Println(posicao, %22morreu %22)\n+if posicao %3C 0 %7B\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-07_22-02-14",
+            "content": "@@ -392,16 +392,17 @@\n  %22morreu\n+ \n %22)%0A     \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-07_22-02-31",
+            "content": "@@ -312,18 +312,27 @@\n posicao \n--\n =\n+ posicao -\n  e%0A%0A    \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-07_22-02-49",
+            "content": "@@ -152,16 +152,62 @@\n cao += s\n+%0A        fmt.Printf(%22%25d %25d%5Cn%22, antes, posicao)\n %0A%0A      \n@@ -298,75 +298,8 @@\n    %7D\n- else %7B%0A            fmt.Printf(%22%25d %25d%5Cn%22, antes, posicao)%0A        %7D\n %0A%0A  \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-07_22-09-48",
+            "content": "@@ -197,37 +197,27 @@\n    fmt.Print\n-f(%22%25d %25s%5Cn%22, \n+ln(\n posicao, %22sa\n@@ -389,21 +389,11 @@\n rint\n-f(%22%25d %25s%5Cn%22, \n+ln(\n posi\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-07_22-11-58",
+            "content": "@@ -399,11 +399,21 @@\n rint\n-ln(\n+f(%22%25d %25s%5Cn%22, \n posi\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-07_22-12-36",
+            "content": "@@ -214,21 +214,23 @@\n  %25s%5Cn%22, \n-antes\n+posicao\n , %22saiu%22\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-07_22-13-31",
+            "content": "@@ -397,32 +397,28 @@\n rint\n-f(%22%25d morreu%5Cn%22, posicao\n+ln(posicao, %22morreu%22\n )%0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-07_22-17-26",
+            "content": "@@ -211,12 +211,10 @@\n %22%25d \n+%25\n s\n-aiu\n %5Cn%22,\n@@ -219,16 +219,24 @@\n %22, antes\n+, %22saiu%22\n )%0A      \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-07_22-21-00",
+            "content": "@@ -136,56 +136,8 @@\n ao%0A%0A\n-        if s %3C 0 %7B%0A            s = 0%0A        %7D%0A%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-07_22-22-57",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, s, e int\n    fmt.Scan(&p, &s, &e)\n\n    posicao := 0\n    for {\n        antes := posicao\n\n        if s < 0 {\n            s = 0\n        }\n\n        posicao += s\n\n        if posicao >= p {\n            fmt.Printf(\"%d saiu\\n\", antes)\n            break\n        } else {\n            fmt.Printf(\"%d %d\\n\", antes, posicao)\n        }\n\n        posicao -= e\n\n        if posicao < 0 {\n            fmt.Printf(\"%d morreu\\n\", posicao)\n            break\n        }\n        s -= 10\n    \n    }\n}\n",
+            "lines": "33"
+        }
+    ]
+}
