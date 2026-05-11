@@ -26,10 +26,10 @@ expanded:
 - eval1@eval1
 flags:
   inbox: all
-  panel: logs
+  panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@apertada
-selected_index: 11
+selected: fup@dieta
+selected_index: 12
