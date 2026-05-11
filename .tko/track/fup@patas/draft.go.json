@@ -1,0 +1,99 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_17-15-43",
+            "content": "@@ -419,17 +419,17 @@\n rintln(%22\n-e\n+E\n mpate%22)%0A\n@@ -495,17 +495,17 @@\n rintln(%22\n-c\n+C\n hico%22)%0A \n@@ -537,17 +537,17 @@\n rintln(%22\n-c\n+C\n ebolinha\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-11_17-16-08",
+            "content": "@@ -121,27 +121,32 @@\n var animais \n+%5B%5Dstr\n in\n-t\n+g\n %0A    fmt.Sca\n@@ -322,205 +322,41 @@\n     \n-if \n anima\n-l == %22vaca%22 %7B%0A            fmt.Println(%22v%22)%0A        %7D else if animal == %22galinha%22 %7B%0A            fmt.Println(%22g%22)%0A        %7D else if animal == %22cavalo%22 %7B%0A            fmt.Println(%22v%22)%0A        %7D\n+is = append(animais, animal)\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-11_17-19-03",
+            "content": "@@ -113,16 +113,31 @@\n int%0A    \n+var animais int\n %0A    fmt\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-11_17-20-42",
+            "content": "@@ -109,17 +109,21 @@\n ais int%0A\n+    \n %0A\n-\n     fmt.\n@@ -202,24 +202,8 @@\n ais)\n-%0A%0A    total := 0\n %0A   \n@@ -302,22 +302,18 @@\n     \n-switch\n+if\n  animal \n %7B%0A  \n@@ -312,132 +312,185 @@\n mal \n-%7B%0A        case %22v%22:%0A            total += 4%0A        case %22g%22:%0A            total += 2%0A        case %22c%22:%0A            total += 4\n+== %22vaca%22 %7B%0A            fmt.Println(%22v%22)%0A        %7D else if animal == %22galinha%22 %7B%0A            fmt.Println(%22g%22)%0A        %7D else if animal == %22cavalo%22 %7B%0A            fmt.Println(%22v%22)\n %0A   \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-11_17-23-38",
+            "content": "@@ -346,13 +346,8 @@\n  %22v%22\n-, %22c%22\n :%0A  \n@@ -420,37 +420,50 @@\n     \n-%7D%0A        fmt.Println(total)%0A\n+case %22c%22:%0A            total += 4%0A        %7D\n %0A   \n@@ -563,21 +563,31 @@\n chico %3E \n-total\n+chute_cebolinha\n  %7B%0A     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-11_17-26-54",
+            "content": "@@ -476,17 +476,18 @@\n e_chico \n-%3C\n+==\n  chute_c\n@@ -522,17 +522,14 @@\n ln(%22\n-Cebolinha\n+empate\n %22)%0A \n@@ -588,9 +588,9 @@\n ln(%22\n-C\n+c\n hico\n@@ -618,33 +618,36 @@\n    fmt.Println(%22\n-empate\n+cebolinha\n %22)%0A    %7D%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-11_17-29-06",
+            "content": "@@ -471,24 +471,38 @@\n  chute_c\n+hico %3C chute_c\n ebolinha\n  %3E total\n@@ -493,24 +493,16 @@\n ebolinha\n- %3E total\n  %7B%0A     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-11_17-29-37",
+            "content": "@@ -549,17 +549,17 @@\n e_chico \n-%3C\n+%3E\n  total %7B\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-11_17-30-14",
+            "content": "@@ -549,17 +549,17 @@\n e_chico \n-%3E\n+%3C\n  total %7B\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-11_17-30-28",
+            "content": "@@ -468,23 +468,25 @@\n  if \n- \n chute_c\n-hico %3C=\n+ebolinha %3E\n  tot\n@@ -516,18 +516,16 @@\n n(%22C\n-hico Bento\n+ebolinha\n %22)%0A \n@@ -548,19 +548,14 @@\n te_c\n-ebolinha %3C=\n+hico %3E\n  tot\n@@ -577,32 +577,28 @@\n t.Println(%22C\n-ebolinha\n+hico\n %22)%0A    %7D els\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-11_17-32-06",
+            "content": "@@ -23,100 +23,8 @@\n mt%22%0A\n-%0Afunc absDiff(a, b int) int %7B%0A    if a %3E b %7B%0A        return a - b%0A    %7D%0A    return b - a%0A%7D%0A%0A\n func\n@@ -431,117 +431,45 @@\n     \n-%7D%0A\n     \n-chute_chico = absDiff(chute_chico, \n+fmt.Println(\n total)%0A\n+%0A\n     \n-chute_cebolinha = absDiff(chute_cebolinha, total)\n+%7D\n %0A    if \n chut\n@@ -460,24 +460,25 @@\n    %7D%0A    if \n+ \n chute_chico \n@@ -478,32 +478,23 @@\n _chico %3C\n- chute_cebolinha\n+= total\n  %7B%0A     \n@@ -554,28 +554,23 @@\n olinha %3C\n- chute_chico\n+= total\n  %7B%0A     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-11_17-36-57",
+            "content": "@@ -621,17 +621,16 @@\n  total)%0A\n-%0A\n     if c\n@@ -641,23 +641,32 @@\n _chico %3C\n-= total\n+ chute_cebolinha\n  %7B%0A     \n@@ -730,15 +730,20 @@\n ha %3C\n-= total\n+ chute_chico\n  %7B%0A \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-11_17-37-54",
+            "content": "@@ -642,16 +642,17 @@\n _chico %3C\n+=\n  total %7B\n@@ -718,16 +718,17 @@\n olinha %3C\n+=\n  total %7B\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-11_17-39-53",
+            "content": "@@ -643,31 +643,21 @@\n chico %3C \n-chute_cebolinha\n+total\n  %7B%0A     \n@@ -718,27 +718,21 @@\n linha %3C \n-chute_chico\n+total\n  %7B%0A     \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-11_17-40-47",
+            "content": "@@ -519,35 +519,8 @@\n   %7D%0A\n-        fmt.Println(total)%0A\n     \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-11_17-44-37",
+            "content": "@@ -459,16 +459,17 @@\n   total \n++\n = 4%0A    \n@@ -500,16 +500,17 @@\n   total \n++\n = 2%0A    \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-11_17-44-53",
+            "content": "@@ -459,17 +459,16 @@\n   total \n-+\n = 4%0A    \n@@ -499,17 +499,16 @@\n   total \n-+\n = 2%0A    \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-11_17-45-05",
+            "content": "@@ -515,26 +515,24 @@\n       %7D%0A    \n-%7D%0A\n     fmt.Prin\n@@ -546,16 +546,17 @@\n al)%0A    \n+%7D\n %0A    chu\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-11_17-46-53",
+            "content": "package main\nimport \"fmt\"\n\nfunc absDiff(a, b int) int {\n    if a > b {\n        return a - b\n    }\n    return b - a\n}\n\nfunc main() {\n    var chute_chico int\n    var chute_cebolinha int\n    var qtd_animais int\n\n    fmt.Scan(&chute_chico)\n    fmt.Scan(&chute_cebolinha)\n    fmt.Scan(&qtd_animais)\n\n    total := 0\n    for i := 0; i < qtd_animais; i++ {\n        var animal string\n        fmt.Scan(&animal)\n        switch animal {\n        case \"v\", \"c\":\n            total += 4\n        case \"g\":\n            total += 2\n        }\n    }\n    fmt.Println(total)\n    \n    chute_chico = absDiff(chute_chico, total)\n    chute_cebolinha = absDiff(chute_cebolinha, total)\n\n    if chute_chico < chute_cebolinha {\n        fmt.Println(\"Chico Bento\")\n    } else if chute_cebolinha < chute_chico {\n        fmt.Println(\"Cebolinha\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "43"
+        }
+    ]
+}
