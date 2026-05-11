@@ -22,7 +22,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@for_extra
+- fup@list
+- eval1@eval1
 flags:
   inbox: all
   panel: logs
@@ -30,5 +31,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@castelos
-selected_index: 9
+selected: fup@apertada
+selected_index: 11

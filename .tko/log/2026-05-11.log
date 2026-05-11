@@ -1,0 +1,9 @@
+2026-05-11 16:45:14, MOVE, v:1, k:fup@apertada, mode:DOWN
+2026-05-11 16:45:18, MOVE, v:1, k:fup@apertada, mode:PICK
+2026-05-11 16:45:14, MOVE, v:1, k:fup@apertada, mode:EDIT
+2026-05-11 16:45:14, MOVE, v:1, k:fup@apertada, mode:EDIT
+2026-05-11 16:47:26, MOVE, v:1, k:fup@apertada, mode:EDIT
+2026-05-11 16:53:10, MOVE, v:1, k:fup@apertada, mode:EDIT
+2026-05-11 16:55:14, EXEC, v:1, k:fup@apertada, mode:FULL, rate:100, size:18
+2026-05-11 16:55:34, MOVE, v:1, k:fup@apertada, mode:BACK
+2026-05-11 16:55:43, SELF, v:1, k:fup@apertada, self:1, rate:100

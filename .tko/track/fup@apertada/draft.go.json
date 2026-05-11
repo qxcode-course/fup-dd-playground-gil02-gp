@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_16-55-13",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    n = 5\n\n    vetor := make([]int, n)\n    for i := 0; i < n; i++ {\n        fmt.Scan(&vetor[i])\n    }\n    menor := vetor[0]\n    for i := 0; i < n; i++ {\n        if vetor[i] < menor {\n            menor = vetor[i]\n        }\n    }\n    fmt.Printf(\"%d\\n\", menor)   \n}\n",
+            "lines": "18"
+        }
+    ]
+}
