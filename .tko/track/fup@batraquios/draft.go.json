@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_01-22-06",
+            "content": "@@ -442,16 +442,18 @@\n tln(%22nao\n+  \n %22)%0A    %7D\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-12_01-22-22",
+            "content": "@@ -395,17 +395,18 @@\n mt.Print\n-f\n+ln\n (%22sim%22)%0A\n@@ -435,17 +435,18 @@\n mt.Print\n-f\n+ln\n (%22nao%22)%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-12_01-23-04",
+            "content": "@@ -444,10 +444,8 @@\n %22nao\n-%5Cn\n %22)%0A \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-12_01-23-21",
+            "content": "@@ -401,18 +401,16 @@\n ntf(%22sim\n-%5Cn\n %22)%0A    %7D\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-12_01-23-28",
+            "content": "@@ -349,26 +349,8 @@\n lse%0A\n-            break%0A\n     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-12_01-24-34",
+            "content": "@@ -254,17 +254,16 @@\n := true%0A\n-%0A\n     for \n@@ -286,65 +286,8 @@\n ++%7B%0A\n-        num := false%0A        for j := 0; j %3C n; j++%7B%0A    \n     \n@@ -302,17 +302,17 @@\n etor%5Bi%5D \n-=\n+!\n = vetor2\n@@ -316,101 +316,10 @@\n or2%5B\n-j%5D %7B%0A                num = true%0A                break%0A            %7D%0A        %7D%0A        if !num\n+i%5D\n  %7B%0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-12_01-29-07",
+            "content": "@@ -242,20 +242,16 @@\n     \n-var \n contido \n bool\n@@ -250,13 +250,9 @@\n ido \n-bool \n+:\n = tr\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_01-30-46",
+            "content": "@@ -238,24 +238,28 @@\n   %7D%0A    \n+var \n contido \n := true%0A\n@@ -250,17 +250,21 @@\n contido \n-:\n+bool \n = true%0A%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_01-31-18",
+            "content": "@@ -46,13 +46,8 @@\n ar n\n-1, n2\n  int\n@@ -62,17 +62,16 @@\n .Scan(&n\n-1\n )%0A    va\n@@ -99,33 +99,32 @@\n or i := 0; i %3C n\n-1\n ; i++%7B%0A        f\n@@ -152,26 +152,8 @@\n   %7D%0A\n-    fmt.Scan(&n2)%0A\n     \n@@ -192,17 +192,16 @@\n 0; i %3C n\n-2\n ; i++%7B%0A \n@@ -280,9 +280,8 @@\n  %3C n\n-1\n ; i+\n@@ -329,17 +329,16 @@\n 0; j %3C n\n-2\n ; j++%7B%0A \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_01-34-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2 int\n    fmt.Scan(&n1)\n    var vetor [50]int\n    for i := 0; i < n1; i++{\n        fmt.Scan(&vetor[i])\n    }\n    fmt.Scan(&n2)\n    var vetor2 [50]int\n    for i := 0; i < n2; i++{\n        fmt.Scan(&vetor2[i])\n    }\n    contido := true\n\n    for i := 0; i < n1; i++{\n        num := false\n        for j := 0; j < n2; j++{\n            if vetor[i] == vetor2[j] {\n                num = true\n                break\n            }\n        }\n        if !num {\n            contido = false\n            break\n        }\n    }\n    if contido {\n        fmt.Printf(\"sim\\n\")\n    } else {\n        fmt.Printf(\"nao\\n\")\n    }\n}\n",
+            "lines": "35"
+        }
+    ]
+}
