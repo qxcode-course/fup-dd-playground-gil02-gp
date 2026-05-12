@@ -1,0 +1,109 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_17-12-38",
+            "content": "@@ -260,27 +260,8 @@\n   %7D%0A\n-    fmt.Print(%22%5B%22)%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-12_17-13-18",
+            "content": "@@ -272,17 +272,16 @@\n Print(%22%5B\n- \n %22)%0A    f\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-12_17-13-28",
+            "content": "@@ -509,25 +509,6 @@\n ha)%0A\n-    fmt.Print(%22%5D%22)%0A\n %7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-12_17-13-43",
+            "content": "@@ -520,15 +520,14 @@\n .Print(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-12_17-13-56",
+            "content": "@@ -169,28 +169,33 @@\n     \n-var \n vetor2 \n-%5B100%5D int\n+:= make(%5B%5Dint, n2)\n %0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-12_17-14-45",
+            "content": "@@ -486,16 +486,18 @@\n mt.Print\n+ln\n (figurin\n@@ -498,18 +498,32 @@\n igurinha\n-, \n+)%0A    fmt.Print(\n %22 %5D%22)%0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-12_17-19-52",
+            "content": "@@ -481,257 +481,29 @@\n     \n-repetida := 0%0A    for i := 0; i %3C n1; i++ %7B%0A        for j := i + 1; j %3C n1; j++ %7B%0A            if vetor%5Bi%5D == vetor%5Bj%5D %7B%0A                repetida++%0A                break%0A            %7D%0A        %7D%0A    %7D%0A    fmt.Print(figurinha - repetida)%0A    fmt.Print(\n+fmt.Print(figurinha, \n %22 %5D%22\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-12_17-20-49",
+            "content": "@@ -703,14 +703,10 @@\n inha\n-, %22 %22,\n+ -\n  rep\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-12_17-21-10",
+            "content": "@@ -68,16 +68,21 @@\n Scan(&n1\n+, &n2\n )%0A    va\n@@ -165,26 +165,8 @@\n   %7D%0A\n-    fmt.Scan(&n2)%0A\n     \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-12_17-26-09",
+            "content": "@@ -633,24 +633,46 @@\n  repetida++%0A\n+                break%0A\n             \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-12_17-27-50",
+            "content": "@@ -430,24 +430,46 @@\n figurinha++%0A\n+                break%0A\n             \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-12_17-28-08",
+            "content": "@@ -669,16 +669,21 @@\n gurinha,\n+ %22 %22,\n  repetid\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_17-28-22",
+            "content": "@@ -672,10 +672,9 @@\n inha\n- -\n+,\n  rep\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_17-28-30",
+            "content": "@@ -668,16 +668,27 @@\n igurinha\n+ - repetida\n )%0A    fm\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_17-28-37",
+            "content": "@@ -434,38 +434,16 @@\n rinha++%0A\n-                break%0A\n         \n@@ -619,30 +619,8 @@\n a++%0A\n-                break%0A\n     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_17-30-32",
+            "content": "@@ -46,40 +46,121 @@\n ar n\n+1\n , \n-total int%0A    fmt.Scan(&total)\n+n2 int%0A    fmt.Scan(&n1)%0A    var vetor%5B50%5D int%0A    for i := 0; i %3C n1; i++ %7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D\n %0A   \n@@ -171,18 +171,18 @@\n .Scan(&n\n+2\n )\n-%0A\n %0A    var\n@@ -182,25 +182,23 @@\n     var \n-figurinha\n+vetor2 \n %5B100%5D in\n@@ -212,32 +212,33 @@\n or i := 0; i %3C n\n+2\n ; i++ %7B%0A        \n@@ -247,25 +247,22 @@\n t.Scan(&\n-figurinha\n+vetor2\n %5Bi%5D)%0A   \n@@ -264,17 +264,16 @@\n )%0A    %7D%0A\n-%0A\n     fmt.\n@@ -280,24 +280,43 @@\n Print(%22%5B %22)%0A\n+    figurinha := 0%0A\n     for i :=\n@@ -328,9 +328,8 @@\n  %3C n\n--\n 1; i\n@@ -345,84 +345,136 @@\n     \n-if figurinha%5Bi%5D == figurinha%5Bi+1%5D %7B%0A            fmt.Print(figurinha%5Bi%5D, %22 %22)\n+for j := 0; j %3C n2; j++ %7B%0A            if vetor%5Bi%5D == vetor2%5Bj%5D %7B%0A                figurinha++%0A                break%0A            %7D\n %0A   \n@@ -494,23 +494,21 @@\n     \n-fmt.Print(%22%5D%22)%0A\n+repetida := 0\n %0A   \n@@ -516,61 +516,29 @@\n for \n-num\n+i\n  := \n-1; num %3C= total; num++ %7B%0A        figu := false\n+0; i %3C n1; i++ %7B\n %0A   \n@@ -550,24 +550,29 @@\n for \n-i\n+j\n  := \n-0; i\n+i + 1; j\n  %3C n\n+1\n ; \n-i\n+j\n ++ %7B\n@@ -591,26 +591,27 @@\n  if \n-num == figurinha%5Bi\n+vetor%5Bi%5D == vetor%5Bj\n %5D %7B%0A\n@@ -630,19 +630,18 @@\n     \n-figu = true\n+repetida++\n %0A   \n@@ -691,31 +691,35 @@\n     \n+%7D%0A\n     \n-if !figu %7B%0A        \n+fmt.Print(figurinha)%0A\n     \n@@ -732,32 +732,12 @@\n int(\n-num, \n %22 \n+%5D\n %22)%0A\n-        %7D%0A    %7D%0A\n %7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-12_17-38-13",
+            "content": "@@ -360,36 +360,16 @@\n t(%22%5D%22)%0A%0A\n-    fmt.Print(%22%5B %22)%0A\n     for \n@@ -633,29 +633,10 @@\n %7D%0A    %7D%0A\n-    fmt.Print(%22%5D%22)%0A\n %7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-12_17-38-58",
+            "content": "@@ -668,15 +668,14 @@\n .Print(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-12_17-39-19",
+            "content": "@@ -360,10 +360,8 @@\n t(%22%5D\n-%5Cn\n %22)%0A%0A\n@@ -664,18 +664,19 @@\n  fmt.Print(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-12_17-39-33",
+            "content": "@@ -671,15 +671,13 @@\n Print(%22%5D\n-%5Cn\n %22)%0A%7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-12_17-39-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, total int\n    fmt.Scan(&total)\n    fmt.Scan(&n)\n\n    var figurinha[100] int\n    for i := 0; i < n; i++ {\n        fmt.Scan(&figurinha[i])\n    }\n\n    fmt.Print(\"[ \")\n    for i := 0; i < n-1; i++ {\n        if figurinha[i] == figurinha[i+1] {\n            fmt.Print(figurinha[i], \" \")\n        }\n    }\n    fmt.Print(\"]\\n\")\n\n    fmt.Print(\"[ \")\n    for num := 1; num <= total; num++ {\n        figu := false\n        for i := 0; i < n; i++ {\n            if num == figurinha[i] {\n                figu = true\n                break\n            }\n        }\n        if !figu {\n            fmt.Print(num, \" \")\n        }\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "lines": "35"
+        }
+    ]
+}
