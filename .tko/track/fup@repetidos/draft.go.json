@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_01-08-38",
+            "content": "@@ -63,16 +63,20 @@\n mt.Scan(\n+&p, \n &n)%0A    \n@@ -168,29 +168,8 @@\n ++%7B%0A\n-        fmt.Scan(&p)%0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-12_01-11-47",
+            "content": "@@ -67,12 +67,8 @@\n can(\n-&p, \n &n)%0A\n@@ -178,24 +178,35 @@\n t.Scan(&\n+p)%0A        \n vetor%5Bi%5D\n )%0A    %7D%0A\n@@ -197,17 +197,20 @@\n vetor%5Bi%5D\n-)\n+ = p\n %0A    %7D%0A \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-12_01-13-54",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, n int\n    fmt.Scan(&p, &n)\n    contador := 0\n    var vetor []int\n    vetor = make([]int, n)\n    for i := 0; i < n; i++{\n        fmt.Scan(&vetor[i])\n    }\n    for i := 0; i < n; i++{\n        if vetor[i] == p {\n            contador++\n        }\n    }\n    fmt.Println(contador)\n}\n",
+            "lines": "18"
+        }
+    ]
+}
