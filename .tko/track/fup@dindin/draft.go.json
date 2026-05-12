@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_00-57-10",
+            "content": "@@ -621,17 +621,17 @@\n f manha \n-%3C\n+%3E\n  tarde %7B\n@@ -676,17 +676,17 @@\n f tarde \n-%3C\n+%3E\n  manha %7B\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-12_01-00-02",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    var sabor, turno string\n    chocolate := 0\n    limao := 0\n    manha := 0\n    tarde := 0\n\n    for i := 0; i < n; i++ {\n        fmt.Scan(&sabor, &turno)\n        if sabor == \"c\" {\n            chocolate++\n        } else if sabor == \"l\" {\n            limao++\n        }\n        if turno == \"m\" {\n            manha++\n        } else if turno == \"t\" {\n            tarde++\n        }\n    }\n    if chocolate > limao {\n        fmt.Println(\"c\")\n    } else if limao > chocolate {\n        fmt.Println(\"l\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n    if manha < tarde {\n        fmt.Println(\"m\")\n    } else if tarde < manha {\n        fmt.Println(\"t\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "40"
+        }
+    ]
+}
