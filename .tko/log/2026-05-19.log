@@ -7,3 +7,15 @@
 2026-05-19 00:21:02, MOVE, v:1, k:fup@tazos, mode:EDIT
 2026-05-19 00:21:14, MOVE, v:1, k:fup@tazos, mode:EDIT
 2026-05-19 00:22:09, SELF, v:1, k:fup@tazos, self:1, rate:100, friend:hanna, concept:1, problem:1, debug:1, refactor:1
+2026-05-19 16:58:23, MOVE, v:1, k:fup@revolta, mode:DOWN
+2026-05-19 16:58:29, MOVE, v:1, k:fup@revolta, mode:PICK
+2026-05-19 16:58:23, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-19 16:58:23, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-19 17:00:41, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-19 17:08:09, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-19 17:13:00, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:28
+2026-05-19 17:12:55, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-19 17:13:00, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-19 17:13:42, EXEC, v:1, k:fup@revolta, mode:FULL, rate:100, size:28
+2026-05-19 17:13:48, MOVE, v:1, k:fup@revolta, mode:BACK
+2026-05-19 17:13:56, SELF, v:1, k:fup@revolta, self:1, rate:100

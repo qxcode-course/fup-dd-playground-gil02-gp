@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_17-13-00",
+            "content": "@@ -397,19 +397,16 @@\n %22soldado\n-s%5Cn\n %22)%0A    %7D\n@@ -469,18 +469,16 @@\n rebeldes\n-%5Cn\n %22)%0A    %7D\n@@ -515,10 +515,8 @@\n pate\n-%5Cn\n %22)%0A \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-19_17-13-42",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, x int\n    fmt.Scan(&n)\n    soma_pares := 0\n    soma_impares := 0\n\n    for i := 0; i < n; i++ {\n        fmt.Scan(&x)\n\n        if x < 1 || x > 50{\n            continue\n        }\n        if x%2 == 0 {\n            soma_pares += x\n        }   else {\n            soma_impares += x\n        }\n    }\n    if soma_impares > soma_pares {\n        fmt.Printf(\"soldados\\n\")\n    } else if soma_pares > soma_impares{\n        fmt.Printf(\"rebeldes\\n\")\n    } else {\n        fmt.Printf(\"empate\\n\")\n    }\n}\n",
+            "lines": "28"
+        }
+    ]
+}
