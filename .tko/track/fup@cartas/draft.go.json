@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_17-46-33",
+            "content": "@@ -434,14 +434,15 @@\n intln(%22%5D\n+ \n %22)%0A%0A%7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-19_17-46-59",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\tvetor := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vetor[i])\n\t}\n\tfmt.Print(\"[\")\n\tfor i, v := range vetor {\n\t\tvar carta string\n\t\tswitch v {\n\t\tcase 1:\n\t\t\tcarta = \"A\"\n\t\tcase 11:\n\t\t\tcarta = \"J\"\n\t\tcase 12:\n\t\t\tcarta = \"Q\"\n\t\tcase 13:\n\t\t\tcarta = \"K\"\n\t\tdefault:\n\t\t\tcarta = fmt.Sprintf(\"%d\", v)\n\t\t}\n\t\tif i > 0 {\n\t\t\tfmt.Print(\", \")\n\t\t}\n\t\tfmt.Print(carta)\n\t}\n\tfmt.Println(\"]\")\n\n}\n",
+            "lines": "34"
+        }
+    ]
+}

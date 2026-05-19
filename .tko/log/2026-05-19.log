@@ -19,3 +19,15 @@
 2026-05-19 17:13:42, EXEC, v:1, k:fup@revolta, mode:FULL, rate:100, size:28
 2026-05-19 17:13:48, MOVE, v:1, k:fup@revolta, mode:BACK
 2026-05-19 17:13:56, SELF, v:1, k:fup@revolta, self:1, rate:100
+2026-05-19 17:16:39, MOVE, v:1, k:fup@cartas, mode:DOWN
+2026-05-19 17:16:41, MOVE, v:1, k:fup@cartas, mode:PICK
+2026-05-19 17:16:39, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-19 17:16:39, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-19 17:20:16, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-19 17:24:47, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-19 17:27:47, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-19 17:44:59, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-19 17:46:33, EXEC, v:1, k:fup@cartas, mode:FULL, rate:0, size:34
+2026-05-19 17:46:59, EXEC, v:1, k:fup@cartas, mode:FULL, rate:100, size:34
+2026-05-19 17:47:32, MOVE, v:1, k:fup@cartas, mode:BACK
+2026-05-19 17:47:54, SELF, v:1, k:fup@cartas, self:1, rate:100, concept:1, problem:1
