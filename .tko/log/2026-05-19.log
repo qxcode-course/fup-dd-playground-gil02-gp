@@ -1,0 +1,9 @@
+2026-05-19 00:07:29, MOVE, v:1, k:fup@tazos, mode:PICK
+2026-05-19 00:11:42, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-05-19 00:15:45, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-05-19 00:20:15, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:45
+2026-05-19 00:21:14, EXEC, v:1, k:fup@tazos, mode:FULL, rate:100, size:45
+2026-05-19 00:21:40, MOVE, v:1, k:fup@tazos, mode:BACK
+2026-05-19 00:21:02, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-05-19 00:21:14, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-05-19 00:22:09, SELF, v:1, k:fup@tazos, self:1, rate:100, friend:hanna, concept:1, problem:1, debug:1, refactor:1

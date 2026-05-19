@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_16-52-10",
+            "content": "@@ -41,30 +41,21 @@\n     \n+v\n ar\n-r := make(%5B%5Dint, 50)\n+ n%5B50%5D int\n %0A   \n@@ -89,19 +89,17 @@\n         \n-arr\n+n\n %5Bi%5D = i \n@@ -168,11 +168,9 @@\n  %22, \n-arr\n+n\n %5Bi%5D)\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-18_16-59-14",
+            "content": "@@ -41,368 +41,158 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A    conta := 0%0A    x := 0%0A    arr := make(%5B%5Dint, n)%0A    fmt.Print(%22%5B %22)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A%0A        if arr%5Bi%5D == x%7B%0A            conta++%0A        %7D else %7B%0A            x = arr%5Bi%5D%0A            conta = 0%0A        %7D%0A        if conta %3E= 1 %7B%0A            fmt.Print(arr%5Bi%5D, %22 %22)%0A        %7D%0A    %7D%0A    fmt.Print(%22%5D%22)%0A\n+arr := make(%5B%5Dint, 50)%0A    for i := 0; i %3C 50; i++ %7B%0A        arr%5Bi%5D = i + 1%0A    %7D%0A    for i := 0; i %3C 50; i++ %7B%0A        fmt.Printf(%22%25d %22, arr%5Bi%5D)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-18_17-17-22",
+            "content": "@@ -399,10 +399,8 @@\n t(%22%5D\n-%5Cn\n %22)%0A%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-18_17-17-35",
+            "content": "@@ -325,28 +325,13 @@\n nta \n-=\n+%3E\n = 1 \n-&& arr%5Bi%5D == x \n %7B%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-18_17-20-31",
+            "content": "@@ -325,9 +325,9 @@\n nta \n-%3E\n+=\n = 1 \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-18_17-20-57",
+            "content": "@@ -94,42 +94,8 @@\n = 0%0A\n-    maxqtd := 0%0A    repetido := 0%0A\n     \n@@ -265,142 +265,40 @@\n     \n-if conta %3E maxqtd %7B%0A                maxqtd = conta%0A            %7D%0A            conta = 0%0A            repetido = x%0A            x = arr%5Bi%5D\n+x = arr%5Bi%5D%0A            conta = 0\n %0A   \n@@ -325,17 +325,12 @@\n nta \n-== maxqtd\n+%3E= 1\n  && \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-18_17-38-49",
+            "content": "@@ -480,24 +480,17 @@\n r%5Bi%5D == \n-repetido\n+x\n  %7B%0A     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-18_17-41-10",
+            "content": "@@ -457,17 +457,17 @@\n f conta \n-%3E\n+=\n = maxqtd\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-18_17-43-57",
+            "content": "@@ -226,104 +226,8 @@\n %5D)%0A%0A\n-        if conta %3E= maxqtd && arr%5Bi%5D == repetido %7B%0A            fmt.Print(arr%5Bi%5D, %22 %22)%0A        %7D%0A\n     \n@@ -436,24 +436,120 @@\n %5D%0A        %7D%0A\n+        if conta %3E= maxqtd && arr%5Bi%5D == repetido %7B%0A            fmt.Print(arr%5Bi%5D, %22 %22)%0A        %7D%0A\n     %7D%0A    fm\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-18_17-44-21",
+            "content": "@@ -77,17 +77,17 @@\n onta := \n-1\n+0\n %0A    x :\n@@ -222,16 +222,112 @@\n rr%5Bi%5D)%0A%0A\n+        if conta %3E= maxqtd && arr%5Bi%5D == repetido %7B%0A            fmt.Print(arr%5Bi%5D, %22 %22)%0A        %7D%0A\n         \n@@ -476,17 +476,17 @@\n conta = \n-1\n+0\n %0A       \n@@ -503,16 +503,16 @@\n ido = x%0A\n+\n         \n@@ -540,104 +540,8 @@\n   %7D%0A\n-        if conta %3E= maxqtd && arr%5Bi%5D == arr%5Bi+1%5D %7B%0A            fmt.Print(arr%5Bi%5D, %22 %22)%0A        %7D%0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-18_17-53-58",
+            "content": "@@ -481,19 +481,19 @@\n %5Bi%5D \n-!= repetido\n+== arr%5Bi+1%5D\n  %7B%0A \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-18_17-56-47",
+            "content": "@@ -480,17 +480,24 @@\n r%5Bi%5D != \n-x\n+repetido\n  %7B%0A     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-18_17-57-02",
+            "content": "@@ -480,24 +480,17 @@\n r%5Bi%5D != \n-repetido\n+x\n  %7B%0A     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-18_17-57-10",
+            "content": "@@ -405,22 +405,17 @@\n etido = \n-arr%5Bi%5D\n+x\n %0A       \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-18_17-57-29",
+            "content": "@@ -405,17 +405,22 @@\n etido = \n-x\n+arr%5Bi%5D\n %0A       \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-18_17-58-16",
+            "content": "@@ -362,38 +362,31 @@\n     \n+%7D%0A\n     \n-repetido = x%0A            %7D\n+        conta = 1\n %0A   \n@@ -390,33 +390,36 @@\n             \n-conta = 1\n+repetido = x\n %0A           \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-18_17-59-14",
+            "content": "@@ -409,17 +409,17 @@\n conta = \n-0\n+1\n %0A       \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-18_17-59-56",
+            "content": "@@ -68,188 +68,188 @@\n &n)%0A\n-%0A\n     \n-arr := make(%5B%5Dint, n)%0A    for i := 0; i %3C n; i++ %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A%0A    conta := 1%0A    maxqtd := 1%0A%0A    for i := 1; i %3C n; i++ %7B%0A        if arr%5Bi%5D == arr%5Bi+1%5D \n+conta := 1%0A    x := 0%0A    maxqtd := 0%0A    repetido := 0%0A    arr := make(%5B%5Dint, n)%0A    fmt.Print(%22%5B %22)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A%0A        if arr%5Bi%5D == x\n %7B%0A  \n@@ -362,31 +362,24 @@\n     \n-%7D%0A            conta = 1\n+    repetido = x\n %0A   \n@@ -379,26 +379,24 @@\n = x%0A        \n-%7D%0A\n     %7D%0A    if\n@@ -397,172 +397,67 @@\n     \n-if conta %3E maxqtd %7B%0A        maxqtd = conta%0A    %7D%0A%0A    fmt.Print(%22%5B %22)%0A    conta = 1%0A    for i := 1; i %3C n; i++ %7B%0A%09%09if arr%5Bi%5D == arr%5Bi-1%5D %7B%0A%09%09%09conta++%0A%09%09%7D else %7B%0A%09%09%09\n+        conta = 0%0A            x = arr%5Bi%5D%0A        %7D%0A        \n if c\n@@ -453,33 +453,33 @@\n        if conta \n-=\n+%3E\n = maxqtd %7B%0A%09%09%09%09f\n@@ -475,89 +475,36 @@\n qtd \n-%7B%0A%09%09%09%09fmt.Print(arr%5Bi-1%5D, %22 %22)%0A%09%09%09%7D%0A%09%09%09conta = 1%0A%09%09%7D%0A%09%7D%0A    if conta == maxqtd %7B%0A\n+&& arr%5Bi%5D != repetido %7B%0A    \n     \n@@ -525,19 +525,17 @@\n arr%5B\n-n-1\n+i\n %5D, %22 %22)%0A\n     \n@@ -526,24 +526,34 @@\n rr%5Bi%5D, %22 %22)%0A\n+        %7D%0A\n     %7D%0A    fm\n@@ -567,10 +567,11 @@\n (%22%5D%5Cn%22)%0A\n+%0A\n %7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-19_00-20-15",
+            "content": "@@ -236,25 +236,25 @@\n %5Bi%5D == arr%5Bi\n--\n++\n 1%5D %7B%0A       \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-19_00-21-14",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    arr := make([]int, n)\n    for i := 0; i < n; i++ {\n        fmt.Scan(&arr[i])\n    }\n\n    conta := 1\n    maxqtd := 1\n\n    for i := 1; i < n; i++ {\n        if arr[i] == arr[i-1] {\n            conta++\n        } else {\n            if conta > maxqtd {\n                maxqtd = conta\n            }\n            conta = 1\n        }\n    }\n    if conta > maxqtd {\n        maxqtd = conta\n    }\n\n    fmt.Print(\"[ \")\n    conta = 1\n    for i := 1; i < n; i++ {\n\t\tif arr[i] == arr[i-1] {\n\t\t\tconta++\n\t\t} else {\n\t\t\tif conta == maxqtd {\n\t\t\t\tfmt.Print(arr[i-1], \" \")\n\t\t\t}\n\t\t\tconta = 1\n\t\t}\n\t}\n    if conta == maxqtd {\n        fmt.Print(arr[n-1], \" \")\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "lines": "45"
+        }
+    ]
+}
