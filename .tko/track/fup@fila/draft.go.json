@@ -1,0 +1,124 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_18-16-47",
+            "content": "@@ -542,16 +542,17 @@\n .Print(%22\n+,\n  %22)%0A    \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-19_18-17-08",
+            "content": "@@ -422,17 +422,16 @@\n Print(%22%5B\n- \n %22)%0A    f\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-19_18-17-22",
+            "content": "@@ -578,17 +578,16 @@\n .Print(%22\n- \n %5D%5Cn%22)%0A%0A%7D\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-19_18-17-30",
+            "content": "@@ -582,195 +582,14 @@\n nt(%22\n+ \n %5D%5Cn%22)%0A\n-    fmt.Print(%22%5B %22)%0A    for i := 0; i %3C cont_ser; i++ %7B%0A        fmt.Print(servidores%5Bi%5D)%0A        if i %3C cont_ser - 1 %7B%0A            fmt.Print(%22 %22)%0A        %7D%0A    %7D%0A    fmt.Print(%22%5D%5Cn%22)\n %0A%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-19_18-19-07",
+            "content": "@@ -761,17 +761,16 @@\n .Print(%22\n- \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-19_18-19-19",
+            "content": "@@ -574,25 +574,24 @@\n  fmt.Print(%22\n- \n %5D%5Cn%22)%0A    fm\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-19_18-19-50",
+            "content": "@@ -582,18 +582,16 @@\n nt(%22 %5D%5Cn\n-%5B \n %22)%0A    f\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-19_18-20-44",
+            "content": "@@ -583,24 +583,44 @@\n t(%22 %5D%5Cn%5B %22)%0A\n+    fmt.Print(%22%5B %22)%0A\n     for i :=\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-19_18-20-56",
+            "content": "@@ -578,16 +578,17 @@\n .Print(%22\n+ \n %5D%5Cn%5B %22)%0A\n@@ -744,16 +744,17 @@\n .Print(%22\n+ \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-19_18-21-31",
+            "content": "@@ -578,17 +578,16 @@\n .Print(%22\n- \n %5D%5Cn%5B %22)%0A\n@@ -743,17 +743,16 @@\n .Print(%22\n- \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-19_18-21-43",
+            "content": "@@ -586,26 +586,8 @@\n  %5D%5Cn\n-%22)%0A    fmt.Print(%22\n %5B %22)\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-19_18-22-35",
+            "content": "@@ -601,18 +601,17 @@\n Print(%22%5B\n-%5Cn\n+ \n %22)%0A    f\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-20_23-40-23",
+            "content": "@@ -593,33 +593,34 @@\n     fmt.Print(%22%5B\n- \n+%5Cn\n %22)%0A    for i := \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-20_23-40-34",
+            "content": "@@ -414,32 +414,33 @@\n     fmt.Print(%22%5B\n+ \n %22)%0A    for i := \n@@ -601,16 +601,17 @@\n Print(%22%5B\n+ \n %22)%0A    f\n@@ -733,18 +733,8 @@\n (%22 %22\n-, aluno%5Bi%5D\n )%0A  \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-20_23-42-26",
+            "content": "@@ -600,17 +600,16 @@\n Print(%22%5B\n- \n %22)%0A    f\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-20_23-42-36",
+            "content": "@@ -720,32 +720,42 @@\n    fmt.Print(%22 %22\n+, aluno%5Bi%5D\n )%0A        %7D%0A    \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-20_23-42-50",
+            "content": "@@ -761,16 +761,17 @@\n .Print(%22\n+ \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-20_23-43-01",
+            "content": "@@ -414,33 +414,32 @@\n     fmt.Print(%22%5B\n- \n %22)%0A    for i := \n@@ -757,21 +757,20 @@\n  fmt.Print(%22\n- \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-20_23-43-15",
+            "content": "@@ -733,18 +733,8 @@\n (%22 %22\n-, aluno%5Bi%5D\n )%0A  \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-20_23-43-39",
+            "content": "@@ -549,18 +549,8 @@\n (%22 %22\n-, aluno%5Bi%5D\n )%0A  \n@@ -731,26 +731,21 @@\n nt(%22 %22, \n-servidores\n+aluno\n %5Bi%5D)%0A   \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-20_23-44-32",
+            "content": "@@ -480,21 +480,16 @@\n t.Print(\n-%22 %22, \n aluno%5Bi%5D\n@@ -486,24 +486,101 @@\n t(aluno%5Bi%5D)%0A\n+        if i %3C cont_alu - 1 %7B%0A            fmt.Print(%22 %22, aluno%5Bi%5D)%0A        %7D%0A\n     %7D%0A    fm\n@@ -599,13 +599,8 @@\n n%22)%0A\n-    %0A\n     \n@@ -643,32 +643,99 @@\n cont_ser; i++ %7B%0A\n+        fmt.Print(servidores%5Bi%5D)%0A        if i %3C cont_ser - 1 %7B%0A    \n         fmt.Prin\n@@ -752,24 +752,34 @@\n vidores%5Bi%5D)%0A\n+        %7D%0A\n     %7D%0A    fm\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-20_23-47-32",
+            "content": "@@ -422,16 +422,17 @@\n Print(%22%5B\n+ \n %22)%0A    f\n@@ -523,16 +523,20 @@\n %22 %5D%5Cn%22)%0A\n+    \n %0A    fmt\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-20_23-47-47",
+            "content": "@@ -531,32 +531,33 @@\n     fmt.Print(%22%5B\n+ \n %22)%0A    for i := \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-20_23-47-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    var aluno[50] int\n    var servidores[50] int\n    cont_alu := 0\n    cont_ser := 0\n \n    for i := 0; i < n; i++ {\n        var tipo int\n        fmt.Scan(&tipo)\n        if tipo % 2 == 1 {\n            aluno[cont_alu] = tipo\n            cont_alu++\n        } else {\n            servidores[cont_ser] = tipo\n            cont_ser++\n        }\n    }\n    fmt.Print(\"[\")\n    for i := 0; i < cont_alu; i++ {\n        fmt.Print(\" \", aluno[i])\n    }\n    fmt.Print(\" ]\\n\")\n\n    fmt.Print(\"[\")\n    for i := 0; i < cont_ser; i++ {\n        fmt.Print(\" \", servidores[i])\n    }\n    fmt.Print(\" ]\\n\")\n}\n",
+            "lines": "33"
+        }
+    ]
+}
