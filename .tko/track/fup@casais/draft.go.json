@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-21_00-15-10",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, x int\n    var machos [51]int\n    var femeas [51]int\n    fmt.Scan(&n)\n\n    casal := 0\n    for i := 0; i < n; i++ {\n        fmt.Scan(&x)\n        especiesID := x\n        if especiesID < 0 {\n            especiesID = -especiesID\n            femeas[especiesID]++\n        } else {\n            machos[especiesID]++\n        }\n    }\n\n    for i := 1; i <= 50; i++ {\n        if machos[i] < femeas[i] {\n            casal += machos[i]\n        } else {\n            casal += femeas[i]\n        }\n    }\n\n    fmt.Println(casal)\n}\n",
+            "lines": "30"
+        }
+    ]
+}
