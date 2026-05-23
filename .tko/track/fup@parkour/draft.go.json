@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-23_22-58-06",
+            "content": "@@ -184,16 +184,18 @@\n  := \n-1\n+0\n ; i %3C n\n+-1\n ; i+\n@@ -213,17 +213,16 @@\n  if \n-(\n bloco%5Bi%5D\n -blo\n@@ -221,24 +221,21 @@\n o%5Bi%5D\n--\n+ %3E \n bloco%5Bi\n--\n++\n 1%5D\n-) %3E 1\n  %7B%0A \n@@ -254,17 +254,39 @@\n arkour +\n-+\n+= bloco%5Bi%5D - bloco%5Bi+1%5D\n %0A       \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-23_22-59-55",
+            "content": "@@ -237,38 +237,8 @@\n %3E 1 \n-%7C%7C (bloco%5Bi%5D-bloco%5Bi-1%5D) %3C -1 \n %7B%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-23_23-02-23",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    var bloco[50] int\n    for i := 0; i < n; i++ {\n        fmt.Scan(&bloco[i])\n    }\n    parkour := 0\n    for i := 1; i < n; i++ {\n        if (bloco[i]-bloco[i-1]) > 1 || (bloco[i]-bloco[i-1]) < -1 {\n            parkour ++\n        }\n    }\n    fmt.Println(parkour)\n}\n",
+            "lines": "18"
+        }
+    ]
+}
