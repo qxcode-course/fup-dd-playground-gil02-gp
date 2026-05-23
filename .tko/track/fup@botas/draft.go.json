@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-23_23-09-10",
+            "content": "@@ -553,16 +553,18 @@\n mt.Print\n+ln\n (total)%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-23_23-09-37",
+            "content": "@@ -114,17 +114,16 @@\n 61%5D int%0A\n-%0A\n     for \n@@ -558,13 +558,8 @@\n int(\n-%22 %22, \n tota\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-23_23-10-42",
+            "content": "@@ -555,16 +555,20 @@\n t.Print(\n+%22 %22,\n  total)%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-23_23-10-55",
+            "content": "@@ -555,16 +555,17 @@\n t.Print(\n+ \n total)%0A%7D\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-23_23-11-00",
+            "content": "@@ -510,16 +510,17 @@\n   total \n++\n = esquer\n@@ -558,10 +558,8 @@\n rint\n-ln\n (tot\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-23_23-11-49",
+            "content": "@@ -510,17 +510,16 @@\n   total \n-+\n = esquer\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-23_23-12-04",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    var esquerda[61] int\n    var direita[61] int\n\n    for i := 0; i < n; i++ {\n        tamanho := 0\n        var lado string\n        fmt.Scan(&tamanho, &lado)\n\n        if lado == \"E\" {\n            esquerda[tamanho]++\n        } else if lado == \"D\" {\n            direita[tamanho]++\n        }\n    }\n    total := 0\n    for i := 0; i < 61; i++ {\n        if esquerda[i] > direita[i] {\n            total += direita[i]\n        } else {\n            total += esquerda[i]\n        }\n    }\n    fmt.Println(total)\n}\n",
+            "lines": "30"
+        }
+    ]
+}

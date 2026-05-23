@@ -10,3 +10,17 @@
 2026-05-23 23:02:23, EXEC, v:1, k:fup@parkour, mode:FULL, rate:100, size:18
 2026-05-23 23:02:30, MOVE, v:1, k:fup@parkour, mode:BACK
 2026-05-23 23:03:06, SELF, v:1, k:fup@parkour, self:1, rate:100, concept:1, problem:1, debug:1
+2026-05-23 23:05:33, MOVE, v:1, k:fup@botas, mode:DOWN
+2026-05-23 23:05:34, MOVE, v:1, k:fup@botas, mode:PICK
+2026-05-23 23:05:33, MOVE, v:1, k:fup@botas, mode:EDIT
+2026-05-23 23:05:33, MOVE, v:1, k:fup@botas, mode:EDIT
+2026-05-23 23:08:58, MOVE, v:1, k:fup@botas, mode:EDIT
+2026-05-23 23:09:10, EXEC, v:1, k:fup@botas, mode:FULL, rate:100, size:29
+2026-05-23 23:09:37, EXEC, v:1, k:fup@botas, mode:FULL, rate:0, size:29
+2026-05-23 23:10:42, EXEC, v:1, k:fup@botas, mode:FULL, rate:0, size:30
+2026-05-23 23:10:55, EXEC, v:1, k:fup@botas, mode:FULL, rate:0, size:30
+2026-05-23 23:11:00, EXEC, v:1, k:fup@botas, mode:FULL, rate:0, size:30
+2026-05-23 23:11:49, EXEC, v:1, k:fup@botas, mode:FULL, rate:0, size:30
+2026-05-23 23:12:04, EXEC, v:1, k:fup@botas, mode:FULL, rate:100, size:30
+2026-05-23 23:12:06, MOVE, v:1, k:fup@botas, mode:BACK
+2026-05-23 23:12:44, SELF, v:1, k:fup@botas, self:1, rate:100, concept:1, problem:1, debug:1, refactor:1
