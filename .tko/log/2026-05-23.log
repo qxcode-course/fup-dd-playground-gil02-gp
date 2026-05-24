@@ -38,3 +38,9 @@
 2026-05-23 23:29:04, SELF, v:1, k:fup@intervalada, self:1, rate:100, concept:1, problem:1
 2026-05-23 23:26:06, MOVE, v:1, k:fup@intervalada, mode:EDIT
 2026-05-23 23:28:39, MOVE, v:1, k:fup@intervalada, mode:EDIT
+2026-05-23 23:31:25, MOVE, v:1, k:fup@piao, mode:DOWN
+2026-05-23 23:31:28, MOVE, v:1, k:fup@piao, mode:PICK
+2026-05-23 23:31:25, MOVE, v:1, k:fup@piao, mode:EDIT
+2026-05-23 23:31:25, MOVE, v:1, k:fup@piao, mode:EDIT
+2026-05-23 23:31:25, MOVE, v:1, k:fup@piao, mode:EDIT
+2026-05-23 23:38:29, MOVE, v:1, k:fup@piao, mode:BACK

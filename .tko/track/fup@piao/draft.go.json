@@ -1,0 +1,114 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_00-03-37",
+            "content": "@@ -197,17 +197,18 @@\n  := l + \n-1\n+n \n %0A    per\n@@ -230,20 +230,17 @@\n pior := \n-l + \n+-\n 1%0A%0A    f\n@@ -326,16 +326,20 @@\n    dista\n+ncia\n  := abs(\n@@ -348,12 +348,8 @@\n gada\n- - l\n )%0A  \n@@ -362,16 +362,20 @@\n if dista\n+ncia\n  %3C melho\n@@ -396,32 +396,36 @@\n   melhor = dista\n+ncia\n %0A            gan\n@@ -464,16 +464,20 @@\n if dista\n+ncia\n  %3E pior \n@@ -502,16 +502,20 @@\n  = dista\n+ncia\n %0A       \n@@ -552,17 +552,16 @@\n %7D%0A    %7D%0A\n-%0A\n     fmt.\n@@ -610,9 +610,4 @@\n )%0A%7D%0A\n-    %0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-24_00-08-14",
+            "content": "@@ -348,17 +348,16 @@\n da - l)%0A\n-%0A\n         \n@@ -370,23 +370,8 @@\n ta %3C\n-= l && dista %3C=\n  mel\n@@ -460,17 +460,16 @@\n  dista %3E\n-=\n  pior %7B%0A\n@@ -547,178 +547,30 @@\n     \n-if ganhador == -1 %7B%0A        fmt.Println(%22Nenhum%22)%0A    %7D else %7B%0A        fmt.Println(ganhador)%0A    %7D%0A    if perdedor == -1 %7B%0A        fmt.Println(%22Nenhum%22)%0A    %7D else %7B%0A    \n+fmt.Println(ganhador)%0A\n     \n@@ -595,12 +595,11 @@\n or)%0A\n+%7D%0A\n     \n-%7D%0A%7D\n %0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-24_00-11-02",
+            "content": "@@ -655,24 +655,95 @@\n ador)%0A    %7D%0A\n+    if perdedor == -1 %7B%0A        fmt.Println(%22Nenhum%22)%0A    %7D else %7B%0A    \n     fmt.Prin\n@@ -756,10 +756,16 @@\n rdedor)%0A\n+    %7D%0A\n %7D%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-24_00-11-48",
+            "content": "@@ -229,17 +229,20 @@\n pior := \n--\n+l + \n 1%0A%0A    f\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-24_00-12-29",
+            "content": "@@ -177,18 +177,17 @@\n ador := \n--1\n+0\n %0A    mel\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-24_00-13-17",
+            "content": "@@ -599,17 +599,17 @@\n rintln(%22\n-n\n+N\n enhum%22)%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-24_00-13-34",
+            "content": "@@ -661,78 +661,8 @@\n   %7D%0A\n-    if perdedor == 0 %7B%0A        fmt.Println(%22nenhum%22)%0A    %7D else %7B%0A    \n     \n@@ -683,16 +683,10 @@\n rdedor)%0A\n-    %7D%0A\n %7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-24_00-14-07",
+            "content": "@@ -437,24 +437,28 @@\n ganhador = i\n+ + 1\n %0A        %7D%0A \n@@ -532,16 +532,20 @@\n edor = i\n+ + 1\n %0A       \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-24_00-21-03",
+            "content": "@@ -645,24 +645,94 @@\n ador)%0A    %7D%0A\n+    if perdedor == 0 %7B%0A        fmt.Println(%22nenhum%22)%0A    %7D else %7B%0A    \n     fmt.Prin\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-24_00-31-18",
+            "content": "@@ -675,10 +675,16 @@\n rdedor)%0A\n+    %7D%0A\n %7D%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-24_00-31-37",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func abs\n@@ -41,17 +41,20 @@\n ) int %7B%0A\n-%09\n+    \n if x %3C 0\n@@ -56,18 +56,24 @@\n x %3C 0 %7B%0A\n-%09%09\n+        \n return -\n@@ -74,20 +74,26 @@\n turn -x%0A\n-%09%7D%0A%09\n+    %7D%0A    \n return x\n@@ -109,17 +109,20 @@\n ain() %7B%0A\n-%09\n+    \n var l, n\n@@ -126,17 +126,20 @@\n , n int%0A\n-%09\n+    \n fmt.Scan\n@@ -143,17 +143,20 @@\n can(&l)%0A\n-%09\n+    \n fmt.Scan\n@@ -161,17 +161,20 @@\n an(&n)%0A%0A\n-%09\n+    \n ganhador\n@@ -180,17 +180,20 @@\n r := -1%0A\n-%09\n+    \n melhor :\n@@ -200,17 +200,20 @@\n = l + 1%0A\n-%09\n+    \n perdedor\n@@ -218,17 +218,20 @@\n or := 0%0A\n-%09\n+    \n pior := \n@@ -234,17 +234,20 @@\n  := -1%0A%0A\n-%09\n+    \n for i :=\n@@ -263,18 +263,24 @@\n ; i++ %7B%0A\n-%09%09\n+        \n var joga\n@@ -286,18 +286,24 @@\n ada int%0A\n-%09%09\n+        \n fmt.Scan\n@@ -313,18 +313,24 @@\n ogada)%0A%0A\n-%09%09\n+        \n dista :=\n@@ -351,18 +351,23 @@\n l)%0A%0A\n-%09%09if jogad\n+        if dist\n a %3C=\n@@ -390,19 +390,28 @@\n elhor %7B%0A\n-%09%09%09\n+            \n melhor =\n@@ -417,19 +417,28 @@\n = dista%0A\n-%09%09%09\n+            \n ganhador\n@@ -446,14 +446,26 @@\n = i%0A\n-%09%09%7D%0A%09%09\n+        %7D%0A        \n if d\n@@ -479,19 +479,28 @@\n  pior %7B%0A\n-%09%09%09\n+            \n pior = d\n@@ -508,11 +508,20 @@\n sta%0A\n-%09%09%09\n+            \n perd\n@@ -533,17 +533,29 @@\n = i%0A\n-%09%09%7D%0A%09%7D%0A%0A%09\n+        %7D%0A    %7D%0A%0A    \n if g\n@@ -570,18 +570,24 @@\n == -1 %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -600,17 +600,20 @@\n enhum%22)%0A\n-%09\n+    \n %7D else %7B\n@@ -617,10 +617,16 @@\n e %7B%0A\n-%09%09\n+        \n fmt.\n@@ -647,13 +647,18 @@\n or)%0A\n-%09%7D%0A%0A%09\n+    %7D%0A    \n fmt.\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-24_00-42-54",
+            "content": "@@ -380,16 +380,17 @@\n  dista %3E\n+=\n  pior %7B%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-24_00-45-06",
+            "content": "@@ -166,17 +166,20 @@\n lhor := \n--\n+l + \n 1%0A%09perde\n@@ -200,18 +200,10 @@\n  := \n+-\n 1\n-000000000\n %0A%0A%09f\n@@ -264,16 +264,44 @@\n ogada)%0A%0A\n+%09%09dista := abs(jogada - l)%0A%0A\n %09%09if jog\n@@ -316,16 +316,16 @@\n  && \n-jogada %3E\n+dista %3C=\n  mel\n@@ -338,29 +338,28 @@\n %09%09%09melhor = \n-jogad\n+dist\n a%0A%09%09%09ganhado\n@@ -372,24 +372,20 @@\n %09%09%7D%0A\n-%09%09%0A\n %09%09if \n-jogada %3C\n+dista %3E\n  pio\n@@ -398,21 +398,20 @@\n %09pior = \n-jogad\n+dist\n a%0A%09%09%09per\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-24_00-47-24",
+            "content": "@@ -193,18 +193,26 @@\n pior := \n--\n 1\n+000000000\n %0A%0A%09for i\n@@ -350,48 +350,24 @@\n %09%09%7D%0A\n+%09%09\n %0A%09%09\n-dista := abs(jogada - l)%0A%09%09if dista %3E\n+if jogada %3C\n  pio\n@@ -384,12 +384,13 @@\n r = \n-dist\n+jogad\n a%0A%09%09\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-24_00-48-57",
+            "content": "@@ -273,20 +273,20 @@\n  jogada \n-%3E= 0\n+%3C= l\n  && joga\n@@ -292,55 +292,22 @@\n ada \n-%3C= l %7B%0A%09%09%09if jogada %3E melhor %7B%0A                \n+%3E melhor %7B%0A%09%09%09\n melh\n@@ -318,30 +318,16 @@\n  jogada%0A\n-            %7D%0A\n %09%09%09ganha\n@@ -343,45 +343,10 @@\n %09%7D%0A%0A\n-        if jogada %3E= 0 %7B%0A            \n+%09%09\n dist\n@@ -366,28 +366,18 @@\n da - l)%0A\n-            \n+%09%09\n if dista\n@@ -390,88 +390,42 @@\n r %7B%0A\n-                pior = dista%0A                perdedor = i%0A            %7D%0A        \n+%09%09%09pior = dista%0A%09%09%09perdedor = i%0A%09%09\n %7D%0A%09%7D\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-24_00-55-45",
+            "content": "@@ -363,20 +363,21 @@\n         \n-    \n+%7D%0A%09%09%09\n ganhador\n@@ -381,30 +381,16 @@\n dor = i%0A\n-            %7D%0A\n %09%09%7D%0A%0A   \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-05-24_00-56-46",
+            "content": "@@ -263,31 +263,8 @@\n ada)\n-%0A%09%09dista := abs(jogada)\n %0A%0A%09%09\n@@ -424,16 +424,53 @@\n  %3E= 0 %7B%0A\n+            dista := abs(jogada - l)%0A\n         \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-05-24_16-47-47",
+            "content": "@@ -421,24 +421,25 @@\n   %7D%0A%09%09%7D%0A\n+%0A\n         \n %0A%09%09if di\n@@ -430,19 +430,45 @@\n         \n-%0A%09%09\n+if jogada %3E= 0 %7B%0A            \n if dista\n@@ -527,32 +527,46 @@\n    perdedor = i%0A\n+            %7D%0A\n         %7D%0A%09%7D%0A%0A%09i\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-05-24_16-48-48",
+            "content": "@@ -293,30 +293,51 @@\n %09if \n-dista %3C= l\n+jogada %3E= 0\n  && \n-dista %3C=\n+jogada %3C= l %7B%0A%09%09%09if jogada %3E\n  mel\n@@ -363,28 +363,29 @@\n    melhor = \n-dist\n+jogad\n a%0A          \n@@ -403,16 +403,30 @@\n dor = i%0A\n+            %7D%0A\n %09%09%7D%0A    \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-24_16-50-34",
+            "content": "@@ -170,12 +170,9 @@\n  := \n-l + \n+-\n 1%0A%09p\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-24_16-53-00",
+            "content": "@@ -409,17 +409,16 @@\n  dista %3E\n-=\n  pior %7B%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-24_16-54-10",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc abs(x int) int {\n\tif x < 0 {\n\t\treturn -x\n\t}\n\treturn x\n}\nfunc main() {\n\tvar l, n int\n\tfmt.Scan(&l)\n\tfmt.Scan(&n)\n\n\tganhador := -1\n\tmelhor := l + 1\n\tperdedor := 0\n\tpior := -1\n\n\tfor i := 0; i < n; i++ {\n\t\tvar jogada int\n\t\tfmt.Scan(&jogada)\n\t\tdista := abs(jogada)\n\n\t\tif dista <= l && dista <= melhor {\n                melhor = dista\n                ganhador = i\n\t\t}\n        \n\t\tif dista >= pior {\n                pior = dista\n                perdedor = i\n        }\n\t}\n\n\tif ganhador == -1 {\n\t\tfmt.Println(\"nenhum\")\n\t} else {\n\t\tfmt.Println(ganhador)\n\t}\n\n\tfmt.Println(perdedor)\n}\n",
+            "lines": "44"
+        }
+    ]
+}
