@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_17-45-56",
+            "content": "@@ -903,17 +903,17 @@\n e if p2 \n-%3E\n+%3C\n  p1 %7B%0A  \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-05-24_17-46-38",
+            "content": "@@ -23,92 +23,8 @@\n mt%22%0A\n-func abs(x float64) float64 %7B%0A    if x %3C 0 %7B%0A        return -x%0A    %7D%0A    return x%0A%7D%0A\n func\n@@ -79,39 +79,35 @@\n lores := make(%5B%5D\n-float64\n+int\n , n)%0A    chutes \n@@ -120,15 +120,11 @@\n e(%5B%5D\n-float64\n+int\n , n)\n@@ -421,44 +421,31 @@\n  if \n-abs(valores%5Bi%5D-chutes%5Bi%5D) %3C 0.000001\n+chutes%5Bi%5D == valores%5Bi%5D\n  %7B%0A \n@@ -475,16 +475,30 @@\n  %7D else \n+%7B%0A            \n if escol\n@@ -512,16 +512,20 @@\n = %22M%22 %7B%0A\n+    \n         \n@@ -542,17 +542,17 @@\n ores%5Bi%5D \n-%3E\n+%3C\n  chutes%5B\n@@ -564,37 +564,45 @@\n                 \n+   \n-p2++%0A\n+ p1++%0A    \n             %7D el\n@@ -614,34 +614,38 @@\n                 \n+   \n-p1\n+ p2\n ++%0A             \n@@ -692,33 +692,33 @@\n   if valores%5Bi%5D \n-%3C\n+%3E\n  chutes%5Bi%5D %7B%0A   \n@@ -727,33 +727,33 @@\n                p\n-2\n+1\n ++%0A             \n@@ -777,33 +777,33 @@\n                p\n-1\n+2\n ++%0A             \n@@ -831,16 +831,21 @@\n       %7D%0A\n+    %7D\n %0A    if \n@@ -990,11 +990,10 @@\n )%0A    %7D%0A\n-%0A\n %7D%0A\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-05-24_17-53-55",
+            "content": "package main\nimport \"fmt\"\nfunc abs(x float64) float64 {\n    if x < 0 {\n        return -x\n    }\n    return x\n}\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    valores := make([]float64, n)\n    chutes := make([]float64, n)\n    escolha := make([]string, n)\n\n    for i := 0; i < n; i++ {\n        fmt.Scan(&valores[i])\n    }\n    for i := 0; i < n; i++ {\n        fmt.Scan(&chutes[i])\n    }\n    for i := 0; i < n; i++ {\n        fmt.Scan(&escolha[i])\n    }\n    p1 := 0\n    p2 := 0\n\n    for i := 0; i < n; i++ {\n        if abs(valores[i]-chutes[i]) < 0.000001 {\n            p1++\n        } else if escolha[i] == \"M\" {\n            if valores[i] > chutes[i] {\n                p2++\n            } else {\n                p1++\n                }\n            } else {\n                if valores[i] < chutes[i] {\n                    p2++\n                } else {\n                    p1++\n                }\n            }\n        }\n\n    if p1 > p2 {\n        fmt.Println(\"primeiro\")\n    } else if p2 > p1 {\n        fmt.Println(\"segundo\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n\n}\n",
+            "lines": "55"
+        }
+    ]
+}
