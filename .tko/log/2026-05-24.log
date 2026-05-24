@@ -46,3 +46,11 @@
 2026-05-24 16:54:10, EXEC, v:1, k:fup@piao, mode:FULL, rate:100, size:44
 2026-05-24 16:54:14, MOVE, v:1, k:fup@piao, mode:BACK
 2026-05-24 16:55:01, SELF, v:1, k:fup@piao, self:1, rate:100, concept:1, problem:1, debug:1, refactor:1
+2026-05-24 16:59:47, MOVE, v:1, k:fup@jedi, mode:DOWN
+2026-05-24 16:59:48, MOVE, v:1, k:fup@jedi, mode:PICK
+2026-05-24 16:59:47, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-05-24 16:59:47, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-05-24 17:01:20, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-05-24 17:04:33, EXEC, v:1, k:fup@jedi, mode:FULL, rate:100, size:30
+2026-05-24 17:04:59, MOVE, v:1, k:fup@jedi, mode:BACK
+2026-05-24 17:05:21, SELF, v:1, k:fup@jedi, self:1, rate:100, concept:1, problem:1

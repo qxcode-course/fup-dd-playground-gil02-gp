@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_17-04-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var t int\n    fmt.Scan(&t)\n    var vet[50] int\n    soma_jedi := 0\n    soma_sith := 0\n\n    for i := 0; i < t; i++ {\n        fmt.Scan(&vet[i])\n        if vet[i] < 1 || vet[i] > 10 {\n            continue\n        }\n        if i < t/2 {\n            soma_jedi += vet[i]\n        } else {\n            soma_sith += vet[i]\n        }\n    }\n\n    if soma_jedi > soma_sith {\n        fmt.Println(\"Jedi\")\n    } else if soma_sith > soma_jedi {\n        fmt.Println(\"Sith\")\n    } else {\n        fmt.Println(\"Empate\")\n    }\n\n}\n",
+            "lines": "30"
+        }
+    ]
+}
