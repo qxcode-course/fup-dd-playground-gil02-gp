@@ -1,0 +1,14 @@
+2026-05-25 16:48:11, MOVE, v:1, k:fup@blackjack, mode:DOWN
+2026-05-25 16:48:12, MOVE, v:1, k:fup@blackjack, mode:PICK
+2026-05-25 16:48:11, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-05-25 16:48:11, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-05-25 16:52:57, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-05-25 16:57:57, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-05-25 16:57:59, EXEC, v:1, k:fup@blackjack, mode:FULL, rate:0, size:21
+2026-05-25 16:57:59, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-05-25 17:04:33, MOVE, v:1, k:fup@blackjack, mode:BACK
+2026-05-25 17:28:26, MOVE, v:1, k:fup@blackjack, mode:PICK
+2026-05-25 17:32:55, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-05-25 17:36:24, EXEC, v:1, k:fup@blackjack, mode:FULL, rate:100, size:28
+2026-05-25 17:36:29, MOVE, v:1, k:fup@blackjack, mode:BACK
+2026-05-25 17:36:45, SELF, v:1, k:fup@blackjack, self:1, rate:100, friend:hanna

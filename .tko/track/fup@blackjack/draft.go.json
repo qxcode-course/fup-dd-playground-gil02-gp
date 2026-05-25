@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_16-57-59",
+            "content": "@@ -45,15 +45,41 @@\n var \n-tam int\n+qtdCartas int%0A    var nome string\n %0A   \n@@ -93,53 +93,75 @@\n an(&\n-tam\n+nome\n )%0A    \n-count := 0\n+fmt.Scan(&qtdCartas)\n %0A    \n+cart\n as := \n-0%0A    var x int\n+make(%5B%5Dint, qtdCartas)\n %0A   \n@@ -181,11 +181,17 @@\n i %3C \n-tam\n+qtdCartas\n ; i+\n@@ -212,17 +212,25 @@\n t.Scan(&\n-x\n+cartas%5Bi%5D\n )%0A      \n@@ -238,14 +238,19 @@\n  if \n-x\n+nome\n  == \n-1\n+%22A%22\n  %7B%0A \n@@ -264,247 +264,165 @@\n     \n-as++%0A            count +=11%0A        %7D else %7B%0A            if x %3E= 11 && x %3C= 13 %7B%0A                count += 10%0A            %7D else %7B%0A                count += x%0A            %7D%0A        %7D%0A    %7D%0A    for i := 0; i %3C as; i++ %7B%0A        if count %3E 21 \n+fmt.Print(1)%0A        %7D else if nome == %2211%22%7B%0A            fmt.Print(11)%0A        %7D else if nome == %22Q%22%7B%0A            fmt.Print(12)%0A        %7D else if nome == %22K%22\n %7B%0A  \n@@ -435,19 +435,21 @@\n     \n-count -= 10\n+fmt.Print(13)\n %0A   \n@@ -465,29 +465,6 @@\n   %7D%0A\n-    fmt.Println(count)%0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-25_17-36-24",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var tam int\n    fmt.Scan(&tam)\n    count := 0\n    as := 0\n    var x int\n    for i := 0; i < tam; i++ {\n        fmt.Scan(&x)\n        if x == 1 {\n            as++\n            count +=11\n        } else {\n            if x >= 11 && x <= 13 {\n                count += 10\n            } else {\n                count += x\n            }\n        }\n    }\n    for i := 0; i < as; i++ {\n        if count > 21 {\n            count -= 10\n        }\n    }\n    fmt.Println(count)\n}\n",
+            "lines": "28"
+        }
+    ]
+}
