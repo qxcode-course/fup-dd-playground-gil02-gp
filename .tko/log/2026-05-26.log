@@ -24,3 +24,10 @@
 2026-05-26 17:08:21, EXEC, v:1, k:fup@pedra, mode:FULL, rate:100, size:30
 2026-05-26 17:08:36, MOVE, v:1, k:fup@pedra, mode:BACK
 2026-05-26 17:08:44, SELF, v:1, k:fup@pedra, self:1, rate:100, concept:1, problem:1
+2026-05-26 18:09:51, MOVE, v:1, k:fup@casamento, mode:DOWN
+2026-05-26 18:09:52, MOVE, v:1, k:fup@casamento, mode:PICK
+2026-05-26 18:13:05, MOVE, v:1, k:fup@casamento, mode:BACK
+2026-05-26 21:53:45, MOVE, v:1, k:fup@casamento, mode:PICK
+2026-05-26 21:57:13, EXEC, v:1, k:fup@casamento, mode:FULL, rate:100, size:19
+2026-05-26 21:57:16, MOVE, v:1, k:fup@casamento, mode:BACK
+2026-05-26 21:57:24, SELF, v:1, k:fup@casamento, self:1, rate:100, concept:1, problem:1

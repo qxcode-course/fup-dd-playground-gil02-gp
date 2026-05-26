@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_21-57-13",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var vet[5] int\n    for i := 0; i < 5; i++ {\n        fmt.Scan(&vet[i])\n    }\n    maior := vet[0]\n    menor := vet[0]\n    for i := 1; i < 5; i++ {\n        if vet[i] > maior {\n            maior = vet[i]\n        }\n        if vet[i] < menor {\n            menor = vet[i]\n        }\n    }\n    fmt.Println(maior + menor)\n}\n",
+            "lines": "19"
+        }
+    ]
+}
