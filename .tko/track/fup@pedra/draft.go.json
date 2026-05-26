@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_17-01-59",
+            "content": "@@ -225,16 +225,19 @@\n acao := \n+abs\n (a - b)%0A\n@@ -476,8 +476,57 @@\n     %7D%0A%7D%0A\n+%0Afunc abs(i int) int %7B%0A%09panic(%22unimplemented%22)%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-26_17-02-32",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var n in\n@@ -47,17 +47,20 @@\n r n int%0A\n-%09\n+    \n fmt.Scan\n@@ -65,17 +65,20 @@\n an(&n)%0A%0A\n-%09\n+    \n melhor :\n@@ -82,17 +82,20 @@\n r := -1%0A\n-%09\n+    \n melhorpo\n@@ -109,17 +109,20 @@\n  := 101%0A\n-%09\n+    \n for i :=\n@@ -138,18 +138,20 @@\n ; i++ %7B%0A\n-%09%09\n+    \n var a, b\n@@ -155,18 +155,20 @@\n , b int%0A\n-%09%09\n+    \n fmt.Scan\n@@ -176,18 +176,20 @@\n &a, &b)%0A\n-%09%09\n+    \n if a %3E= \n@@ -204,19 +204,24 @@\n %3E= 10 %7B%0A\n-%09%09%09\n+        \n pontuaca\n@@ -229,71 +229,24 @@\n  := \n+(\n a - b\n-%0A%09%09%09if pontuacao %3C 0 %7B%0A%09%09%09%09pontuacao = -pontuacao%0A%09%09%09%7D%0A%09%09%09\n+)%0A        \n if p\n@@ -274,20 +274,28 @@\n uacao %7B%0A\n-%09%09%09%09\n+            \n melhorpo\n@@ -318,36 +318,57 @@\n cao%0A\n-%09%09%09%09melhor = i%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09\n+            melhor = i%0A        %7D%0A    %7D%0A    %7D%0A    \n if m\n@@ -381,18 +381,24 @@\n == -1 %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -417,17 +417,20 @@\n hador%22)%0A\n-%09\n+    \n %7D else %7B\n@@ -434,10 +434,16 @@\n e %7B%0A\n-%09%09\n+        \n fmt.\n@@ -469,9 +469,12 @@\n or)%0A\n-%09\n+    \n %7D%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-26_17-08-20",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tmelhor := -1\n\tmelhorpontuacao := 101\n\tfor i := 0; i < n; i++ {\n\t\tvar a, b int\n\t\tfmt.Scan(&a, &b)\n\t\tif a >= 10 && b >= 10 {\n\t\t\tpontuacao := a - b\n\t\t\tif pontuacao < 0 {\n\t\t\t\tpontuacao = -pontuacao\n\t\t\t}\n\t\t\tif pontuacao < melhorpontuacao {\n\t\t\t\tmelhorpontuacao = pontuacao\n\t\t\t\tmelhor = i\n\t\t\t}\n\t\t}\n\t}\n\tif melhor == -1 {\n\t\tfmt.Println(\"sem ganhador\")\n\t} else {\n\t\tfmt.Printf(\"%d\\n\", melhor)\n\t}\n}\n",
+            "lines": "30"
+        }
+    ]
+}
