@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_22-14-16",
+            "content": "@@ -151,17 +151,17 @@\n .Print(%22\n-.\n+ \n %22)%0A     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-26_22-14-31",
+            "content": "@@ -154,13 +154,8 @@\n int(\n-%22.%22, \n %22.%22)\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-26_22-15-04",
+            "content": "@@ -142,32 +142,37 @@\n       fmt.Print(\n+%22.%22, \n %22.%22)%0A        %7D%0A \n@@ -237,145 +237,8 @@\n (n)%0A\n-            if j %3C 1%7B%0A                fmt.Print(%22.%22)%0A            %7D%0A        %7D%0A        for j := 1; j %3C n; j++ %7B%0A            fmt.Print(%22.%22)%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-26_22-16-53",
+            "content": "@@ -328,17 +328,16 @@\n = 1; j %3C\n-=\n  n; j++ \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_22-17-46",
+            "content": "@@ -110,33 +110,32 @@\n  for j := 1; j %3C\n-=\n  n; j++ %7B%0A      \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_22-17-53",
+            "content": "@@ -110,32 +110,33 @@\n  for j := 1; j %3C\n+=\n  n; j++ %7B%0A      \n@@ -248,18 +248,17 @@\n  if j %3C \n-i \n+1\n %7B%0A      \n@@ -329,16 +329,17 @@\n = 1; j %3C\n+=\n  n; j++ \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_22-19-34",
+            "content": "@@ -84,17 +84,16 @@\n = 1; i %3C\n-=\n  n; i++ \n@@ -110,37 +110,34 @@\n  for j := 1; j %3C\n-=\n  n\n--i\n ; j++ %7B%0A        \n@@ -190,17 +190,21 @@\n 1; j %3C= \n-i\n+2*i-1\n ; j++ %7B%0A\n@@ -333,13 +333,10 @@\n  j %3C\n-=\n  n\n--i\n ; j+\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_22-21-54",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    for i := 1; i <= n; i++ {\n\n        for j := 1; j <= n-i; j++ {\n            fmt.Print(\".\")\n        }\n        for j := 1; j <= i; j++ {\n            fmt.Print(n)\n            if j < i {\n                fmt.Print(\".\")\n            }\n        }\n        for j := 1; j <= n-i; j++ {\n            fmt.Print(\".\")\n        }\n        fmt.Println()\n    }\n}\n",
+            "lines": "23"
+        }
+    ]
+}
