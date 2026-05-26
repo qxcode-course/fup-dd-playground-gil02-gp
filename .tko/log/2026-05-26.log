@@ -31,3 +31,15 @@
 2026-05-26 21:57:13, EXEC, v:1, k:fup@casamento, mode:FULL, rate:100, size:19
 2026-05-26 21:57:16, MOVE, v:1, k:fup@casamento, mode:BACK
 2026-05-26 21:57:24, SELF, v:1, k:fup@casamento, self:1, rate:100, concept:1, problem:1
+2026-05-26 21:59:33, MOVE, v:1, k:fup@afogado, mode:DOWN
+2026-05-26 21:59:34, MOVE, v:1, k:fup@afogado, mode:PICK
+2026-05-26 22:01:36, EXEC, v:1, k:fup@afogado, mode:FULL, rate:0, size:17
+2026-05-26 22:03:23, EXEC, v:1, k:fup@afogado, mode:FULL, rate:0, size:22
+2026-05-26 21:59:33, MOVE, v:1, k:fup@afogado, mode:EDIT
+2026-05-26 21:59:33, MOVE, v:1, k:fup@afogado, mode:EDIT
+2026-05-26 22:03:19, MOVE, v:1, k:fup@afogado, mode:EDIT
+2026-05-26 22:03:23, MOVE, v:1, k:fup@afogado, mode:EDIT
+2026-05-26 22:07:56, MOVE, v:1, k:fup@afogado, mode:EDIT
+2026-05-26 22:08:37, EXEC, v:1, k:fup@afogado, mode:FULL, rate:100, size:29
+2026-05-26 22:08:48, MOVE, v:1, k:fup@afogado, mode:BACK
+2026-05-26 22:09:23, SELF, v:1, k:fup@afogado, self:1, rate:100, concept:1, problem:1

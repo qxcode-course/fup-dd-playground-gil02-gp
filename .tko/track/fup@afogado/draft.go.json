@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_22-01-36",
+            "content": "@@ -23,143 +23,8 @@\n mt%22%0A\n-func consegueSair(posicao, s, e, p int) bool %7B%0A    nova := posicao + s%0A    if nova %3E= p %7B%0A        return true%0A    %7D%0A    return false%0A%7D%0A\n func\n@@ -43,16 +43,19 @@\n   var p,\n+ s,\n  e int%0A \n@@ -73,13 +73,18 @@\n (&p,\n+ &s,\n  &e)%0A\n+%0A\n     \n@@ -118,41 +118,48 @@\n     \n-if consegueSair(posicao, 1, e,\n+nova := posicao + s%0A        if nova %3E=\n  p\n-)\n  %7B%0A \n@@ -253,22 +253,24 @@\n (posicao\n-)%0A    \n+, nova)%0A\n     posi\n@@ -276,10 +276,19 @@\n icao\n-++\n+ = nova - e\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-26_22-03-23",
+            "content": "@@ -42,14 +42,23 @@\n ir(p\n+osicao\n , s, e\n+, p\n  int\n@@ -74,44 +74,15 @@\n     \n-posicao := 0%0A    for s %3E 0 %7B%0A       \n+nova :=\n  pos\n@@ -91,38 +91,30 @@\n ao +\n-=\n  s%0A    \n-  \n-  \n if \n-posicao\n+nova\n  %3E= p %7B%0A\n     \n@@ -109,20 +109,16 @@\n  %3E= p %7B%0A\n-    \n         \n@@ -133,115 +133,8 @@\n rue%0A\n-        %7D%0A        posicao -= e%0A        if posicao %3C 0 %7B%0A            return false%0A        %7D%0A        s -= 10%0A\n     \n@@ -215,16 +215,19 @@\n    p\n-ul\n+osica\n o := \n-1\n+0\n %0A   \n@@ -262,17 +262,23 @@\n ir(p\n-, pulo, e\n+osicao, 1, e, p\n ) %7B%0A\n@@ -302,19 +302,30 @@\n rintln(p\n-ulo\n+osicao, %22saiu%22\n )%0A      \n@@ -358,11 +358,43 @@\n     \n-pul\n+fmt.Println(posicao)%0A        posica\n o++%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-26_22-08-37",
+            "content": "package main\nimport \"fmt\"\nfunc consegueSair(p, s, e int) bool {\n    posicao := 0\n    for s > 0 {\n        posicao += s\n        if posicao >= p {\n            return true\n        }\n        posicao -= e\n        if posicao < 0 {\n            return false\n        }\n        s -= 10\n    }\n    return false\n}\nfunc main() {\n    var p, e int\n    fmt.Scan(&p, &e)\n    pulo := 1\n    for {\n        if consegueSair(p, pulo, e) {\n            fmt.Println(pulo)\n            break\n        }\n        pulo++\n    }\n}\n",
+            "lines": "29"
+        }
+    ]
+}
