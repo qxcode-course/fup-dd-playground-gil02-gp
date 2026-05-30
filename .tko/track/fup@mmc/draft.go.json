@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-30_20-57-43",
+            "content": "@@ -207,18 +207,31 @@\n .Scan(&n\n-, \n+)%0A    fmt.Scan(\n &m)%0A    \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-30_21-04-28",
+            "content": "@@ -52,11 +52,10 @@\n     \n+i\n f\n-or\n  b !\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-30_21-06-07",
+            "content": "package main\nimport \"fmt\"\nfunc mdc(a, b int) int {\n    for b != 0 {\n        a, b = b, a % b\n    }\n    return a\n}\nfunc mmc(a, b int) int {\n    return a * b / mdc(a, b)\n}\nfunc main() {\n    var n, m int\n    fmt.Scan(&n, &m)\n    fmt.Println(mmc(n, m))\n}\n",
+            "lines": "16"
+        }
+    ]
+}
