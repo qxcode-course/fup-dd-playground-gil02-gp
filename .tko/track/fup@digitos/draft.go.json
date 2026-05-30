@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-30_20-16-41",
+            "content": "@@ -178,16 +178,20 @@\n 0%0A    %7D%0A\n+    \n %0A    fmt\n@@ -196,16 +196,18 @@\n mt.Print\n+ln\n (cont)%0A%7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-30_20-16-54",
+            "content": "@@ -196,10 +196,8 @@\n rint\n-ln\n (con\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-30_20-17-10",
+            "content": "@@ -69,23 +69,10 @@\n n(&a\n-)%0A    fmt.Scan(\n+, \n &b)%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-30_20-17-29",
+            "content": "@@ -66,17 +66,16 @@\n Scan(&a)\n- \n %0A    fmt\n@@ -103,79 +103,8 @@\n = 0%0A\n-    for a == 0 %7C%7C b == 0 %7B%0A        fmt.Println(1)%0A        return%0A    %7D%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-30_20-21-31",
+            "content": "@@ -104,18 +104,19 @@\n = 0%0A    \n-i\n f\n+or\n  a == 0 \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-30_20-21-52",
+            "content": "@@ -118,10 +118,10 @@\n = 0 \n-&&\n+%7C%7C\n  b =\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-30_20-22-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a) \n    fmt.Scan(&b)\n\n    cont := 0\n    if a == 0 && b == 0 {\n        fmt.Println(1)\n        return\n    }\n    for b > 0 {\n        if b % 10 == a {\n            cont++\n        }\n        b /= 10\n    }\n\n    fmt.Println(cont)\n}\n",
+            "lines": "21"
+        }
+    ]
+}
