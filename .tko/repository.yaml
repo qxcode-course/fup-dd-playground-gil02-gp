@@ -27,5 +27,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@digitos
-selected_index: 13
+selected: fup@copos
+selected_index: 10
