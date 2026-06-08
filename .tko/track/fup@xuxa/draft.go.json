@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-04_00-43-00",
+            "content": "@@ -49,16 +49,21 @@\n palavras\n+%5B101%5D\n  string%0A\n@@ -101,16 +101,19 @@\n anho := \n+str\n len(pala\n@@ -178,16 +178,9 @@\n rint\n-f(%22%25c%22, \n+(\n pala\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-04_00-44-45",
+            "content": "@@ -17,235 +17,103 @@\n ort \n-(%0A    %22fmt%22%0A    %22bufio%22%0A    %22os%22%0A)%0Afunc main() %7B%0A    reader := bufio.NewReader(os.Stdin)%0A    frase, _ := reader.ReadString('%5Cn')%0A%0A    if len(frase) %3E 0 && frase%5Blen(frase)-1%5D == '%5Cn' %7B%0A        frase = frase%5B:len(frase)-1%5D%0A    %7D\n+%22fmt%22%0Afunc main() %7B%0A    var palavras string%0A    fmt.Scan(&palavra)%0A%0A    tamanho := len(palavra)\n %0A   \n@@ -126,18 +126,15 @@\n  := \n-len(frase)\n+tamanho\n  - 1\n@@ -170,49 +170,32 @@\n rint\n-(string(frase\n+f(%22%25c%22, palavra\n %5Bi%5D)\n-)\n %0A    %7D%0A\n-    fmt.Println()%0A\n %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-08_01-55-53",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n)\nfunc main() {\n    reader := bufio.NewReader(os.Stdin)\n    frase, _ := reader.ReadString('\\n')\n\n    if len(frase) > 0 && frase[len(frase)-1] == '\\n' {\n        frase = frase[:len(frase)-1]\n    }\n    for i := len(frase) - 1; i >= 0; i-- {\n        fmt.Print(string(frase[i]))\n    }\n    fmt.Println()\n}\n",
+            "lines": "18"
+        }
+    ]
+}
