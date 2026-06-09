@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-09_17-07-50",
+            "content": "@@ -749,16 +749,15 @@\n (%22%25d\n-,\n+%5Cn\n  leds\n-%5Cn\n %22, q\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-06-09_17-08-18",
+            "content": "@@ -745,16 +745,17 @@\n intf(%22%25d\n+,\n  leds%5Cn%22\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-06-09_17-08-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var painel[101] string\n    var n int\n    var qtd = 0\n    fmt.Scan(&n)\n\n    for j := 0; j < n; j++ {\n        qtd = 0\n        fmt.Scan(&painel[j])\n    }\n    for i := 0; i < n; i++ {\n    if (painel[i] == \"0\"){\n        qtd += 6\n    }\n    if (painel[i] == \"1\"){\n        qtd += 2\n    } \n    if (painel[i] == \"2\"){\n        qtd += 5\n    } \n    if (painel[i] == \"3\"){\n        qtd += 5\n    } \n    if (painel[i] == \"4\"){\n        qtd += 4\n    } \n    if (painel[i] == \"5\"){\n        qtd += 5\n    }\n    if (painel[i] == \"6\"){\n        qtd += 6\n    }\n    if (painel[i] == \"7\"){\n        qtd += 3\n    }\n    if (painel[i] == \"8\"){\n        qtd += 7\n    }\n    if (painel[i] == \"9\"){\n        qtd += 6\n    }\n    }\n    fmt.Printf(\"%d leds\\n\", qtd)\n}\n",
+            "lines": "46"
+        }
+    ]
+}
