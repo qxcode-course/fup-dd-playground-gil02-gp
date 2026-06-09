@@ -22,10 +22,10 @@ expanded:
 - fup@string
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@inverte
-selected_index: 8
+selected: fup@substring
+selected_index: 9

@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-09_02-41-30",
+            "content": "@@ -425,23 +425,8 @@\n %22%22)%0A\n-        return%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-09_02-41-51",
+            "content": "@@ -350,17 +350,103 @@\n     \n+if \n inicio\n---%0A\n+ %3C 0 %7C%7C inicio %3E= len(texto) %7C%7C qtd %3C 0 %7B%0A        fmt.Println(%22%22)%0A        return%0A    %7D\n %0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-09_02-46-13",
+            "content": "@@ -24,23 +24,23 @@\n    %22\n-bufio\n+fmt\n %22%0A    %22\n-fmt\n+bufio\n %22%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-09_02-47-08",
+            "content": "@@ -342,16 +342,30 @@\n  &qtd)%0A%0A\n+    inicio--%0A%0A\n     fim \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-09_02-48-12",
+            "content": "@@ -346,94 +346,8 @@\n d)%0A%0A\n-    if inicio %3C 0 %7C%7C inicio %3E= len(texto) %7C%7C qtd %3C 0 %7B%0A        fmt.Println(%22%22)%0A    %7D%0A%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-09_02-50-06",
+            "content": "@@ -425,23 +425,8 @@\n %22%22)%0A\n-        return%0A\n     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-09_02-50-25",
+            "content": "@@ -24,52 +24,90 @@\n    %22\n-fmt%22%0A)%0Afunc main() %7B%0A    var inicio, q\n+bufio%22%0A    %22fmt%22%0A    %22os%22%0A)%0Afunc main() %7B%0A    palavra := bufio.NewReader(os.S\n td\n- \n in\n-t\n+)\n %0A   \n@@ -132,31 +132,165 @@\n     \n-fmt.Scanf(%22%25s%22, &texto)\n+texto, _ = palavra.ReadString('%5Cn')%0A    if len(texto) %3E 0 && texto%5Blen(texto)-1%5D == '%5Cn' %7B%0A        texto = texto%5B:len(texto)-1%5D%0A    %7D%0A    var inicio, qtd int\n %0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-09_02-52-29",
+            "content": "@@ -24,90 +24,52 @@\n    %22\n-bufio%22%0A    %22fmt%22%0A    %22os%22%0A)%0Afunc main() %7B%0A    palavra := bufio.NewReader(os.S\n+fmt%22%0A)%0Afunc main() %7B%0A    var inicio, q\n td\n+ \n in\n-)\n+t\n %0A   \n@@ -94,165 +94,31 @@\n     \n-texto, _ = palavra.ReadString('%5Cn')%0A    if len(texto) %3E 0 && texto%5Blen(texto)-1%5D == '%5Cn' %7B%0A        texto = texto%5B:len(texto)-1%5D%0A    %7D%0A    var inicio, qtd int\n+fmt.Scanf(%22%25s%22, &texto)\n %0A   \n@@ -122,29 +122,26 @@\n     fmt.\n-Fscan(palavra\n+Scanf(%22%25d%22\n , &inici\n@@ -155,21 +155,18 @@\n fmt.\n-Fscan(palavra\n+Scanf(%22%25d%22\n , &q\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-09_02-55-16",
+            "content": "package main\nimport (\n    \"bufio\"\n    \"fmt\"\n    \"os\"\n)\nfunc main() {\n    palavra := bufio.NewReader(os.Stdin)\n    var texto string\n    texto, _ = palavra.ReadString('\\n')\n    if len(texto) > 0 && texto[len(texto)-1] == '\\n' {\n        texto = texto[:len(texto)-1]\n    }\n    var inicio, qtd int\n    fmt.Fscan(palavra, &inicio)\n    fmt.Fscan(palavra, &qtd)\n\n    if inicio < 0 || inicio >= len(texto) || qtd < 0 {\n        fmt.Println(\"\")\n        return\n    }\n\n    fim := inicio + qtd\n    if fim > len(texto) {\n        fim = len(texto)\n    }\n    fmt.Println(texto[inicio:fim])\n}\n",
+            "lines": "28"
+        }
+    ]
+}
