@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-10_00-38-44",
+            "content": "@@ -246,16 +246,17 @@\n f c == '\n+ \n ' %7C%7C c =\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-10_00-39-57",
+            "content": "@@ -246,17 +246,16 @@\n f c == '\n- \n ' %7C%7C c =\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-10_00-40-26",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    if scanner.Scan() {\n        frase := scanner.Text()\n    vogais := \"\"\n    consoantes := \"\"\n\n    for _, c := range frase {\n        if c == ' ' || c == '\\n' {\n            continue\n        }\n        if c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' {\n            vogais += string(c)\n        } else {\n            consoantes += string(c)\n        }\n    }\n    fmt.Println(vogais)\n    fmt.Println(consoantes)\n    }\n}\n",
+            "lines": "27"
+        }
+    ]
+}

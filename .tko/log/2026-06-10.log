@@ -9,3 +9,19 @@
 2026-06-10 00:19:07, EXEC, v:1, k:fup@leds, mode:FULL, rate:100, size:19
 2026-06-10 00:19:31, MOVE, v:1, k:fup@leds, mode:BACK
 2026-06-10 00:20:02, SELF, v:1, k:fup@leds, self:1, rate:100, concept:1, problem:1, debug:1
+2026-06-10 00:22:27, MOVE, v:1, k:fup@ru, mode:DOWN
+2026-06-10 00:22:29, MOVE, v:1, k:fup@ru, mode:PICK
+2026-06-10 00:22:27, MOVE, v:1, k:fup@ru, mode:EDIT
+2026-06-10 00:22:27, MOVE, v:1, k:fup@ru, mode:EDIT
+2026-06-10 00:26:18, MOVE, v:1, k:fup@ru, mode:EDIT
+2026-06-10 00:31:18, MOVE, v:1, k:fup@ru, mode:EDIT
+2026-06-10 00:36:14, MOVE, v:1, k:fup@ru, mode:EDIT
+2026-06-10 00:38:44, EXEC, v:1, k:fup@ru, mode:FULL, rate:100, size:27
+2026-06-10 00:39:08, MOVE, v:1, k:fup@ru, mode:BACK
+2026-06-10 00:39:27, MOVE, v:1, k:fup@ru, mode:PICK
+2026-06-10 00:39:57, EXEC, v:1, k:fup@ru, mode:FULL, size:27, fail:COMP
+2026-06-10 00:40:26, EXEC, v:1, k:fup@ru, mode:FULL, rate:100, size:27
+2026-06-10 00:40:29, MOVE, v:1, k:fup@ru, mode:BACK
+2026-06-10 00:40:15, MOVE, v:1, k:fup@ru, mode:EDIT
+2026-06-10 00:40:26, MOVE, v:1, k:fup@ru, mode:EDIT
+2026-06-10 00:41:26, SELF, v:1, k:fup@ru, self:1, rate:100, concept:1, problem:1
