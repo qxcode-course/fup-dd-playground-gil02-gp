@@ -1,46 +1,19 @@
 package main
 import "fmt"
 func main() {
-    var painel[101] string
     var n int
-    var qtd = 0
     fmt.Scan(&n)
 
-    for j := 0; j < n; j++ {
-        qtd = 0
-        fmt.Scan(&painel[j])
-    }
+    leds := [10]int{6,2,5,5,4,5,6,3,7,6}
+
     for i := 0; i < n; i++ {
-    if (painel[i] == "0"){
-        qtd += 6
+        var num string
+        fmt.Scan(&num)
+        total := 0
+        for _, c := range num {
+            total += leds[c - '0']
+        }
+        fmt.Printf("%d leds\n", total)
     }
-    if (painel[i] == "1"){
-        qtd += 2
-    } 
-    if (painel[i] == "2"){
-        qtd += 5
-    } 
-    if (painel[i] == "3"){
-        qtd += 5
-    } 
-    if (painel[i] == "4"){
-        qtd += 4
-    } 
-    if (painel[i] == "5"){
-        qtd += 5
-    }
-    if (painel[i] == "6"){
-        qtd += 6
-    }
-    if (painel[i] == "7"){
-        qtd += 3
-    }
-    if (painel[i] == "8"){
-        qtd += 7
-    }
-    if (painel[i] == "9"){
-        qtd += 6
-    }
-    }
-    fmt.Printf("%d leds\n", qtd)
+
 }

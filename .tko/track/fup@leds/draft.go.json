@@ -12,8 +12,23 @@
         },
         {
             "label": "2026-06-09_17-08-25",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var painel[101] string\n    var n int\n    var qtd = 0\n    fmt.Scan(&n)\n\n    for j := 0; j < n; j++ {\n        qtd = 0\n        fmt.Scan(&painel[j])\n    }\n    for i := 0; i < n; i++ {\n    if (painel[i] == \"0\"){\n        qtd += 6\n    }\n    if (painel[i] == \"1\"){\n        qtd += 2\n    } \n    if (painel[i] == \"2\"){\n        qtd += 5\n    } \n    if (painel[i] == \"3\"){\n        qtd += 5\n    } \n    if (painel[i] == \"4\"){\n        qtd += 4\n    } \n    if (painel[i] == \"5\"){\n        qtd += 5\n    }\n    if (painel[i] == \"6\"){\n        qtd += 6\n    }\n    if (painel[i] == \"7\"){\n        qtd += 3\n    }\n    if (painel[i] == \"8\"){\n        qtd += 7\n    }\n    if (painel[i] == \"9\"){\n        qtd += 6\n    }\n    }\n    fmt.Printf(\"%d leds\\n\", qtd)\n}\n",
+            "content": "@@ -45,239 +45,682 @@\n var \n-n int%0A    fmt.Scan(&n)%0A%0A    leds := %5B10%5Dint%7B6,2,5,5,4,5,6,3,7,6%7D%0A%0A    for i := 0; i %3C n; i++ %7B%0A        var num string%0A        fmt.Scan(&num)%0A        total := 0\n+painel%5B101%5D string%0A    var n int%0A    var qtd = 0%0A    fmt.Scan(&n)%0A%0A    for j := 0; j %3C n; j++ %7B%0A        qtd = 0%0A        fmt.Scan(&painel%5Bj%5D)%0A    %7D%0A    for i := 0; i %3C n; i++ %7B%0A    if (painel%5Bi%5D == %220%22)%7B%0A        qtd += 6%0A    %7D%0A    if (painel%5Bi%5D == %221%22)%7B%0A        qtd += 2%0A    %7D %0A    if (painel%5Bi%5D == %222%22)%7B%0A        qtd += 5%0A    %7D %0A    if (painel%5Bi%5D == %223%22)%7B%0A        qtd += 5%0A    %7D %0A    if (painel%5Bi%5D == %224%22)%7B%0A        qtd += 4\n %0A    \n+%7D %0A\n     \n-for _, c := range num %7B%0A            total += leds%5Bc - '0'%5D%0A    \n+if (painel%5Bi%5D == %225%22)%7B%0A        qtd += 5%0A    %7D%0A    if (painel%5Bi%5D == %226%22)%7B%0A        qtd += 6%0A    %7D%0A    if (painel%5Bi%5D == %227%22)%7B%0A        qtd += 3%0A    %7D%0A    if (painel%5Bi%5D == %228%22)%7B%0A        qtd += 7%0A    %7D%0A    if (painel%5Bi%5D == %229%22)%7B%0A        qtd += 6%0A\n     \n@@ -721,24 +721,26 @@\n 6%0A    %7D%0A    \n+%7D%0A\n     fmt.Prin\n@@ -744,23 +744,26 @@\n rint\n-ln(total)%0A    %7D%0A\n+f(%22%25d leds%5Cn%22, qtd)\n %0A%7D%0A\n",
             "lines": "46"
+        },
+        {
+            "label": "2026-06-10_00-18-21",
+            "content": "@@ -299,23 +299,11 @@\n rint\n-f(%22%25d%5Cn leds%22, \n+ln(\n tota\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-10_00-18-53",
+            "content": "@@ -304,15 +304,15 @@\n (%22%25d\n+%5Cn\n  leds\n-%5Cn\n %22, t\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-10_00-19-07",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    leds := [10]int{6,2,5,5,4,5,6,3,7,6}\n\n    for i := 0; i < n; i++ {\n        var num string\n        fmt.Scan(&num)\n        total := 0\n        for _, c := range num {\n            total += leds[c - '0']\n        }\n        fmt.Printf(\"%d leds\\n\", total)\n    }\n\n}\n",
+            "lines": "19"
         }
     ]
 }
