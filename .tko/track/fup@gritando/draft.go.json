@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_01-34-03",
+            "content": "@@ -66,21 +66,23 @@\n ) %7B%0A    \n-frase\n+scanner\n  := bufi\n@@ -86,20 +86,21 @@\n ufio.New\n-Read\n+Scann\n er(os.St\n@@ -112,114 +112,76 @@\n     \n+var \n texto\n-, _ := frase.ReadString('%5Cn')%0A%0A    for _, char := range texto %7B%0A        if char %3E= 'a' && char %3C= 'z'\n+%5B100%5D string%0A    for i := 0; i %3C 100 && scanner.Scan(); i++\n  %7B%0A \n@@ -191,212 +191,123 @@\n     \n-  \n-  fmt.Printf(%22%25c%22, char - ('a' - 'A'))%0A        %7D else if char %3E= 'A' && char %3C= 'Z' %7B%0A            fmt.Printf(%22%25c%22, char + ('a' - 'A'))%0A        %7D else %7B%0A            fmt.Printf(%22%25c%22, char)%0A        %7D%0A    %7D%0A\n+texto%5Bi%5D = scanner.Text()%0A    %7D%0A    for i := 0; i %3C 100 && texto%5Bi%5D != %22%22; i++ %7B%0A        fmt.Println(texto%5Bi%5D)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-19_01-45-47",
+            "content": "@@ -351,32 +351,84 @@\n  + ('a' - 'A'))%0A\n+        %7D else %7B%0A            fmt.Printf(%22%25c%22, char)%0A\n         %7D%0A    %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-19_01-46-01",
+            "content": "@@ -363,60 +363,8 @@\n '))%0A\n-        %7D else %7B%0A            fmt.Printf(%22%25c%22, char)%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-19_01-46-46",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n)\nfunc main() {\n    frase := bufio.NewReader(os.Stdin)\n    texto, _ := frase.ReadString('\\n')\n\n    for _, char := range texto {\n        if char >= 'a' && char <= 'z' {\n            fmt.Printf(\"%c\", char - ('a' - 'A'))\n        } else if char >= 'A' && char <= 'Z' {\n            fmt.Printf(\"%c\", char + ('a' - 'A'))\n        } else {\n            fmt.Printf(\"%c\", char)\n        }\n    }\n\n}\n",
+            "lines": "21"
+        }
+    ]
+}

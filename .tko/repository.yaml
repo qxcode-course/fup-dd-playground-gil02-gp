@@ -22,10 +22,12 @@ expanded:
 - fup@string
 flags:
   inbox: all
-  panel: graph
-  show_panel: 'true'
+  panel: skills
   task_graph_mode: executions
   show_time: 'true'
+audit:
+  enabled: false
+  interval_seconds: null
 lang: go
-selected: fup@ru
-selected_index: 11
+selected: fup@amora
+selected_index: 13
