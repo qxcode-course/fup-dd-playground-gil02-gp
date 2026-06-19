@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_01-55-02",
+            "content": "@@ -49,22 +49,8 @@\n os%22%0A\n-    %22strings%22%0A\n )%0Afu\n@@ -147,120 +147,28 @@\n     \n-trecho, _ := texto.ReadString('%5Cn')%0A%0A    texto = strings.TrimSpace(frase)%0A    trecho = strings.TrimSpace(trecho)%0A\n+fmt.Print(frase)%0A    \n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-19_01-58-54",
+            "content": "@@ -275,52 +275,6 @@\n o)%0A%0A\n-    fmt.Println(strings.Count(texto, trecho))%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-19_02-00-41",
+            "content": "@@ -12,17 +12,16 @@\n n%0Aimport\n- \n (%0A    %22f\n@@ -198,21 +198,21 @@\n ')%0A%0A    \n-frase\n+texto\n  = strin\n@@ -301,21 +301,21 @@\n s.Count(\n-frase\n+texto\n , trecho\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-19_02-03-32",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n    \"strings\"\n)\nfunc main() {\n    texto := bufio.NewReader(os.Stdin)\n    frase, _ := texto.ReadString('\\n')\n    trecho, _ := texto.ReadString('\\n')\n\n    frase = strings.TrimSpace(frase)\n    trecho = strings.TrimSpace(trecho)\n\n    fmt.Println(strings.Count(frase, trecho))\n}\n",
+            "lines": "17"
+        }
+    ]
+}
