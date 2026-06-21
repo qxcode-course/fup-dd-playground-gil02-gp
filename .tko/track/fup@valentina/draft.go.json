@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-21_02-37-21",
+            "content": "@@ -303,13 +303,8 @@\n n%22, \n-byte(\n resu\n@@ -308,17 +308,16 @@\n esultado\n-)\n +'a')%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-21_02-37-58",
+            "content": "@@ -139,17 +139,17 @@\n t(n2 - '\n-a\n+b\n ')%0A%0A    \n@@ -299,16 +299,21 @@\n %22%25c%5Cn%22, \n+byte(\n resultad\n@@ -313,16 +313,17 @@\n esultado\n+)\n +'a')%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-21_02-39-24",
+            "content": "@@ -303,13 +303,8 @@\n n%22, \n-byte(\n resu\n@@ -313,12 +313,11 @@\n ado+'a')\n-)\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-21_02-40-06",
+            "content": "@@ -317,14 +317,13 @@\n tado\n-) \n +'a')\n+)\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-21_02-40-20",
+            "content": "@@ -316,16 +316,15 @@\n ltado) +\n- \n 'a')%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-21_02-42-44",
+            "content": "@@ -89,41 +89,15 @@\n (&n1\n-)%0A    fmt.Scan(&op)%0A    fmt.Scan(\n+, &op, \n &n2)\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-21_02-44-25",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,291 +37,102 @@\n ) %7B%0A\n-%09\n+    \n var \n-s1, s2, opStr string%0A%09if _, err := fmt.Scan(&s1, &opStr, &s2); err != nil %7B%0A%09%09fmt.Println(%22Erro ao ler a entrada:%22, err)%0A%09%09return%0A%09%7D%0A%09if len(s1) == 0 %7C%7C len(s2) == 0 %7C%7C len(opStr) == 0 %7B%0A%09%09fmt.Println(%22Entrada inv%C3%A1lida%22)%0A%09%09return%0A%09%7D%0A%0A%09n1 := s1%5B0%5D%0A%09n2 := s2%5B0%5D%0A%09op := opStr%5B0%5D%0A%0A%09\n+n1, n2 byte%0A    var op rune%0A    fmt.Scan(&n1)%0A    fmt.Scan(&op)%0A    fmt.Scan(&n2)%0A    \n a :=\n@@ -146,17 +146,20 @@\n  - 'a')%0A\n-%09\n+    \n b := int\n@@ -170,17 +170,20 @@\n - 'a')%0A%0A\n-%09\n+    \n var resu\n@@ -191,18 +191,22 @@\n tado int\n-%0A%09\n+ %0A    \n if op ==\n@@ -212,18 +212,24 @@\n = '+' %7B%0A\n-%09%09\n+        \n resultad\n@@ -245,17 +245,20 @@\n b) %25 26%0A\n-%09\n+    \n %7D else %7B\n@@ -262,10 +262,16 @@\n e %7B%0A\n-%09%09\n+        \n resu\n@@ -300,12 +300,18 @@\n  26%0A\n-%09%7D%0A%09\n+    %7D%0A    \n fmt.\n@@ -340,16 +340,18 @@\n sultado)\n-+\n+ + \n 'a')%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-21_02-48-03",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar s1, s2, opStr string\n\tif _, err := fmt.Scan(&s1, &opStr, &s2); err != nil {\n\t\tfmt.Println(\"Erro ao ler a entrada:\", err)\n\t\treturn\n\t}\n\tif len(s1) == 0 || len(s2) == 0 || len(opStr) == 0 {\n\t\tfmt.Println(\"Entrada inv\u00e1lida\")\n\t\treturn\n\t}\n\n\tn1 := s1[0]\n\tn2 := s2[0]\n\top := opStr[0]\n\n\ta := int(n1 - 'a')\n\tb := int(n2 - 'a')\n\n\tvar resultado int\n\tif op == '+' {\n\t\tresultado = (a + b) % 26\n\t} else {\n\t\tresultado = (a - b + 26) % 26\n\t}\n\tfmt.Printf(\"%c\\n\", byte(resultado)+'a')\n}\n",
+            "lines": "30"
+        }
+    ]
+}
