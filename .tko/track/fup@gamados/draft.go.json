@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-21_02-04-07",
+            "content": "@@ -111,47 +111,60 @@\n in)%0A\n+%0A\n     \n-if scanner.Scan() %7B%0A   \n+texto, _ := scanner.ReadString('%5Cn')%0A\n     \n- \n texto \n-:\n = st\n@@ -183,28 +183,15 @@\n ace(\n-scanner.Text())%0A    \n+texto)%0A\n     \n@@ -227,128 +227,8 @@\n xto)\n-%0A    %7D%0A    if err := scanner.Err(); err != nil %7B%0A        fmt.Println(%22Erro ao ler a entrada:%22, err)%0A        return%0A    %7D\n %0A%0A  \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-21_02-11-45",
+            "content": "@@ -111,34 +111,8 @@\n in)%0A\n-    var palavras %5B%5Dstring%0A\n     \n@@ -199,16 +199,17 @@\n alavras \n+:\n = string\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-21_02-12-26",
+            "content": "@@ -623,16 +623,17 @@\n tln(%22nao\n+ \n %22)%0A    %7D\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-21_02-12-57",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    var palavras []string\n    if scanner.Scan() {\n        texto := strings.TrimSpace(scanner.Text())\n        palavras = strings.Fields(texto)\n    }\n    if err := scanner.Err(); err != nil {\n        fmt.Println(\"Erro ao ler a entrada:\", err)\n        return\n    }\n\n    ordenadas := true\n    for i := 0; i < len(palavras)-1; i++ {\n        if palavras[i] > palavras[i+1] {\n            ordenadas = false\n            break\n        }\n    }\n    if ordenadas {\n        fmt.Println(\"sim\")\n    } else {\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "lines": "33"
+        }
+    ]
+}

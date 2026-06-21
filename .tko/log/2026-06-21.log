@@ -15,3 +15,16 @@
 2026-06-21 01:46:32, EXEC, v:1, k:fup@traficantes, mode:FULL, rate:100, size:35
 2026-06-21 01:46:43, MOVE, v:1, k:fup@traficantes, mode:BACK
 2026-06-21 01:48:40, SELF, v:1, k:fup@traficantes, self:1, rate:100, concept:1, problem:1, debug:1
+2026-06-21 01:54:27, MOVE, v:1, k:fup@gamados, mode:DOWN
+2026-06-21 01:54:29, MOVE, v:1, k:fup@gamados, mode:PICK
+2026-06-21 01:54:27, MOVE, v:1, k:fup@gamados, mode:EDIT
+2026-06-21 01:55:53, MOVE, v:1, k:fup@gamados, mode:EDIT
+2026-06-21 02:01:29, MOVE, v:1, k:fup@gamados, mode:EDIT
+2026-06-21 02:04:07, EXEC, v:1, k:fup@gamados, mode:FULL, size:28, fail:COMP
+2026-06-21 02:05:56, MOVE, v:1, k:fup@gamados, mode:EDIT
+2026-06-21 02:10:34, MOVE, v:1, k:fup@gamados, mode:EDIT
+2026-06-21 02:11:45, EXEC, v:1, k:fup@gamados, mode:FULL, size:32, fail:COMP
+2026-06-21 02:12:26, EXEC, v:1, k:fup@gamados, mode:FULL, rate:42, size:33
+2026-06-21 02:12:57, EXEC, v:1, k:fup@gamados, mode:FULL, rate:100, size:33
+2026-06-21 02:13:11, MOVE, v:1, k:fup@gamados, mode:BACK
+2026-06-21 02:13:36, SELF, v:1, k:fup@gamados, self:1, rate:100, concept:1, problem:1, debug:1
