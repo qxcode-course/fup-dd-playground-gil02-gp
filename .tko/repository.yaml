@@ -29,5 +29,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@gamados
-selected_index: 16
+selected: fup@mario
+selected_index: 17
