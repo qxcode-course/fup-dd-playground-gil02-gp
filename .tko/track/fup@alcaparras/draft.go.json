@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_22-05-00",
+            "content": "@@ -430,17 +430,17 @@\n Println(\n-count\n+frase\n )%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-22_22-05-16",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import (\n@@ -15,16 +15,26 @@\n mport (%0A\n+    %22fmt%22%0A\n     %22buf\n@@ -37,26 +37,16 @@\n %22bufio%22%0A\n-    %22fmt%22%0A\n     %22os%22\n@@ -48,17 +48,16 @@\n  %22os%22%0A)%0A\n-%0A\n func mai\n@@ -147,49 +147,8 @@\n %5Cn')\n-%0A    linha, _ := entrada.ReadString('%5Cn')\n %0A%0A  \n@@ -251,317 +251,54 @@\n     \n-if len(frase) %3E 0 && frase%5Blen(frase)-1%5D == '%5Cr' %7B%0A        frase = frase%5B:len(frase)-1%5D%0A    %7D%0A    if len(linha) %3E 0 && linha%5Blen(linha)-1%5D == '%5Cn' %7B%0A        linha= linha%5B:len(linha)-1%5D%0A    %7D%0A    if len(linha) %3E 0 && linha%5Blen(linha)-1%5D == '%5Cr' %7B%0A        linha= linha%5B:len(linha)-1%5D%0A    %7D%0A    letra := linha%5B0%5D\n+var letra byte%0A    fmt.Fscan(entrada, &letra)%0A\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-22_22-18-08",
+            "content": "package main\n\nimport (\n    \"bufio\"\n    \"fmt\"\n    \"os\"\n)\n\nfunc main() {\n    entrada := bufio.NewReader(os.Stdin)\n    frase, _ := entrada.ReadString('\\n')\n    linha, _ := entrada.ReadString('\\n')\n\n    if len(frase) > 0 && frase[len(frase)-1] == '\\n' {\n        frase = frase[:len(frase)-1]\n    }\n    if len(frase) > 0 && frase[len(frase)-1] == '\\r' {\n        frase = frase[:len(frase)-1]\n    }\n    if len(linha) > 0 && linha[len(linha)-1] == '\\n' {\n        linha= linha[:len(linha)-1]\n    }\n    if len(linha) > 0 && linha[len(linha)-1] == '\\r' {\n        linha= linha[:len(linha)-1]\n    }\n    letra := linha[0]\n    count := 0\n    for i := 0; i < len(frase); i++ {\n        if frase[i] == letra {\n            count++\n        }\n    }\n    fmt.Println(count)\n}\n",
+            "lines": "34"
+        }
+    ]
+}
