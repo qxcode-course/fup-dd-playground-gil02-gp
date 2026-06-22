@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_01-11-21",
+            "content": "@@ -605,206 +605,27 @@\n     \n-if iguais == len(pessoa) %7B%0A            fmt.Println(%22chefe%22)%0A        %7D else if iguais*2 %3E= len(pessoa) %7B%0A            fmt.Println(%22ultron%22)%0A        %7D else %7B%0A            fmt.Println(%22pessoa%22)%0A        %7D\n+fmt.Println(iguais)\n %0A   \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-22_01-15-35",
+            "content": "@@ -689,16 +689,17 @@\n uais*2 %3E\n+=\n  len(pes\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-22_01-15-58",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n    \"strings\"\n)\nfunc main() {\n    entrada := bufio.NewReader(os.Stdin)\n    var t int\n    fmt.Fscan(entrada, &t)\n\n    for ; t > 0; t-- {\n        var ultron, pessoa string\n        fmt.Fscan(entrada, &ultron, &pessoa)\n\n        ultron = strings.TrimSpace(ultron)\n        pessoa = strings.TrimSpace(pessoa)\n\n        var existir[26] bool\n        for _, c := range ultron {\n            existir[c-'a'] = true\n        }\n        iguais := 0\n        for _, c := range pessoa {\n            if existir[c-'a'] {\n                iguais++\n            }\n        }\n        if iguais == len(pessoa) {\n            fmt.Println(\"chefe\")\n        } else if iguais*2 > len(pessoa) {\n            fmt.Println(\"ultron\")\n        } else {\n            fmt.Println(\"pessoa\")\n        }\n    }\n}\n",
+            "lines": "38"
+        }
+    ]
+}

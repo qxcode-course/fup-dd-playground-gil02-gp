@@ -29,5 +29,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@eribelton
-selected_index: 20
+selected: fup@disfarce
+selected_index: 21
