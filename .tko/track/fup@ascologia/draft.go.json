@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_21-54-07",
+            "content": "@@ -340,17 +340,8 @@\n tln(\n-soma %25 50\n )%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-22_21-55-05",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n)\nfunc main() {\n    entrada := bufio.NewReader(os.Stdin)\n    nome, _ := entrada.ReadString('\\n')\n    if len(nome) > 0 && nome[len(nome)-1] == '\\n' {\n        nome = nome[:len(nome)-1]\n    }\n    soma := 0\n    for i := 0; i < len(nome); i++{\n        soma += int(nome[i])\n    }\n    fmt.Println(soma % 50)\n}\n",
+            "lines": "18"
+        }
+    ]
+}

@@ -29,5 +29,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@datilografar
-selected_index: 29
+selected: fup@ascologia
+selected_index: 31

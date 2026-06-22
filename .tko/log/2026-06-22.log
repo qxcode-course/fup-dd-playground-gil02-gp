@@ -135,3 +135,11 @@
 2026-06-22 21:44:39, EXEC, v:1, k:fup@datilografar, mode:FULL, rate:100, size:30
 2026-06-22 21:44:50, MOVE, v:1, k:fup@datilografar, mode:BACK
 2026-06-22 21:45:26, SELF, v:1, k:fup@datilografar, self:1, rate:100, concept:1, problem:1, debug:1
+2026-06-22 21:47:01, MOVE, v:1, k:fup@ascologia, mode:DOWN
+2026-06-22 21:47:04, MOVE, v:1, k:fup@ascologia, mode:PICK
+2026-06-22 21:47:01, MOVE, v:1, k:fup@ascologia, mode:EDIT
+2026-06-22 21:51:24, MOVE, v:1, k:fup@ascologia, mode:EDIT
+2026-06-22 21:54:07, EXEC, v:1, k:fup@ascologia, mode:FULL, rate:0, size:18
+2026-06-22 21:55:05, EXEC, v:1, k:fup@ascologia, mode:FULL, rate:100, size:18
+2026-06-22 21:55:23, MOVE, v:1, k:fup@ascologia, mode:BACK
+2026-06-22 21:55:45, SELF, v:1, k:fup@ascologia, self:1, rate:100, concept:1, problem:1, debug:1
