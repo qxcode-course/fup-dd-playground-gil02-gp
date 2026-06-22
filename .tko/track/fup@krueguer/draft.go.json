@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_17-16-26",
+            "content": "@@ -452,671 +452,21 @@\n     \n-inicioAtual := 0%0A        tamAtual := 0%0A        inicioMaior := 0%0A        tamMaior := 0%0A%0A        for i := 0; i %3C len(s); i++ %7B%0A            if vogal(s%5Bi%5D) %7B%0A                if tamAtual == 0 %7B%0A                    inicioAtual = i%0A                %7D%0A                tamAtual++%0A            %7D else %7B%0A                if tamAtual %3E tamMaior %7B%0A                    inicioMaior = inicioAtual%0A                    tamMaior = tamAtual%0A                %7D%0A                tamAtual = 0%0A            %7D%0A        %7D%0A        if tamAtual %3E tamMaior %7B%0A            inicioMaior = inicioAtual%0A            tamMaior = tamAtual%0A        %7D%0A        fmt.Printf(s%5BinicioMaior:inicioMaior+tamMaior%5D + %22%5Cn%22\n+fmt.Println(s\n )%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-22_17-26-10",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n)\nfunc vogal(c byte) bool {\n    return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'\n}\nfunc main() {\n    entrada := bufio.NewReader(os.Stdin)\n    var n int\n    fmt.Fscan(entrada, &n)\n    entrada.ReadBytes('\\n')\n\n    for ; n > 0; n-- {\n        var s string\n        s, _ = entrada.ReadString('\\n')\n\n        if len(s) > 0 && s[len(s)-1] == '\\n' {\n            s = s[:len(s)-1]\n        }\n        inicioAtual := 0\n        tamAtual := 0\n        inicioMaior := 0\n        tamMaior := 0\n\n        for i := 0; i < len(s); i++ {\n            if vogal(s[i]) {\n                if tamAtual == 0 {\n                    inicioAtual = i\n                }\n                tamAtual++\n            } else {\n                if tamAtual > tamMaior {\n                    inicioMaior = inicioAtual\n                    tamMaior = tamAtual\n                }\n                tamAtual = 0\n            }\n        }\n        if tamAtual > tamMaior {\n            inicioMaior = inicioAtual\n            tamMaior = tamAtual\n        }\n        fmt.Printf(s[inicioMaior:inicioMaior+tamMaior] + \"\\n\")\n    }\n    \n}\n",
+            "lines": "49"
+        }
+    ]
+}
