@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_01-41-00",
+            "content": "@@ -10,821 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0Afunc main() %7B%0A    scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Scan()%0A    frase := scanner.Text()%0A    frase = strings.TrimSpace(frase)%0A%0A    elementos := strings.Fields(frase)%0A    for i, e := range elementos %7B%0A        temLetra := false%0A        temPonto := false%0A        for _, c := range e %7B%0A            if c %3E= 'a' && c %3C= 'z' %7C%7C c %3E= 'A' && c %3C= 'Z' %7B%0A                temLetra = true%0A                break%0A            %7D%0A            if c == '.' %7B%0A                temPonto = true%0A            %7D%0A        %7D%0A        if temLetra %7B%0A            fmt.Print(%22str%22)%0A        %7D else if temPonto %7B%0A            fmt.Print(%22float%22)%0A        %7D else %7B%0A            fmt.Print(%22int%22)%0A        %7D%0A        if i %3C len(elementos)-1 %7B%0A            fmt.Print(%22 %22)%0A        %7D%0A    %7D%0A    fmt.Println(\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-22_02-02-54",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    frase := scanner.Text()\n    frase = strings.TrimSpace(frase)\n\n    elementos := strings.Fields(frase)\n    for i, e := range elementos {\n        temLetra := false\n        temPonto := false\n        for _, c := range e {\n            if c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z' {\n                temLetra = true\n                break\n            }\n            if c == '.' {\n                temPonto = true\n            }\n        }\n        if temLetra {\n            fmt.Print(\"str\")\n        } else if temPonto {\n            fmt.Print(\"float\")\n        } else {\n            fmt.Print(\"int\")\n        }\n        if i < len(elementos)-1 {\n            fmt.Print(\" \")\n        }\n    }\n    fmt.Println()\n}\n",
+            "lines": "40"
+        }
+    ]
+}
