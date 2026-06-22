@@ -15,3 +15,8 @@
 2026-06-22 00:38:44, EXEC, v:1, k:fup@vcvcvc, mode:FULL, rate:100, size:26
 2026-06-22 00:38:50, MOVE, v:1, k:fup@vcvcvc, mode:BACK
 2026-06-22 00:39:20, SELF, v:1, k:fup@vcvcvc, self:1, rate:100, concept:1, problem:1, debug:1
+2026-06-22 00:41:21, MOVE, v:1, k:fup@eribelton, mode:DOWN
+2026-06-22 00:41:23, MOVE, v:1, k:fup@eribelton, mode:PICK
+2026-06-22 00:41:21, MOVE, v:1, k:fup@eribelton, mode:EDIT
+2026-06-22 00:41:21, MOVE, v:1, k:fup@eribelton, mode:EDIT
+2026-06-22 00:50:59, MOVE, v:1, k:fup@eribelton, mode:BACK
