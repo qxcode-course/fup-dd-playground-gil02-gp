@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_21-40-46",
+            "content": "@@ -461,52 +461,8 @@\n (0)%0A\n-    %7D else %7B%0A        fmt.Println(resul%5Bi:%5D)%0A\n     \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-22_21-41-26",
+            "content": "@@ -120,22 +120,20 @@\n uebrado \n-string\n+byte\n %0A    var\n@@ -283,11 +283,8 @@\n rado\n-%5B0%5D\n  %7B%0A \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-22_21-44-39",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n)\nfunc main() {\n    entrada := bufio.NewReader(os.Stdin)\n    var quebrado string\n    var numero string\n\n    fmt.Fscan(entrada, &quebrado, &numero)\n\n    resul := \"\"\n\n    for i := 0; i < len(numero); i++{\n        if numero[i] != quebrado[0] {\n            resul += string(numero[i])\n        }\n    }\n    i := 0\n    for i < len(resul) && resul[i] == '0' {\n        i++\n    }\n    if i == len(resul){\n        fmt.Println(0)\n    } else {\n        fmt.Println(resul[i:])\n    }\n}\n",
+            "lines": "30"
+        }
+    ]
+}

@@ -123,3 +123,15 @@
 2026-06-22 21:25:39, EXEC, v:1, k:fup@espacos, mode:FULL, rate:100, size:26
 2026-06-22 21:25:53, MOVE, v:1, k:fup@espacos, mode:BACK
 2026-06-22 21:26:10, SELF, v:1, k:fup@espacos, self:1, rate:100, concept:1, problem:1, debug:1
+2026-06-22 21:31:16, MOVE, v:1, k:fup@datilografar, mode:DOWN
+2026-06-22 21:31:19, MOVE, v:1, k:fup@datilografar, mode:PICK
+2026-06-22 21:31:16, MOVE, v:1, k:fup@datilografar, mode:EDIT
+2026-06-22 21:32:18, MOVE, v:1, k:fup@datilografar, mode:EDIT
+2026-06-22 21:37:20, MOVE, v:1, k:fup@datilografar, mode:EDIT
+2026-06-22 21:40:46, EXEC, v:1, k:fup@datilografar, mode:FULL, rate:0, size:28
+2026-06-22 21:41:26, EXEC, v:1, k:fup@datilografar, mode:FULL, rate:0, size:30
+2026-06-22 21:41:19, MOVE, v:1, k:fup@datilografar, mode:EDIT
+2026-06-22 21:41:26, MOVE, v:1, k:fup@datilografar, mode:EDIT
+2026-06-22 21:44:39, EXEC, v:1, k:fup@datilografar, mode:FULL, rate:100, size:30
+2026-06-22 21:44:50, MOVE, v:1, k:fup@datilografar, mode:BACK
+2026-06-22 21:45:26, SELF, v:1, k:fup@datilografar, self:1, rate:100, concept:1, problem:1, debug:1
