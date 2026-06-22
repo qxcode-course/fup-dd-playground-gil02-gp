@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_00-34-56",
+            "content": "@@ -132,16 +132,19 @@\n    frase\n+, _\n  := scan\n@@ -151,13 +151,23 @@\n ner.\n-Text(\n+ReadString('%5Cn'\n )%0A%0A \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-22_00-35-14",
+            "content": "@@ -503,18 +503,16 @@\n Print(%22v\n-%5Cn\n %22)%0A     \n@@ -547,18 +547,16 @@\n Print(%22c\n-%5Cn\n %22)%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-22_00-36-26",
+            "content": "@@ -503,16 +503,18 @@\n Print(%22v\n+%5Cn\n %22)%0A     \n@@ -549,16 +549,18 @@\n Print(%22c\n+%5Cn\n %22)%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-22_00-36-42",
+            "content": "@@ -547,17 +547,16 @@\n Print(%22c\n- \n %22)%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-22_00-36-52",
+            "content": "@@ -500,18 +500,16 @@\n mt.Print\n-ln\n (%22v%22)%0A  \n@@ -548,13 +548,12 @@\n rint\n-ln\n (%22c\n+ \n %22)%0A \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-22_00-37-13",
+            "content": "@@ -500,16 +500,18 @@\n mt.Print\n+ln\n (%22v%22)%0A  \n@@ -546,16 +546,18 @@\n mt.Print\n+ln\n (%22c%22)%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-22_00-37-37",
+            "content": "@@ -570,24 +570,6 @@\n   %7D%0A\n-    fmt.Println()%0A\n %7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-22_00-38-44",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    frase := scanner.Text()\n\n    for _, vogal := range frase {\n        if vogal == '\\n' {\n            break\n        }\n        if vogal == ' ' {\n            fmt.Print(\" \")\n        } else if vogal == 'a' || vogal == 'e' || vogal == 'i' || vogal == 'o' || vogal == 'u' ||\n        vogal == 'A' || vogal == 'E' || vogal == 'I' || vogal == 'O' || vogal == 'U' {\n            fmt.Print(\"v\")\n        } else {\n            fmt.Print(\"c\")\n        }\n    }\n    fmt.Println()\n}\n",
+            "lines": "26"
+        }
+    ]
+}
