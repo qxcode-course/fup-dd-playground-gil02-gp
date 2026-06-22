@@ -29,5 +29,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@krueguer
-selected_index: 25
+selected: fup@word
+selected_index: 27

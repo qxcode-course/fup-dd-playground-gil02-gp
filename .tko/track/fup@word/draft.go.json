@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_17-40-47",
+            "content": "@@ -30,13 +30,8 @@\n o%22%0A%09\n-%22fmt%22\n %0A%09%22o\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-22_17-41-06",
+            "content": "@@ -222,1424 +222,25 @@\n %09%7D%0A%09\n-var op byte%0A    fmt.Fscan(entrada, &op)%0A    switch op %7B%0A    case 'M' :%0A        for i := 0; i %3C len(texto); i++ %7B%0A            c := texto%5Bi%5D%0A            if c %3E= 'A' && c %3C= 'Z' %7B%0A                c-= 'a' - 'A'%0A            %7D%0A            fmt.Printf(%22%25c%22, c)%0A        %7D%0A    case 'm' :%0A        for i := 0; i %3C len(texto); i++ %7B%0A            c := texto%5Bi%5D%0A            if c %3E= 'a' && c %3C= 'z' %7B%0A                c+= 'a' - 'A'%0A            %7D%0A            fmt.Printf(%22%25c%22, c)%0A        %7D%0A    case 'i' :%0A        for i := 0; i %3C len(texto); i++ %7B%0A            c := texto%5Bi%5D%0A            if c %3E= 'a' && c %3C=  'z' %7B%0A                c-= 'a' - 'A'%0A            %7D else if c %3E= 'A' && c %3C= 'Z' %7B%0A                c+= 'a' - 'A'%0A            %7D%0A            fmt.Printf(%22%25c%22, c)%0A        %7D%0A    case 'p' :%0A        inicio := true%0A        for i := 0; i %3C len(texto); i++ %7B%0A            c := texto%5Bi%5D%0A            if c == ' ' %7B%0A                inicio = true%0A                fmt.Printf(%22%25c%22, c)%0A                continue%0A            %7D%0A            if inicio %7B%0A                if (i + 1 == len(texto) %7C%7C texto%5Bi+1%5D == ' ') && (c %3E= 'a' && c %3E= 'z') %7B%0A%0A                %7D else if c %3E= 'a' && c %3C='z' %7B%0A                    c-= 'a' - 'A'%0A                %7D%0A                inicio = false%0A            %7D else %7B%0A                if c %3E= 'A' && c %3C= 'Z' %7B%0A                    c+= 'a' - 'A'%0A                %7D%0A            %7D%0A            fmt.Printf(%22%25c%22, c)%0A        %7D%0A    %7D%0A    \n+fmt.Println(texto)\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-22_18-08-09",
+            "content": "@@ -370,33 +370,33 @@\n        if c %3E= '\n-a\n+A\n ' && c %3C= 'z' %7B%0A\n@@ -390,17 +390,17 @@\n & c %3C= '\n-z\n+Z\n ' %7B%0A    \n@@ -577,33 +577,33 @@\n        if c %3E= '\n-A\n+a\n ' && c %3C= 'Z' %7B%0A\n@@ -589,33 +589,33 @@\n %3E= 'a' && c %3C= '\n-Z\n+z\n ' %7B%0A            \n@@ -1308,25 +1308,25 @@\n %3E= 'a' && c \n-%3C\n+%3E\n = 'z') %7B%0A%0A  \n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-06-22_18-10-42",
+            "content": "@@ -1639,20 +1639,7 @@\n     \n-fmt.Println()\n %0A%7D%0A\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-06-22_18-11-10",
+            "content": "@@ -1304,61 +1304,25 @@\n  (c \n-=\n+%3E\n = 'a' \n-%7C%7C c == 'e' %7C%7C c == 'i' %7C%7C c == 'o' %7C%7C c == 'u\n+&& c %3C= 'z\n ') %7B\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-06-22_18-14-15",
+            "content": "@@ -178,17 +178,17 @@\n 1%5D == '%5C\n-r\n+n\n ' %7B%0A%09%09te\n@@ -1297,33 +1297,16 @@\n ' ') && \n-%0A                \n (c == 'a\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-06-22_18-17-22",
+            "content": "@@ -42,19 +42,8 @@\n os%22%0A\n-%09%22strings%22%0A\n )%0A%0Af\n@@ -135,53 +135,8 @@\n n')%0A\n-    texto = strings.TrimRight(texto, %22%5Cr%5Cn%22)%0A\n %09if \n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-06-22_18-20-40",
+            "content": "@@ -38,16 +38,27 @@\n %22%0A%09%22os%22%0A\n+%09%22strings%22%0A\n )%0A%0Afunc \n@@ -142,16 +142,61 @@\n g('%5Cn')%0A\n+    texto = strings.TrimRight(texto, %22%5Cr%5Cn%22)%0A\n %09if len(\n@@ -234,17 +234,17 @@\n 1%5D == '%5C\n-n\n+r\n ' %7B%0A%09%09te\n@@ -278,37 +278,52 @@\n %09%7D%0A%09\n-op, _ := entrada.ReadByte()%0A%09\n+var op byte%0A    fmt.Fscan(entrada, &op)%0A    \n swit\n@@ -334,17 +334,20 @@\n p %7B%0A\n-%09\n+    \n case 'M'\n :%0A%09%09\n@@ -342,20 +342,27 @@\n case 'M'\n+ \n :%0A\n-%09%09\n+        \n for i :=\n@@ -379,35 +379,44 @@\n n(texto); i++ %7B%0A\n-%09%09%09\n+            \n c := texto%5Bi%5D%0A%09%09\n@@ -405,35 +405,44 @@\n   c := texto%5Bi%5D%0A\n-%09%09%09\n+            \n if c %3E= 'a' && c\n@@ -455,35 +455,64 @@\n ' %7B%0A\n-%09%09%09%09c -= 'a' - 'A'%0A%09%09%09%7D%0A%09%09%09\n+                c-= 'a' - 'A'%0A            %7D%0A            \n fmt.\n@@ -531,21 +531,30 @@\n  c)%0A\n-%09%09%7D%0A%09\n+        %7D%0A    \n case 'm'\n :%0A%09%09\n@@ -549,20 +549,27 @@\n case 'm'\n+ \n :%0A\n-%09%09\n+        \n for i :=\n@@ -586,35 +586,44 @@\n n(texto); i++ %7B%0A\n-%09%09%09\n+            \n c := texto%5Bi%5D%0A%09%09\n@@ -612,35 +612,44 @@\n   c := texto%5Bi%5D%0A\n-%09%09%09\n+            \n if c %3E= 'A' && c\n@@ -662,35 +662,64 @@\n ' %7B%0A\n-%09%09%09%09c += 'a' - 'A'%0A%09%09%09%7D%0A%09%09%09\n+                c+= 'a' - 'A'%0A            %7D%0A            \n fmt.\n@@ -738,21 +738,30 @@\n  c)%0A\n-%09%09%7D%0A%09\n+        %7D%0A    \n case 'i'\n :%0A%09%09\n@@ -756,20 +756,27 @@\n case 'i'\n+ \n :%0A\n-%09%09\n+        \n for i :=\n@@ -793,35 +793,44 @@\n n(texto); i++ %7B%0A\n-%09%09%09\n+            \n c := texto%5Bi%5D%0A%09%09\n@@ -823,27 +823,36 @@\n := texto%5Bi%5D%0A\n-%09%09%09\n+            \n if c %3E= 'a' \n@@ -862,21 +862,33 @@\n c %3C=\n+ \n  'z' %7B%0A\n-%09%09%09%09c \n+                c\n -= '\n@@ -896,19 +896,28 @@\n ' - 'A'%0A\n-%09%09%09\n+            \n %7D else i\n@@ -945,35 +945,64 @@\n ' %7B%0A\n-%09%09%09%09c += 'a' - 'A'%0A%09%09%09%7D%0A%09%09%09\n+                c+= 'a' - 'A'%0A            %7D%0A            \n fmt.\n@@ -1021,21 +1021,30 @@\n  c)%0A\n-%09%09%7D%0A%09\n+        %7D%0A    \n case 'p'\n :%0A%09%09\n@@ -1043,12 +1043,19 @@\n  'p'\n+ \n :%0A\n-%09%09\n+        \n inic\n@@ -1065,18 +1065,24 @@\n := true%0A\n-%09%09\n+        \n for i :=\n@@ -1107,19 +1107,28 @@\n ; i++ %7B%0A\n-%09%09%09\n+            \n c := tex\n@@ -1133,19 +1133,28 @@\n exto%5Bi%5D%0A\n-%09%09%09\n+            \n if c == \n@@ -1163,93 +1163,161 @@\n ' %7B%0A\n-%09%09%09%09inicio = true%0A%09%09%09%09fmt.Printf(%22%25c%22, c)%0A%09%09%09%09continue%0A%09%09%09%7D%0A%09%09%09if inicio %7B%0A%09%09%09%09\n+                inicio = true%0A                fmt.Printf(%22%25c%22, c)%0A                continue%0A            %7D%0A            if inicio %7B%0A                \n if (i\n-+\n+ + \n 1 ==\n@@ -1352,22 +1352,34 @@\n  ' ') &&\n-%0A%09%09%09%09%09\n+ %0A                \n (c == 'a\n@@ -1432,20 +1432,32 @@\n 'u') %7B%0A%0A\n-%09%09%09%09\n+                \n %7D else i\n@@ -1478,164 +1478,278 @@\n c %3C=\n- \n 'z' %7B%0A\n-%09%09%09%09%09c -= 'a' - 'A'%0A%09%09%09%09%7D%0A%09%09%09%09inicio = false%0A%09%09%09%7D else %7B%0A%09%09%09%09if c %3E= 'A' && c %3C= 'Z' %7B%0A%09%09%09%09%09c += 'a' - 'A'%0A%09%09%09%09%7D%0A%09%09%09%7D%0A%09%09%09fmt.Printf(%22%25c%22, c)%0A%09%09%7D%0A%09%7D%0A%09\n+                    c-= 'a' - 'A'%0A                %7D%0A                inicio = false%0A            %7D else %7B%0A                if c %3E= 'A' && c %3C= 'Z' %7B%0A                    c+= 'a' - 'A'%0A                %7D%0A            %7D%0A            fmt.Printf(%22%25c%22, c)%0A        %7D%0A    %7D%0A    \n fmt.\n",
+            "lines": "72"
+        },
+        {
+            "label": "2026-06-22_18-22-26",
+            "content": "@@ -928,90 +928,67 @@\n %09%09%09i\n-sVogal := c == 'a' %7C%7C c == 'e' %7C%7C c == 'i' %7C%7C c == 'o' %7C%7C c == 'u' %7C%7C\n+f (i+1 == len(texto) %7C%7C texto%5Bi+1%5D == ' ') &&\n %0A%09%09%09%09%09\n+(\n c == '\n-A\n+a\n ' %7C%7C\n@@ -998,9 +998,9 @@\n == '\n-E\n+e\n ' %7C%7C\n@@ -1010,9 +1010,9 @@\n == '\n-I\n+i\n ' %7C%7C\n@@ -1022,9 +1022,9 @@\n == '\n-O\n+o\n ' %7C%7C\n@@ -1034,166 +1034,14 @@\n == '\n-U'%0A%09%09%09%09isUltimaLetra := (i+1 == len(texto) %7C%7C texto%5Bi+1%5D == ' ')%0A%0A%09%09%09%09if isVogal && isUltimaLetra %7B%0A%09%09%09%09%09if c %3E= 'A' && c %3C= 'Z' %7B%0A%09%09%09%09%09%09c += 'a' - 'A'%0A%09%09%09%09%09%7D\n+u') %7B%0A\n %0A%09%09%09\n@@ -1098,45 +1098,8 @@\n 'A'%0A\n-%09%09%09%09%7D else if c %3E= 'A' && c %3C= 'Z' %7B%0A\n %09%09%09%09\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-06-22_18-24-53",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\tentrada := bufio.NewReader(os.Stdin)\n\ttexto, _ := entrada.ReadString('\\n')\n\tif len(texto) > 0 && texto[len(texto)-1] == '\\n' {\n\t\ttexto = texto[:len(texto)-1]\n\t}\n\top, _ := entrada.ReadByte()\n\tswitch op {\n\tcase 'M':\n\t\tfor i := 0; i < len(texto); i++ {\n\t\t\tc := texto[i]\n\t\t\tif c >= 'a' && c <= 'z' {\n\t\t\t\tc -= 'a' - 'A'\n\t\t\t}\n\t\t\tfmt.Printf(\"%c\", c)\n\t\t}\n\tcase 'm':\n\t\tfor i := 0; i < len(texto); i++ {\n\t\t\tc := texto[i]\n\t\t\tif c >= 'A' && c <= 'Z' {\n\t\t\t\tc += 'a' - 'A'\n\t\t\t}\n\t\t\tfmt.Printf(\"%c\", c)\n\t\t}\n\tcase 'i':\n\t\tfor i := 0; i < len(texto); i++ {\n\t\t\tc := texto[i]\n\t\t\tif c >= 'a' && c <= 'z' {\n\t\t\t\tc -= 'a' - 'A'\n\t\t\t} else if c >= 'A' && c <= 'Z' {\n\t\t\t\tc += 'a' - 'A'\n\t\t\t}\n\t\t\tfmt.Printf(\"%c\", c)\n\t\t}\n\tcase 'p':\n\t\tinicio := true\n\t\tfor i := 0; i < len(texto); i++ {\n\t\t\tc := texto[i]\n\t\t\tif c == ' ' {\n\t\t\t\tinicio = true\n\t\t\t\tfmt.Printf(\"%c\", c)\n\t\t\t\tcontinue\n\t\t\t}\n\t\t\tif inicio {\n\t\t\t\tisVogal := c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||\n\t\t\t\t\tc == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U'\n\t\t\t\tisUltimaLetra := (i+1 == len(texto) || texto[i+1] == ' ')\n\n\t\t\t\tif isVogal && isUltimaLetra {\n\t\t\t\t\tif c >= 'A' && c <= 'Z' {\n\t\t\t\t\t\tc += 'a' - 'A'\n\t\t\t\t\t}\n\t\t\t\t} else if c >= 'a' && c <= 'z' {\n\t\t\t\t\tc -= 'a' - 'A'\n\t\t\t\t} else if c >= 'A' && c <= 'Z' {\n\t\t\t\t}\n\t\t\t\tinicio = false\n\t\t\t} else {\n\t\t\t\tif c >= 'A' && c <= 'Z' {\n\t\t\t\t\tc += 'a' - 'A'\n\t\t\t\t}\n\t\t\t}\n\t\t\tfmt.Printf(\"%c\", c)\n\t\t}\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "75"
+        }
+    ]
+}
