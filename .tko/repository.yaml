@@ -22,12 +22,12 @@ expanded:
 - fup@string
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   task_graph_mode: executions
   show_time: 'true'
 audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@identificando
-selected_index: 23
+selected: fup@calipso
+selected_index: 24

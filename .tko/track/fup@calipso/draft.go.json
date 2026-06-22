@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_13-57-37",
+            "content": "@@ -145,16 +145,8 @@\n ner,\n- %22%25d%5Cn%22,\n  &n)\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-22_13-59-29",
+            "content": "@@ -145,16 +145,18 @@\n ner, %22%25d\n+%5Cn\n %22, &n)%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-22_13-59-47",
+            "content": "@@ -366,580 +366,8 @@\n     \n-maiuscula := false%0A        for _, c := range frase %7B%0A            if c != ' ' %7B%0A                if c %3E= 'A'&& c %3C= 'Z' %7B%0A                    maiuscula = true%0A                %7D%0A                break%0A            %7D%0A        %7D%0A        for _, c := range frase %7B%0A            if c != ' ' %7B%0A                fmt.Print(%22 %22)%0A                continue%0A            %7D%0A            if maiuscula %7B%0A                if c %3E= 'A' && c %3C= 'Z' %7B%0A                    c += 'a' - 'A'%0A                %7D%0A            %7D%0A            fmt.Printf(%22%25c%22, c)%0A            maiuscula = !maiuscula%0A        %7D%0A        \n fmt.\n@@ -374,16 +374,21 @@\n Println(\n+frase\n )%0A    %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-22_14-09-04",
+            "content": "@@ -424,33 +424,33 @@\n            if c \n-=\n+!\n = ' ' %7B%0A        \n@@ -634,17 +634,17 @@\n    if c \n-=\n+!\n = ' ' %7B%0A\n@@ -740,16 +740,16 @@\n scula %7B%0A\n+\n         \n@@ -767,92 +767,8 @@\n c %3E=\n- 'a' && c %3C= 'z' %7B%0A                    c -= 'a' - 'A'%0A                %7D else if c %3E=\n  'A'\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-22_14-12-04",
+            "content": "@@ -432,17 +432,17 @@\n    if c \n-!\n+=\n = ' ' %7B%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-22_14-12-42",
+            "content": "@@ -840,38 +840,16 @@\n  %7D else \n-%7B%0A                    \n if c %3E= \n@@ -886,20 +886,16 @@\n         \n-  \n-  \n c += 'a'\n@@ -905,30 +905,8 @@\n 'A'%0A\n-                    %7D%0A\n     \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-22_14-15-17",
+            "content": "@@ -379,11 +379,12 @@\n  := \n-tru\n+fals\n e%0A  \n@@ -514,20 +514,19 @@\n scula = \n-fals\n+tru\n e%0A      \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-22_14-17-55",
+            "content": "@@ -379,12 +379,11 @@\n  := \n-fals\n+tru\n e%0A  \n@@ -513,19 +513,20 @@\n scula = \n-tru\n+fals\n e%0A      \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-22_14-18-23",
+            "content": "@@ -838,30 +838,16 @@\n    %7D\n-%0A            %7D\n  else %7B%0A\n     \n@@ -838,24 +838,28 @@\n    %7D else %7B%0A\n+    \n             \n@@ -908,16 +908,20 @@\n         \n+    \n c += 'a'\n@@ -919,32 +919,54 @@\n  c += 'a' - 'A'%0A\n+                    %7D%0A\n                 \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-22_14-22-48",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n)\nfunc main() {\n    scanner := bufio.NewReader(os.Stdin)\n\n    var n int\n    fmt.Fscanf(scanner, \"%d\", &n)\n    scanner.ReadByte()\n\n    for ; n > 0; n-- {\n        frase, _ := scanner.ReadString('\\n')\n        if len(frase) > 0 && frase[len(frase)-1] == '\\n' {\n            frase = frase[:len(frase)-1]\n        }\n        maiuscula := false\n        for _, c := range frase {\n            if c != ' ' {\n                if c >= 'A'&& c <= 'Z' {\n                    maiuscula = true\n                }\n                break\n            }\n        }\n        for _, c := range frase {\n            if c == ' ' {\n                fmt.Print(\" \")\n                continue\n            }\n            if maiuscula {\n                if c >= 'a' && c <= 'z' {\n                    c -= 'a' - 'A'\n                }\n            } else {\n                if c >= 'A' && c <= 'Z' {\n                    c += 'a' - 'A'\n                }\n            }\n            fmt.Printf(\"%c\", c)\n            maiuscula = !maiuscula\n        }\n        fmt.Println()\n    }\n}\n",
+            "lines": "47"
+        }
+    ]
+}
