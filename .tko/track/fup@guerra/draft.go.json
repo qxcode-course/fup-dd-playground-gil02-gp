@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_21-03-00",
+            "content": "@@ -158,10 +158,9 @@\n  := \n--1\n+0\n %0A%0A  \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-23_21-04-59",
+            "content": "@@ -314,17 +314,16 @@\n  poder %3E\n-=\n  maior %7B\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-23_21-06-06",
+            "content": "@@ -572,33 +572,32 @@\n       if poder %3E\n-=\n  maior %7B%0A       \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-23_21-06-18",
+            "content": "@@ -306,32 +306,33 @@\n       if poder %3E\n+=\n  maior %7B%0A       \n@@ -580,16 +580,17 @@\n  poder %3E\n+=\n  maior %7B\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-23_21-06-33",
+            "content": "@@ -17,111 +17,27 @@\n ort \n-(%0A    %22fmt%22%0A    %22bufio%22%0A    %22os%22%0A    %22strings%22%0A)%0Afunc main() %7B%0A    entrada := bufio.NewReader(os.Stdin)\n+%22fmt%22%0Afunc main() %7B\n %0A   \n@@ -73,52 +73,19 @@\n fmt.\n-Fs\n+S\n can(\n-entrada, &nIron)%0A    entrada.ReadByte(\n+&nIron\n )%0A%0A \n@@ -203,83 +203,23 @@\n     \n-nome, _ := entrada.ReadString('%5Cn')%0A       \n+var\n  nome\n- =\n  string\n-s.TrimSpace(nome)%0A\n %0A   \n@@ -245,37 +245,34 @@\n         fmt.\n-Fs\n+S\n can(\n-entrada\n+&nome\n , &poder)%0A  \n@@ -273,34 +273,8 @@\n er)%0A\n-        entrada.ReadByte()\n %0A   \n@@ -400,31 +400,21 @@\n     fmt.\n-Fs\n+S\n can(\n-entrada, \n &nCaptai\n@@ -419,31 +419,8 @@\n ain)\n-%0A    entrada.ReadByte()\n %0A%0A  \n@@ -465,82 +465,23 @@\n     \n-nome, _ := entrada.ReadString('%5Cn')%0A       \n+var\n  nome\n- =\n  string\n-s.TrimSpace(nome)\n %0A   \n@@ -515,21 +515,18 @@\n fmt.\n-Fs\n+S\n can(\n-entrada\n+&nome\n , &p\n@@ -535,36 +535,8 @@\n er)%0A\n-        entrada.ReadByte()%0A%0A\n     \n@@ -552,32 +552,33 @@\n aptain += poder%0A\n+%0A\n         if poder\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-23_21-22-11",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n    \"strings\"\n)\nfunc main() {\n    entrada := bufio.NewReader(os.Stdin)\n    var nIron, nCaptain int\n    fmt.Fscan(entrada, &nIron)\n    entrada.ReadByte()\n\n    somaIron := 0\n    somaCaptain := 0\n\n    campeao := \"\"\n    maior := -1\n\n    for i := 0; i < nIron; i++ {\n        nome, _ := entrada.ReadString('\\n')\n        nome = strings.TrimSpace(nome)\n\n        var poder int\n        fmt.Fscan(entrada, &poder)\n        entrada.ReadByte()\n        somaIron += poder\n        if poder > maior {\n            maior = poder\n            campeao = nome\n        }\n    }\n    fmt.Fscan(entrada, &nCaptain)\n    entrada.ReadByte()\n\n    for i := 0; i < nCaptain; i++ {\n        nome, _ := entrada.ReadString('\\n')\n        nome = strings.TrimSpace(nome)\n        var poder int\n        fmt.Fscan(entrada, &poder)\n        entrada.ReadByte()\n\n        somaCaptain += poder\n        if poder > maior {\n            maior = poder\n            campeao = nome\n        }\n    }\n    if somaCaptain > somaIron {\n        fmt.Println(\"Team Captain Wins\")\n    } else if somaIron > somaCaptain {\n        fmt.Println(\"Team Iron Wins\")\n    } else {\n        fmt.Println(\"Draw\")\n    }\n    fmt.Println(campeao)\n}\n",
+            "lines": "57"
+        }
+    ]
+}

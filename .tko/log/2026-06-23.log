@@ -38,3 +38,28 @@
 2026-06-23 19:06:18, EXEC, v:1, k:fup@gagueira, mode:FULL, rate:100, size:27
 2026-06-23 19:06:26, MOVE, v:1, k:fup@gagueira, mode:BACK
 2026-06-23 19:06:48, SELF, v:1, k:fup@gagueira, self:1, rate:100, concept:1, problem:1, debug:1
+2026-06-23 20:34:12, MOVE, v:1, k:fup@guerra, mode:DOWN
+2026-06-23 20:34:15, MOVE, v:1, k:fup@guerra, mode:PICK
+2026-06-23 20:36:56, MOVE, v:1, k:fup@guerra, mode:BACK
+2026-06-23 20:37:02, MOVE, v:1, k:fup@guerra, mode:PICK
+2026-06-23 20:34:12, MOVE, v:1, k:fup@guerra, mode:EDIT
+2026-06-23 20:38:29, MOVE, v:1, k:fup@guerra, mode:EDIT
+2026-06-23 20:46:19, MOVE, v:1, k:fup@guerra, mode:PICK
+2026-06-23 20:51:07, MOVE, v:1, k:fup@guerra, mode:EDIT
+2026-06-23 20:56:09, MOVE, v:1, k:fup@guerra, mode:EDIT
+2026-06-23 21:01:07, MOVE, v:1, k:fup@guerra, mode:EDIT
+2026-06-23 21:03:00, EXEC, v:1, k:fup@guerra, mode:FULL, rate:20, size:45
+2026-06-23 21:04:59, EXEC, v:1, k:fup@guerra, mode:FULL, rate:20, size:45
+2026-06-23 21:06:06, EXEC, v:1, k:fup@guerra, mode:FULL, rate:20, size:45
+2026-06-23 21:06:01, MOVE, v:1, k:fup@guerra, mode:EDIT
+2026-06-23 21:06:05, MOVE, v:1, k:fup@guerra, mode:EDIT
+2026-06-23 21:06:18, EXEC, v:1, k:fup@guerra, mode:FULL, rate:20, size:45
+2026-06-23 21:06:33, EXEC, v:1, k:fup@guerra, mode:FULL, rate:20, size:45
+2026-06-23 21:08:27, EXEC, v:1, k:fup@guerra, mode:FULL, rate:20
+2026-06-23 21:11:08, MOVE, v:1, k:fup@guerra, mode:EDIT
+2026-06-23 21:08:26, MOVE, v:1, k:fup@guerra, mode:EDIT
+2026-06-23 21:15:58, MOVE, v:1, k:fup@guerra, mode:EDIT
+2026-06-23 21:21:11, MOVE, v:1, k:fup@guerra, mode:EDIT
+2026-06-23 21:22:11, EXEC, v:1, k:fup@guerra, mode:FULL, rate:100, size:57
+2026-06-23 21:22:19, MOVE, v:1, k:fup@guerra, mode:BACK
+2026-06-23 21:22:37, SELF, v:1, k:fup@guerra, self:1, rate:100, concept:1, problem:1, debug:1
