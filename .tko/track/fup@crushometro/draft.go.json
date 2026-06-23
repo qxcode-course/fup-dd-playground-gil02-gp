@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_14-22-18",
+            "content": "@@ -803,50 +803,12 @@\n tf(%22\n-As chances do crush te dar bola sao: \n %25d%25%25\n-!\n %22, p\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-23_14-23-18",
+            "content": "@@ -845,10 +845,8 @@\n d%25%25!\n-%5Cn\n %22, p\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-23_14-23-30",
+            "content": "package main\nimport \"fmt\"\nfunc ehVogal(c byte) bool {\n    return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||\n    c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U'\n}\nfunc contaVogal(s string) int {\n    cont := 0\n    for i := 0; i < len(s); i++ {\n        if ehVogal(s[i]){\n            cont++\n        }\n    }\n    return cont\n}\nfunc main() {\n    var n1, n2 string\n    fmt.Scan(&n1, &n2)\n\n    ponto := 0\n\n    if n1[0] == n2[0] {\n        ponto += 20\n    }\n    if len(n1) == len(n2) {\n        ponto += 30\n    }\n    if contaVogal(n1) == contaVogal(n2) {\n        ponto += 30\n    }\n    fim1 := ehVogal(n1[len(n1)-1])\n    fim2 := ehVogal(n2[len(n2)-1])\n\n    if fim1 == fim2 {\n        ponto += 20\n    } else {\n        ponto -= 10\n    }\n    if ponto < 0 {\n        ponto = 0\n    }\n    fmt.Printf(\"As chances do crush te dar bola sao: %d%%!\\n\", ponto)\n}\n",
+            "lines": "43"
+        }
+    ]
+}

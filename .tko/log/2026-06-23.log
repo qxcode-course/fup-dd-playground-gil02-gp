@@ -11,3 +11,18 @@
 2026-06-23 13:50:52, EXEC, v:1, k:fup@avestruz, mode:FULL, rate:100, size:37
 2026-06-23 13:51:08, MOVE, v:1, k:fup@avestruz, mode:BACK
 2026-06-23 13:51:26, SELF, v:1, k:fup@avestruz, self:1, rate:100, concept:1, problem:1, debug:1
+2026-06-23 13:56:06, MOVE, v:1, k:fup@crushometro, mode:DOWN
+2026-06-23 13:56:07, MOVE, v:1, k:fup@crushometro, mode:PICK
+2026-06-23 13:56:06, MOVE, v:1, k:fup@crushometro, mode:EDIT
+2026-06-23 13:57:54, MOVE, v:1, k:fup@crushometro, mode:EDIT
+2026-06-23 14:02:54, MOVE, v:1, k:fup@crushometro, mode:EDIT
+2026-06-23 14:06:23, MOVE, v:1, k:fup@crushometro, mode:EDIT
+2026-06-23 14:12:53, MOVE, v:1, k:fup@crushometro, mode:EDIT
+2026-06-23 14:17:49, MOVE, v:1, k:fup@crushometro, mode:EDIT
+2026-06-23 14:22:18, EXEC, v:1, k:fup@crushometro, mode:FULL, rate:0, size:43
+2026-06-23 14:22:55, MOVE, v:1, k:fup@crushometro, mode:EDIT
+2026-06-23 14:22:18, MOVE, v:1, k:fup@crushometro, mode:EDIT
+2026-06-23 14:23:19, EXEC, v:1, k:fup@crushometro, mode:FULL, rate:0, size:43
+2026-06-23 14:23:30, EXEC, v:1, k:fup@crushometro, mode:FULL, rate:100, size:43
+2026-06-23 14:23:46, MOVE, v:1, k:fup@crushometro, mode:BACK
+2026-06-23 14:24:02, SELF, v:1, k:fup@crushometro, self:1, rate:100, concept:1, problem:1, debug:1

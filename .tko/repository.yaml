@@ -29,5 +29,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@avestruz
-selected_index: 34
+selected: fup@crushometro
+selected_index: 35
