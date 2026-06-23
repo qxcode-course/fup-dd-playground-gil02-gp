@@ -26,3 +26,15 @@
 2026-06-23 14:23:30, EXEC, v:1, k:fup@crushometro, mode:FULL, rate:100, size:43
 2026-06-23 14:23:46, MOVE, v:1, k:fup@crushometro, mode:BACK
 2026-06-23 14:24:02, SELF, v:1, k:fup@crushometro, self:1, rate:100, concept:1, problem:1, debug:1
+2026-06-23 18:32:02, MOVE, v:1, k:fup@gagueira, mode:DOWN
+2026-06-23 18:32:03, MOVE, v:1, k:fup@gagueira, mode:PICK
+2026-06-23 18:32:02, MOVE, v:1, k:fup@gagueira, mode:EDIT
+2026-06-23 18:32:02, MOVE, v:1, k:fup@gagueira, mode:EDIT
+2026-06-23 18:34:15, MOVE, v:1, k:fup@gagueira, mode:BACK
+2026-06-23 18:52:42, MOVE, v:1, k:fup@gagueira, mode:PICK
+2026-06-23 18:57:23, MOVE, v:1, k:fup@gagueira, mode:EDIT
+2026-06-23 19:02:33, MOVE, v:1, k:fup@gagueira, mode:EDIT
+2026-06-23 19:05:49, EXEC, v:1, k:fup@gagueira, mode:FULL, rate:0, size:27
+2026-06-23 19:06:18, EXEC, v:1, k:fup@gagueira, mode:FULL, rate:100, size:27
+2026-06-23 19:06:26, MOVE, v:1, k:fup@gagueira, mode:BACK
+2026-06-23 19:06:48, SELF, v:1, k:fup@gagueira, self:1, rate:100, concept:1, problem:1, debug:1

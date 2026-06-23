@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_19-05-49",
+            "content": "@@ -493,16 +493,17 @@\n avra = %22\n+ \n %22%0A      \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-23_19-06-18",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n)\nfunc main() {\n    entrada := bufio.NewReader(os.Stdin)\n    frase, _ := entrada.ReadString('\\n')\n\n    if len(frase) > 0 && frase[len(frase)-1] == '\\n' {\n        frase = frase[:len(frase)-1]\n    }\n    palavra := \"\"\n    for i := 0; i <= len(frase); i++ {\n        if i == len(frase) || frase[i] == ' ' {\n            fmt.Print(palavra, \" \", palavra)\n            if i != len(frase){\n                fmt.Print(\" \")\n            }\n            palavra = \"\"\n        } else {\n            palavra += string(frase[i])\n        }\n    }\n    fmt.Println()\n}\n",
+            "lines": "27"
+        }
+    ]
+}
