@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-25_21-55-02",
+            "content": "package main\nimport \"fmt\"\ntype Jogada struct {\n    p1, p2 int\n}\nfunc calc_pontuacao (j Jogada) (bool, int) {\n    if j.p1 < 10 || j.p2 < 10 {\n        return false, 0\n    }\n    ponto := j.p1 - j.p2\n    if ponto < 0 {\n        ponto = -ponto\n    }\n    return true, ponto\n}\n    func procurar_melhor_jogada(jogadas []Jogada) int {\n        melhorIndice := -1\n        MenorPontuacao := 0\n\n        for i := 0; i < len(jogadas); i++{\n            valida, pontuacao := calc_pontuacao(jogadas[i])\n            if !valida {\n                continue\n            }\n            if melhorIndice == -1 || pontuacao < MenorPontuacao {\n                melhorIndice = i\n                MenorPontuacao = pontuacao\n            }\n        }\n        return melhorIndice\n    }\n\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    jogadas := make([]Jogada, n)\n    for i := 0; i < n; i++ {\n        fmt.Scan(&jogadas[i].p1, &jogadas[i].p2)\n    }\n    indice := procurar_melhor_jogada(jogadas)\n    if indice == -1 {\n        fmt.Println(\"sem ganhador\")\n    }else {\n        fmt.Println(indice)\n    }\n}\n",
+            "lines": "47"
+        }
+    ]
+}
