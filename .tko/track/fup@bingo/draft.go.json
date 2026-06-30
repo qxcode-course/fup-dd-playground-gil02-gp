@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_01-20-08",
+            "content": "@@ -568,18 +568,12 @@\n Println(\n-acerto\n )%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-30_01-20-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    cartela := [4][4] int {\n        {1, 9, 27, 23},\n        {34, 20, 37, 47},\n        {30, 87, 55, 69},\n        {13, 60, 99, 66},\n    }\n    acerto := 0\n    for i := 0; i < 6; i++ {\n        var num int\n        fmt.Scan(&num)\n\n        encontrou := false\n\n        for j := 0; j < 4 && !encontrou; j++ {\n            for c := 0; c < 4; c++ {\n                if cartela[j][c] == num {\n                    acerto++\n                    encontrou = true\n                    break\n                }\n            }\n        }\n    }\n    fmt.Println(acerto)\n}\n",
+            "lines": "28"
+        }
+    ]
+}
