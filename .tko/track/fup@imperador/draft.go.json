@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_02-09-52",
+            "content": "@@ -108,26 +108,25 @@\n inhaLeao := \n--1\n+0\n %0A    colunaL\n@@ -132,18 +132,17 @@\n Leao := \n--1\n+0\n %0A    for\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-30_02-12-02",
+            "content": "@@ -108,25 +108,26 @@\n inhaLeao := \n-0\n+-1\n %0A    colunaL\n@@ -129,25 +129,26 @@\n lunaLeao := \n-0\n+-1\n %0A    for i :\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-30_02-12-37",
+            "content": "@@ -256,9 +256,8 @@\n n(%22 \n-%25\n c%22, \n@@ -548,17 +548,17 @@\n Leao %7C%7C \n-j\n+i\n  == colu\n@@ -1009,24 +1009,25 @@\n intln(%22Conde\n+r\n nados a mort\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-30_02-14-56",
+            "content": "@@ -108,26 +108,25 @@\n inhaLeao := \n--1\n+0\n %0A    colunaL\n@@ -132,18 +132,17 @@\n Leao := \n--1\n+0\n %0A    for\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-30_02-15-14",
+            "content": "@@ -251,17 +251,16 @@\n fmt.Scan\n-f\n (%22 %25c%22, \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-30_02-16-59",
+            "content": "@@ -777,16 +777,75 @@\n ndenado \n++= 2%0A                %7D else %7B%0A                    condenado\n ++%0A     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-30_02-25-05",
+            "content": "@@ -781,67 +781,8 @@\n ado \n-+= 2%0A                %7D else %7B%0A                    condenado\n ++%0A \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-30_02-26-52",
+            "content": "@@ -683,36 +683,29 @@\n            %7D\n-%0A           \n+ else\n  if mat%5Bi%5D%5Bj\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-30_02-27-30",
+            "content": "@@ -318,32 +318,68 @@\n             \n-continue\n+linhaLeao = i%0A                colunaLeao = j\n %0A           \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-06-30_02-29-26",
+            "content": "@@ -310,69 +310,8 @@\n ' %7B%0A\n-                linhaLeao = i%0A                colunaLeao = j%0A\n     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-30_02-29-45",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var n in\n@@ -47,17 +47,20 @@\n r n int%0A\n-%09\n+    \n fmt.Scan\n@@ -65,17 +65,20 @@\n an(&n)%0A%0A\n-%09\n+    \n mat := m\n@@ -95,17 +95,20 @@\n te, n)%0A%0A\n-%09\n+    \n linhaLea\n@@ -115,17 +115,20 @@\n o := -1%0A\n-%09\n+    \n colunaLe\n@@ -136,17 +136,20 @@\n o := -1%0A\n-%09\n+    \n for i :=\n@@ -165,18 +165,24 @@\n ; i++ %7B%0A\n-%09%09\n+        \n mat%5Bi%5D =\n@@ -198,18 +198,24 @@\n yte, n)%0A\n-%09%09\n+        \n for j :=\n@@ -231,19 +231,28 @@\n ; j++ %7B%0A\n-%09%09%09\n+            \n fmt.Scan\n@@ -272,19 +272,28 @@\n %5Bi%5D%5Bj%5D)%0A\n-%09%09%09\n+            \n if mat%5Bi\n@@ -310,71 +310,129 @@\n ' %7B%0A\n-%09%09%09%09linhaLeao = i%0A%09%09%09%09colunaLeao = j%0A%09%09%09%09continue%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09\n+                linhaLeao = i%0A                colunaLeao = j%0A                continue%0A            %7D%0A        %7D %0A    %7D%0A    \n glad\n@@ -442,17 +442,20 @@\n or := 0%0A\n-%09\n+    \n condenad\n@@ -462,17 +462,20 @@\n o := 0%0A%0A\n-%09\n+    \n for i :=\n@@ -491,18 +491,24 @@\n ; i++ %7B%0A\n-%09%09\n+        \n for j :=\n@@ -524,19 +524,28 @@\n ; j++ %7B%0A\n-%09%09%09\n+            \n if linha\n@@ -600,29 +600,59 @@\n ) %7B%0A\n-%09%09%09%09continue%0A%09%09%09%7D%0A%09%09%09\n+                continue%0A            %7D%0A            \n if m\n@@ -669,20 +669,32 @@\n = 'G' %7B%0A\n-%09%09%09%09\n+                \n gladiado\n@@ -701,130 +701,234 @@\n r +=\n- \n 2%0A\n-%09%09%09%7D%0A%09%09%09if mat%5Bi%5D%5Bj%5D == 'C' %7B%0A%09%09%09%09if i+j == n-1 %7B%0A%09%09%09%09%09condenado += 2%0A%09%09%09%09%7D else %7B%0A%09%09%09%09%09condenado++%0A%09%09%09%09%7D%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09\n+            %7D%0A            if mat%5Bi%5D%5Bj%5D == 'C' %7B%0A                if i+j == n-1 %7B%0A                    condenado += 2%0A                %7D else %7B%0A                    condenado++%0A                %7D%0A            %7D%0A        %7D%0A    %7D%0A    \n if g\n@@ -950,18 +950,24 @@\n enado %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -985,17 +985,20 @@\n dores%22)%0A\n-%09\n+    \n %7D else i\n@@ -1023,18 +1023,24 @@\n iador %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -1065,17 +1065,20 @@\n morte%22)%0A\n-%09\n+    \n %7D else %7B\n@@ -1082,10 +1082,16 @@\n e %7B%0A\n-%09%09\n+        \n fmt.\n@@ -1113,9 +1113,12 @@\n m%22)%0A\n-%09\n+    \n %7D%0A%7D%0A\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-06-30_02-34-11",
+            "content": "@@ -601,17 +601,17 @@\n nado += \n-1\n+2\n %0A%09%09%09%09%7D e\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-06-30_02-34-18",
+            "content": "@@ -559,24 +559,78 @@\n j%5D == 'C' %7B%0A\n+%09%09%09%09if i+j == n-1 %7B%0A%09%09%09%09%09condenado += 1%0A%09%09%09%09%7D else %7B%0A%09\n %09%09%09%09condenad\n@@ -633,16 +633,22 @@\n enado++%0A\n+%09%09%09%09%7D%0A\n %09%09%09%7D%0A%09%09%7D\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-06-30_02-39-52",
+            "content": "@@ -214,17 +214,25 @@\n fmt.Scan\n-(\n+f(%22 %25c%22, \n &mat%5Bi%5D%5B\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-07-01_17-14-21",
+            "content": "@@ -218,17 +218,9 @@\n Scan\n-f(%22 %25c%22, \n+(\n &mat\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-07-01_17-17-32",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tmat := make([][]byte, n)\n\n\tlinhaLeao := -1\n\tcolunaLeao := -1\n\tfor i := 0; i < n; i++ {\n\t\tmat[i] = make([]byte, n)\n\t\tfor j := 0; j < n; j++ {\n\t\t\tfmt.Scanf(\" %c\", &mat[i][j])\n\t\t\tif mat[i][j] == 'L' {\n\t\t\t\tlinhaLeao = i\n\t\t\t\tcolunaLeao = j\n\t\t\t\tcontinue\n\t\t\t}\n\t\t}\n\t}\n\tgladiador := 0\n\tcondenado := 0\n\n\tfor i := 0; i < n; i++ {\n\t\tfor j := 0; j < n; j++ {\n\t\t\tif linhaLeao != -1 && (i == linhaLeao || j == colunaLeao) {\n\t\t\t\tcontinue\n\t\t\t}\n\t\t\tif mat[i][j] == 'G' {\n\t\t\t\tgladiador += 2\n\t\t\t}\n\t\t\tif mat[i][j] == 'C' {\n\t\t\t\tcondenado++\n\t\t\t}\n\t\t}\n\t}\n\tif gladiador > condenado {\n\t\tfmt.Println(\"Gladiadores\")\n\t} else if condenado > gladiador {\n\t\tfmt.Println(\"Condenados a morte\")\n\t} else {\n\t\tfmt.Println(\"Ninguem\")\n\t}\n}\n",
+            "lines": "47"
+        }
+    ]
+}
