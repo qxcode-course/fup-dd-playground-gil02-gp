@@ -29,5 +29,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: fup@imperador
-selected_index: 9
+selected: fup@coluna
+selected_index: 10

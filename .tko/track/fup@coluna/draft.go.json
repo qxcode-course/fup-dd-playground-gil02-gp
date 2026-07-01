@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-01_17-49-35",
+            "content": "@@ -504,24 +504,19 @@\n mt.Print\n-f(%22%25d%22, \n+ln(\n coluna)%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-01_17-50-40",
+            "content": "@@ -84,19 +84,20 @@\n ake(%5B%5D%5B%5D\n-int\n+byte\n , n)%0A%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-01_17-51-29",
+            "content": "@@ -175,17 +175,24 @@\n fmt.Scan\n-(\n+f(%22%25d%22, \n &mat%5Bi%5D%5B\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-01_17-52-02",
+            "content": "@@ -126,40 +126,8 @@\n + %7B%0A\n-        mat%5Bi%5D = make(%5B%5Dint, n)%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-01_17-53-44",
+            "content": "@@ -537,10 +537,8 @@\n (%22%25d\n-%5Cn\n %22, c\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-07-01_17-54-02",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    mat := make([][]int, n)\n\n    for i := 0; i < n; i++ {\n        mat[i] = make([]int, n)\n        for j := 0; j < n; j++ {\n            fmt.Scan(&mat[i][j])\n        }\n    }\n    valorMaior := -1\n    coluna := 0\n    for j := 0; j < n; j++ {\n        soma := 0\n        for i := 0; i < n; i++ {\n            soma += int(mat[i][j]) * int(mat[i][j])\n        }\n        if soma > valorMaior {\n            valorMaior = soma\n            coluna = j\n        }\n    }\n    fmt.Printf(\"%d\\n\", coluna)\n}\n",
+            "lines": "27"
+        }
+    ]
+}
