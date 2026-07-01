@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-01_18-18-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var mat[3][3] int\n    for i := 0; i < 3; i++ {\n        for j := 0; j < 3; j++ {\n            fmt.Scan(&mat[i][j])\n        }\n    }\n    soma := 0\n    for j := 0; j < 3; j++ {\n        soma += mat[0][j]\n    }\n    magico := 1\n    for i := 1; i < 3; i++ {\n        linha := 0\n        for j := 0; j < 3; j++ {\n            linha += mat[i][j]\n        }\n        if linha != soma {\n            magico = 0\n            break\n        }\n    }\n    if magico == 1 {\n        for j := 0; j < 3; j++ {\n            coluna := 0\n            for i := 0; i < 3; i++ {\n                coluna += mat[i][j]\n            }\n            if coluna != soma {\n                magico =  0\n                break\n            }\n        }\n    }\n    if magico == 1{\n        diagonal1 := 0\n        for i := 0; i < 3; i++ {\n            diagonal1 += mat[i][i]\n        }\n        if diagonal1 != soma {\n            magico = 0\n        }\n    }\n    if magico == 1{\n        diagonal2 := 0\n        for i := 0; i < 3; i++ {\n            diagonal2 += mat[i][2-i]\n        }\n        if diagonal2 != soma {\n            magico = 0\n        }\n    }\n    if magico == 1 {\n        fmt.Printf(\"sim\\n\")\n    } else {\n        fmt.Printf(\"nao\\n\")\n    }\n}\n",
+            "lines": "60"
+        }
+    ]
+}
