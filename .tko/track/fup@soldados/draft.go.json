@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_18-52-13",
+            "content": "@@ -444,18 +444,11 @@\n rint\n-f(%22%25d%5Cn%22, \n+ln(\n coun\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-03_18-52-55",
+            "content": "@@ -270,42 +270,8 @@\n = 0%0A\n-    for j := 0; j %3C nc; j++ %7B%0A    \n     \n@@ -308,37 +308,29 @@\n     \n-    \n for \n-k\n+j\n  := \n-i + 1; k\n+0; j\n  %3C n\n-l; k\n+c; j\n ++ %7B\n@@ -342,20 +342,16 @@\n         \n-    \n if mat%5Bi\n@@ -359,16 +359,19 @@\n %5Bj%5D \n-==\n+%3E\n  mat%5B\n-k\n+i + 1\n %5D%5Bj%5D\n@@ -393,20 +393,16 @@\n     \n-    \n count++%0A\n     \n@@ -401,26 +401,8 @@\n t++%0A\n-                %7D%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-03_18-58-36",
+            "content": "@@ -405,9 +405,10 @@\n %5Bj%5D \n-%3E\n+==\n  mat\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-03_18-59-02",
+            "content": "@@ -508,11 +508,18 @@\n rint\n-ln(\n+f(%22%25d%5Cn%22, \n coun\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-03_18-59-45",
+            "content": "@@ -326,18 +326,16 @@\n %3C nl\n--1\n ; i++ %7B%0A\n     \n@@ -322,32 +322,78 @@\n ; i %3C nl; i++ %7B%0A\n+            for k := i + 1; k %3C nl; k++ %7B%0A    \n             if m\n@@ -411,18 +411,20 @@\n mat%5B\n-i+1\n+k\n %5D%5Bj%5D %7B%0A\n+    \n     \n@@ -443,16 +443,34 @@\n count++%0A\n+                %7D%0A\n         \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-03_19-15-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nl, nc int\n    fmt.Scan(&nl, &nc)\n\n    mat := make([][]int, nl)\n    for i := 0; i < nl; i++ {\n        mat[i] = make([]int, nc)\n        for j := 0; j < nc; j++ {\n            fmt.Scan(&mat[i][j])\n        }\n    }\n    count := 0\n    for j := 0; j < nc; j++ {\n        for i := 0; i < nl-1; i++ {\n            if mat[i][j] > mat[i+1][j] {\n                count++\n            }\n        }\n    }\n    fmt.Println(count)\n}\n",
+            "lines": "23"
+        }
+    ]
+}
