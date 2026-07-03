@@ -29,5 +29,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: fup@quadrado
-selected_index: 11
+selected: fup@boletim
+selected_index: 12

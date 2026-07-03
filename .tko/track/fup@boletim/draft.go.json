@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_18-35-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    mat := make([][]int, 2)\n\n    soma := 0\n    for i := 0; i < 2; i++ {\n        mat[i] = make([]int, 3)\n        for j := 0; j < 3; j++ {\n            fmt.Scan(&mat[i][j])\n            soma += mat[i][j]\n        }\n    }\n    fmt.Println(soma)\n}\n",
+            "lines": "15"
+        }
+    ]
+}
