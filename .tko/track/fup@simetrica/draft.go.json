@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_19-23-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var mat[3][3] int\n    for i := 0; i < 3; i++ {\n        for j := 0; j < 3; j++ {\n            fmt.Scan(&mat[i][j])\n        }\n    }\n    simetrica := 1\n    for i := 0; i < 3; i++ {\n        for j := 0; j < 3; j++ {\n            if mat[i][j] != mat[j][i] {\n                simetrica = 0\n            }\n        }\n    }\n    if simetrica == 1 {\n        fmt.Print(\"sim\\n\")\n    } else {\n        fmt.Print(\"nao\\n\")\n    }\n}\n",
+            "lines": "23"
+        }
+    ]
+}
