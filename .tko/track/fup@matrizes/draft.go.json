@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-04_01-47-45",
+            "content": "@@ -578,32 +578,8 @@\n + %7B%0A\n-        fmt.Print(%22%5B %22)%0A\n     \n@@ -638,10 +638,38 @@\n rint\n-(S\n+f(%22%25d%22, S%5Bi%5D%5Bj%5D == A%5Bi%5D%5Bj%5D + B\n %5Bi%5D%5B\n@@ -741,32 +741,32 @@\n )%0A            %7D%0A\n+\n         %7D%0A      \n@@ -763,33 +763,8 @@\n   %7D%0A\n-        fmt.Print(%22%5D%5Cn%22)%0A\n     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-07-04_01-50-14",
+            "content": "@@ -41,305 +41,140 @@\n     \n-var\n+const\n  linhas\n-, colunas int%0A    fmt.Scan(&linhas, &colunas)%0A    A := make(%5B%5D%5B%5Dint, linhas)%0A    B := make(%5B%5D%5B%5Dint, linhas)%0A    S := make(%5B%5D%5B%5Dint, linhas)%0A%0A    for i := 0; i %3C linhas; i++ %7B%0A        A%5Bi%5D = make(%5B%5Dint, colunas)%0A        B%5Bi%5D = make(%5B%5Dint, colunas)%0A        S%5Bi%5D = make(%5B%5Dint, colunas)%0A    %7D\n+ = 3%0A    const colunas = 4%0A%0A    var A%5Blinhas%5D%5Bcolunas%5D int%0A    var B%5Blinhas%5D%5Bcolunas%5D int%0A    var S%5Blinhas%5D%5Bcolunas%5D int\n %0A%0A  \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-07-04_01-57-21",
+            "content": "@@ -939,17 +939,16 @@\n .Print(%22\n- \n %5D%5Cn%22)%0A  \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-04_01-57-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var linhas, colunas int\n    fmt.Scan(&linhas, &colunas)\n    A := make([][]int, linhas)\n    B := make([][]int, linhas)\n    S := make([][]int, linhas)\n\n    for i := 0; i < linhas; i++ {\n        A[i] = make([]int, colunas)\n        B[i] = make([]int, colunas)\n        S[i] = make([]int, colunas)\n    }\n\n    for i := 0; i < linhas; i++ {\n        for j := 0; j < colunas; j++ {\n            fmt.Scan(&A[i][j])\n        }\n    }\n    for i := 0; i < linhas; i++ {\n        for j := 0; j < colunas; j++ {\n            fmt.Scan(&B[i][j])\n        }\n    }\n    for i := 0; i < linhas; i++ {\n        for j := 0; j < colunas; j++ {\n            S[i][j] = A[i][j] + B[i][j]\n        }\n    }\n    for i := 0; i < linhas; i++ {\n        fmt.Print(\"[ \")\n        for j := 0; j < colunas; j++ {\n            fmt.Print(S[i][j])\n            if j < colunas-1 {\n                fmt.Printf(\" \")\n            }\n        }\n        fmt.Print(\" ]\\n\")\n    }\n}\n",
+            "lines": "41"
+        }
+    ]
+}

@@ -22,12 +22,12 @@ expanded:
 - fup@mat
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   task_graph_mode: executions
   show_time: 'true'
 audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: fup@simetrica
-selected_index: 15
+selected: fup@matrizes
+selected_index: 16
