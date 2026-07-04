@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-04_02-07-00",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var mat[5][5] int\n    somaPrincipal := 0\n    somaSecundario := 0\n    for i := 0; i < 5; i++ {\n        for j := 0; j < 5; j++ {\n            fmt.Scan(&mat[i][j])\n        }\n    }\n    for i := 0; i < 5; i++ {\n        somaPrincipal += mat[i][i]\n        somaSecundario += mat[i][4-i]\n    }\n    resul := somaPrincipal - somaSecundario\n    fmt.Println(resul)\n}\n",
+            "lines": "18"
+        }
+    ]
+}
